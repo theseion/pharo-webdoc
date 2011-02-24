@@ -6,9 +6,6 @@
 		"HtmlCache" ],
 	"commentStamp" : "",
 	"instvars" : [
-		"selectedPackage",
-		"selectedClass",
-		"selectedMethod",
 		"document",
 		"root",
 		"classView",
