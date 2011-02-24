@@ -13,7 +13,8 @@
 		"root",
 		"classView",
 		"methodView",
-		"packageTree" ],
+		"packageTree",
+		"selectorList" ],
 	"name" : "WDRoot",
 	"pools" : [
 		 ],

@@ -1,11 +1,9 @@
 as yet unclassified
 renderContentOn: html 
 	html div
-		id: 'packageTree';
+		id: self id;
 		with: [
 			self renderSearchFieldOn: html.
 			html unorderedList
-				with: [ 
-				packages do: [:package|
-					self renderPackage: package on: html.
-				]]].
+				id: 'full_list';
+				with: [ self renderListOn: html]].

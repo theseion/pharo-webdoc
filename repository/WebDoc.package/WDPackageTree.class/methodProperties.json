@@ -2,11 +2,13 @@
 	"class" : {
 		 },
 	"instance" : {
+		"id" : "CamilloBruni 2/24/2011 14:17",
 		"initialize" : "CamilloBruni 2/23/2011 16:22",
-		"renderClassesOfPackage:on:" : "CamilloBruni 2/23/2011 17:13",
-		"renderContentOn:" : "CamilloBruni 2/23/2011 18:57",
-		"renderPackage:on:" : "CamilloBruni 2/23/2011 18:54",
-		"renderSearchFieldOn:" : "CamilloBruni 2/23/2011 19:07",
+		"renderClass:at:on:" : "CamilloBruni 2/24/2011 14:19",
+		"renderClass:on:" : "CamilloBruni 2/24/2011 14:55",
+		"renderClassesOfPackage:on:" : "CamilloBruni 2/24/2011 14:11",
+		"renderListOn:" : "CamilloBruni 2/24/2011 14:13",
+		"renderPackage:at:on:" : "CamilloBruni 2/24/2011 14:12",
 		"selectClass:" : "CamilloBruni 2/23/2011 17:07",
 		"selectPackage:" : "CamilloBruni 2/23/2011 17:18",
 		"selectedClass" : "CamilloBruni 2/23/2011 17:07",

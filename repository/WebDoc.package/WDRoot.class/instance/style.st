@@ -9,13 +9,18 @@ BODY {
 	position: fixed;
 	height: 100%;
 	width: 300px;
-	float: left; 
 	overflow-y:scroll;
 }
-
+#methodList {
+	position: fixed;
+	height: 100%;
+	width: 300px;
+	left: 300px;
+	overflow-y:scroll;
+}
 .classMethodContainer {
 	position: absolute;
-	left: 320px;
+	left: 620px;
 }
 .classView {
 	float: left;

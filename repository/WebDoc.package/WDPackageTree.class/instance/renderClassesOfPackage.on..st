@@ -1,10 +1,8 @@
 as yet unclassified
 renderClassesOfPackage: package on: html
+	|classes|
+	classes := package allDefinedClasses.
 	html unorderedList with: [
-		package allDefinedClasses do: [:class|
-			html listItem 
-				with:  [
-					html anchor
-						callback: [ self selectClass: class];
-						with: class name]]]
+		classes doWithIndex: [:class :index|
+			self renderClass: class at: index on: html]]
 	

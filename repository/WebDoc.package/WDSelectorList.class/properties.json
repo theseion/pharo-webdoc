@@ -3,13 +3,12 @@
 	"classinstvars" : [
 		 ],
 	"classvars" : [
-		"HtmlCache" ],
+		 ],
 	"commentStamp" : "",
 	"instvars" : [
-		"selectedClass",
-		"selectedMethod" ],
-	"name" : "WDClassView",
+		 ],
+	"name" : "WDSelectorList",
 	"pools" : [
 		 ],
-	"super" : "WDReflectionComponent",
+	"super" : "WDSearchList",
 	"type" : "normal" }

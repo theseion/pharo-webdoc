@@ -3,7 +3,7 @@
 	"classinstvars" : [
 		 ],
 	"classvars" : [
-		"HtmlCache" ],
+		 ],
 	"commentStamp" : "",
 	"instvars" : [
 		"selectedPackage",
@@ -12,5 +12,5 @@
 	"name" : "WDPackageTree",
 	"pools" : [
 		 ],
-	"super" : "WAComponent",
+	"super" : "WDSearchList",
 	"type" : "normal" }

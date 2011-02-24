@@ -10,5 +10,5 @@
 	"name" : "WDMethodView",
 	"pools" : [
 		 ],
-	"super" : "WAComponent",
+	"super" : "WDReflectionComponent",
 	"type" : "normal" }
