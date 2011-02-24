@@ -1,4 +1,4 @@
-as yet unclassified
+rendering
 renderClassDefinition: class on: html
 	html definitionList
 		class: 'box';

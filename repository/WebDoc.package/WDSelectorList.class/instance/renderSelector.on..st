@@ -1,4 +1,4 @@
-as yet unclassified
+rendering
 renderSelector: selector on: html
 	html anchor
 		class: 'selector_link';

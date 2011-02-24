@@ -1,4 +1,4 @@
-as yet unclassified
+rendering-formatting
 formatArgument: aNode
 	html span
 		class: 'stArgument';

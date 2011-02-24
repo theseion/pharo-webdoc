@@ -1,4 +1,4 @@
-as yet unclassified
+rendering-formatting
 formatTrue: aNode
 	html anchor
 		class: 'stTrue';

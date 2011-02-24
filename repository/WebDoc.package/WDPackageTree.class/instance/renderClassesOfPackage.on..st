@@ -1,4 +1,4 @@
-as yet unclassified
+rendering
 renderClassesOfPackage: package on: html
 	|classes|
 	classes := package allDefinedClasses.

@@ -1,4 +1,4 @@
-as yet unclassified
+rendering-formatting
 formatNil: aNode
 	html anchor
 		class: 'stNil';

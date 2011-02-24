@@ -1,4 +1,4 @@
-as yet unclassified
+rendering-formatting
 formatMethodCommentFor: aNode
 	| source |
 	renderComment ifFalse: [^ self].

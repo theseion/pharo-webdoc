@@ -1,4 +1,4 @@
-as yet unclassified
+rendering
 renderContentOn: html
 	html div
 		class: 'method_details';

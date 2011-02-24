@@ -1,4 +1,4 @@
-as yet unclassified
+instance creation
 for: method
 	^ self new
 		method: method

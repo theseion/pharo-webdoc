@@ -1,4 +1,4 @@
-as yet unclassified
+rendering
 renderSelectorLink: selector in: class on: html
 	html anchor
 		class: 'method_link';

@@ -1,4 +1,4 @@
-as yet unclassified
+rendering
 renderMethodSignatureFor: method on: html
 	html span
 		class: 'summary_signature';

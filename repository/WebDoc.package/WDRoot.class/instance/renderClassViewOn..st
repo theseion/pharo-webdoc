@@ -1,4 +1,4 @@
-as yet unclassified
+rendering
 renderClassViewOn: html.
 	
 	classView selectClass: packageTree selectedClass.

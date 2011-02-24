@@ -1,4 +1,4 @@
-as yet unclassified
+rendering
 indent: aBlock
 	html div
 		class: 'stIndent';

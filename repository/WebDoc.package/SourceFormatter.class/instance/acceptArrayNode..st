@@ -1,4 +1,4 @@
-as yet unclassified
+visitor-double dispatching
 acceptArrayNode: anArrayNode
 	html span 
 		class: 'stArray';

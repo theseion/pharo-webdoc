@@ -1,4 +1,4 @@
-visitor
+private
 newLinesFor: aString startingAt: anIndex 
 	| count cr lf index char |
 	cr := Character value: 13.

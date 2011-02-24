@@ -1,4 +1,4 @@
-as yet unclassified
+rendering-formatting
 formatString: aString
 	 html anchor 
 		url: '/class/', aString class name;

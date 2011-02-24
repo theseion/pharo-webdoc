@@ -1,4 +1,4 @@
-as yet unclassified
+rendering
 renderContentOn: html
 	selectedClass ifNil: [ ^ html text: 'no class selected' ].
 	

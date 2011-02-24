@@ -1,4 +1,4 @@
-as yet unclassified
+rendering-formatting
 formatSelf: aNode
 	html span
 		class: 'stSelf';

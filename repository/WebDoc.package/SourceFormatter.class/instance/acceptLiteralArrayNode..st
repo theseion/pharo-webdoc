@@ -1,4 +1,4 @@
-as yet unclassified
+visitor-double dispatching
 acceptLiteralArrayNode: aRBArrayLiteralNode 
 	| restoreInLilteralArray |
 	html span

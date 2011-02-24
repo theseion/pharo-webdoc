@@ -1,4 +1,4 @@
-as yet unclassified
+visitor-double dispatching
 acceptBlockNode: aBlockNode startBlockString: startBlockString endBlockString: endBlockString 
 	| bodyBlock |
 	html text: startBlockString.

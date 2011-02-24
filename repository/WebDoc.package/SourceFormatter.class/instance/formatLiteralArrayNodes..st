@@ -1,4 +1,4 @@
-as yet unclassified
+rendering-formatting
 formatLiteralArrayNodes: aRBArrayLiteralNode
 	| restoreInLilteralArray |
 	restoreInLilteralArray := inLiteralArray.

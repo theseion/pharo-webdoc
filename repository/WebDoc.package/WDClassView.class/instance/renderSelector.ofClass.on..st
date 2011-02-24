@@ -1,4 +1,4 @@
-as yet unclassified
+rendering
 renderSelector: aSelector ofClass: aClass on: html
 	"Render given selector"
 	

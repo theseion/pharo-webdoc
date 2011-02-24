@@ -1,4 +1,4 @@
-as yet unclassified
+private
 blockNeedsMultiline: aBlockNode
 	| body statement |
 	body := aBlockNode body.

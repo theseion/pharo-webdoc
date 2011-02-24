@@ -1,4 +1,4 @@
-as yet unclassified
+dispatch
 selectClass: class
 
 	selectedClass := class

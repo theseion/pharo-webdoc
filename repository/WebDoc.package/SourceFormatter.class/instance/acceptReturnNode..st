@@ -1,4 +1,4 @@
-as yet unclassified
+visitor-double dispatching
 acceptReturnNode: aReturnNode 
 	html span 
 		class: 'stReturn'; 

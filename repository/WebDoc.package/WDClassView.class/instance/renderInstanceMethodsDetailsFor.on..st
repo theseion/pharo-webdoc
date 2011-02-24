@@ -1,4 +1,4 @@
-as yet unclassified
+rendering
 renderInstanceMethodsDetailsFor: class on: html
 .
 	html div

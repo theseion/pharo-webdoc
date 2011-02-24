@@ -1,4 +1,4 @@
-as yet unclassified
+rendering
 renderMethodViewOn: html
 	
 	methodView method: classView method.

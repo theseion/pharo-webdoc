@@ -1,4 +1,4 @@
-as yet unclassified
+rendering-formatting
 formatLiteral: literal style: styleClass
 	html anchor 
 		url: '/class/', literal class name;

@@ -1,4 +1,4 @@
-as yet unclassified
+rendering
 renderClassLink: class on: html
 	html anchor
 		class: (class isTrait ifTrue: ['trait_link'] ifFalse: ['class_link']);

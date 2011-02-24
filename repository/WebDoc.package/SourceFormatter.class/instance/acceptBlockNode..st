@@ -1,4 +1,4 @@
-as yet unclassified
+visitor-double dispatching
 acceptBlockNode: aBlockNode 
 
 	tempNames addAll: aBlockNode argumentNames.

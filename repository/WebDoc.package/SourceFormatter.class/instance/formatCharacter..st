@@ -1,4 +1,4 @@
-as yet unclassified
+rendering-formatting
 formatCharacter: aChar
 	 html anchor 
 		url: '/class/', aChar class name;

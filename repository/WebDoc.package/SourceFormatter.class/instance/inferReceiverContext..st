@@ -1,4 +1,4 @@
-visitor
+private
 inferReceiverContext: aMessage
 	| receiver |
 	aMessage isSuperSend  ifTrue: [ ^self superSendTarget ].

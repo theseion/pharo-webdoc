@@ -1,4 +1,4 @@
-as yet unclassified
+rendering
 renderSourceOn: html
 	"html preformatted: method getSource."
 	html code

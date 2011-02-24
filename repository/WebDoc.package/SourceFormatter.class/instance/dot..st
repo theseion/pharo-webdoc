@@ -1,3 +1,3 @@
-as yet unclassified
+rendering
 dot: aNode
 	aNode needsDot ifTrue: [html text: $. .]

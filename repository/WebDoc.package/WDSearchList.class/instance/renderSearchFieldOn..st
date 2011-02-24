@@ -1,4 +1,4 @@
-as yet unclassified
+rendering
 renderSearchFieldOn: html
 	html div 
 		id: 'search';

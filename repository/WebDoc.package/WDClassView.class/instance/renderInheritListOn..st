@@ -1,4 +1,4 @@
-as yet unclassified
+rendering
 renderInheritListOn: html
 	html definitionData
 		with: [

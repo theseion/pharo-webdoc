@@ -1,4 +1,4 @@
-as yet unclassified
+rendering
 renderClass: class on: html
 	self renderClassLink: class on: html.
 	class isTrait 

@@ -1,4 +1,4 @@
-as yet unclassified
+visitor-double dispatching
 acceptVariableNode: aVariableNode 
 	"this method reallllyyyy annoys me. why don't we have different ast objects for all these variables???"
 	|name |

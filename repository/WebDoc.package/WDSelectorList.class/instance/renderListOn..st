@@ -1,4 +1,4 @@
-as yet unclassified
+rendering
 renderListOn: html
 	| selectors |
 	selectors := SystemNavigation default allSentMessages asArray sort.

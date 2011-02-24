@@ -1,4 +1,4 @@
-as yet unclassified
+visitor-double dispatching
 acceptLiteralNode: aLiteralNode 
 	|value|
 	value := aLiteralNode value.

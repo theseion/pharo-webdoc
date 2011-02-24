@@ -1,4 +1,4 @@
-as yet unclassified
+rendering-formatting
 formatMethodPatternFor: aMethodNode 
 	| selectorParts arguments |
 	selectorParts := aMethodNode selectorParts.

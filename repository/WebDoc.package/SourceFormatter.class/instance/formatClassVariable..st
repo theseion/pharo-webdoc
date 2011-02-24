@@ -1,4 +1,4 @@
-as yet unclassified
+rendering-formatting
 formatClassVariable: aNode
 	html span
 		class: 'stClassVariable';

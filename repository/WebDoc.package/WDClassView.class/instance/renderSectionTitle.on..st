@@ -1,4 +1,4 @@
-as yet unclassified
+rendering
 renderSectionTitle: aString  on: html
 	html div
 			class: 'title';

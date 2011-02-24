@@ -1,4 +1,4 @@
-as yet unclassified
+rendering-formatting
 formatInstanceVariable: aNode
 	html anchor
 		class: 'stInstanceVariable';

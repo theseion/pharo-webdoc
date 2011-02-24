@@ -1,4 +1,4 @@
-as yet unclassified
+rendering
 renderSelectorList:  selectors in: class on: html
 	html paragraph
 		class: 'inheritedMethodList';

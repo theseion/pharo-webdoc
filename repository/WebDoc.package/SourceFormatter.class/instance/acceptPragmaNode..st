@@ -1,4 +1,4 @@
-as yet unclassified
+visitor-double dispatching
 acceptPragmaNode: aPragmaNode
 	html span 
 		class: 'stPragma';

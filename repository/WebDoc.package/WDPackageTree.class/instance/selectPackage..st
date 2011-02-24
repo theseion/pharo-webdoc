@@ -1,3 +1,3 @@
-as yet unclassified
+dispatch
 selectPackage: aPackage
 	selectedPackage := aPackage.

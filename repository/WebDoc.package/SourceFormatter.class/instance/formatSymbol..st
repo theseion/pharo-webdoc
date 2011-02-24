@@ -1,4 +1,4 @@
-as yet unclassified
+rendering-formatting
 formatSymbol: aSymbol
 	| url |
 	url := '/selectors/', aSymbol asString.

@@ -1,4 +1,4 @@
-as yet unclassified
+initialization
 method: aMethod
 	method := aMethod.
 	parseTree := method parseTree.

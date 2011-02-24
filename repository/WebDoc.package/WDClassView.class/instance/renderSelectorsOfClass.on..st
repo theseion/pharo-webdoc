@@ -1,4 +1,4 @@
-as yet unclassified
+rendering
 renderSelectorsOfClass: aClass on: html
 	"Render all methods with their comments of given class"
 	

@@ -1,4 +1,4 @@
-as yet unclassified
+rendering
 renderSuperOverridesOn: html
 	| classes |
 	classes := class allSuperclasses select: [ :superclass|

@@ -1,4 +1,4 @@
-as yet unclassified
+rendering
 renderSelector: aSelector inMessage: aMessage
 	|url receiverContext |
 	aMessage ifNil: [

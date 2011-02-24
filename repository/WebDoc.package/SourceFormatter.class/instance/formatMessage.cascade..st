@@ -1,4 +1,4 @@
-as yet unclassified
+rendering-formatting
 formatMessage: aMessageNode cascade: cascadeBoolean
 	| selectorParts arguments |
 	selectorParts := aMessageNode selectorParts. 

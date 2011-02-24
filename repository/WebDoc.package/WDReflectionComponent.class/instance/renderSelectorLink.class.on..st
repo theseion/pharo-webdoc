@@ -1,4 +1,4 @@
-as yet unclassified
+rendering
 renderSelectorLink: selector class: class on: html
 	self renderClassLink: class on: html.
 	html text: ' >> '.

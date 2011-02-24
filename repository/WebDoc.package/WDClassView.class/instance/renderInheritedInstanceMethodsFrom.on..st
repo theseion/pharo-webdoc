@@ -1,4 +1,4 @@
-as yet unclassified
+rendering
 renderInheritedInstanceMethodsFrom: class on: html
 	html div
 		class: 'inheritedMethod';

@@ -12,5 +12,5 @@ initialRequest: aRequest
 			classSymbol := Symbol readFromString: ('#', classString).
 			class := Smalltalk at: (classSymbol).
 			packageTree selectClass: class.
-			packageTree selectPackage: (RPackageOrganizer default packageOfClassNamed: classString )]
+			packageTree selectPackage: (RPackage organizer packageOfClassNamed: classString )]
 	"I should do the same for methods"

@@ -1,4 +1,4 @@
-as yet unclassified
+visitor-double dispatching
 acceptMethodNode: aMethodNode 
 	self formatMethodPatternFor: aMethodNode.
 	self indent: [
