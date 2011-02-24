@@ -13,12 +13,8 @@ acceptBlockNode: aBlockNode startBlockString: startBlockString endBlockString: e
 				
 			aBlockNode hasArguments ifTrue: [ html text: '| ']].
 	
-	bodyBlock := [html span
+	html span
 		class: 'stBlockBody';
-		with: [ self visitNode:   aBlockNode body ]].
-	
-	aBlockNode hasArguments 
-		ifTrue:[ self indent: bodyBlock]
-		ifFalse: bodyBlock.
+		with: [ self visitNode:  aBlockNode body ].
 		
 	html text: endBlockString.

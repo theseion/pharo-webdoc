@@ -7,4 +7,5 @@ acceptCascadeNode: aCascadeNode
 		 messages 
 			do: [:each | 
 				self formatMessage: each cascade: true]
-			separatedBy: [html text: $;]]
+			separatedBy: [html text: $;; break].
+		self dot: aCascadeNode]

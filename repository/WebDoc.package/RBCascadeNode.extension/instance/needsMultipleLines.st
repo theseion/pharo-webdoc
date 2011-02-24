@@ -1,0 +1,3 @@
+*WebDoc-testing
+needsMultipleLines
+	^ true

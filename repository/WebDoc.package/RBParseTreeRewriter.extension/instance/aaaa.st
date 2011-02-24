@@ -1,7 +1,8 @@
 *WebDoc-test
 aaaa
-	self  zork
-		acceptMethodNode:  [ 
-			self foundMatch 
-				ifFalse: [ 3]
-				ifTrue: [4]].
+	self 
+		class;
+		foundMatch;
+		acceptArrayNode: self.
+	
+	self error: #zork.

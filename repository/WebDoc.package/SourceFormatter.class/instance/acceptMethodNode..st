@@ -1,6 +1,5 @@
 as yet unclassified
 acceptMethodNode: aMethodNode 
-	self haltIf: aMethodNode selector = #transform.
 	self formatMethodPatternFor: aMethodNode.
 	self indent: [
 			self formatMethodCommentFor: aMethodNode.

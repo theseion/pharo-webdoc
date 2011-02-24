@@ -1,6 +1,12 @@
 as yet unclassified
 acceptSequenceNode: aSequenceNode 
+	| statementsBlock |
 	tempNames addAll: aSequenceNode temporaryNames.
 	self formatMethodCommentFor: aSequenceNode.
 	self formatTemporariesFor: aSequenceNode.
-	self formatStatementsFor: aSequenceNode
+	
+	statementsBlock := [self formatStatementsFor: aSequenceNode].
+	(aSequenceNode needsMultipleLines and: [ aSequenceNode parent isMethod not])
+		ifTrue: [ self indent: statementsBlock]
+		ifFalse: statementsBlock.
+	
