@@ -3,4 +3,6 @@ updateUrl: aUrl
 
 	super updateUrl: aUrl.		
 	selectedClass 	
-		ifNotNil: [:class | aUrl addToPath: 'class/',class name]
+		ifNotNil: [:class | aUrl path
+							add: 'class' after: 'doc';
+							add: class name after: 'class']

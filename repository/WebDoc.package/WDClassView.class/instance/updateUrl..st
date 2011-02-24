@@ -3,4 +3,4 @@ updateUrl: aUrl
 
 	super updateUrl: aUrl.
 	selectedMethod
-		ifNotNil: [:method | aUrl addPath: 'method/', method asString]
+		ifNotNil: [:method | aUrl addToPath: 'method/', method asString]

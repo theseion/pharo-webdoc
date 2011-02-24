@@ -1,3 +1,4 @@
 accessing
 selectClass: anObject
-	selectedClass := anObject
+	selectedClass := anObject.
+	selectedMethod := nil

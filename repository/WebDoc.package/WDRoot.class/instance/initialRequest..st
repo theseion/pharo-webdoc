@@ -1,4 +1,4 @@
-as yet unclassified
+hooks
 initialRequest: aRequest
 	
 	| uriList classIndex |
@@ -13,3 +13,4 @@ initialRequest: aRequest
 			class := Smalltalk at: (classSymbol).
 			packageTree selectClass: class.
 			packageTree selectPackage: (RPackageOrganizer default packageOfClassNamed: classString )]
+	"I should do the same for methods"

@@ -4,11 +4,14 @@
 		"initialize" : "CamilloBruni 2/23/2011 15:58" },
 	"instance" : {
 		"children" : "BenjaminVanRyseghem 2/24/2011 18:18",
-		"initialRequest:" : "BenjaminVanRyseghem 2/24/2011 19:03",
+		"initialRequest:" : "BenjaminVanRyseghem 2/24/2011 19:22",
 		"initialize" : "CamilloBruni 2/24/2011 14:15",
 		"library" : "CamilloBruni 2/24/2011 17:39",
 		"renderClassViewOn:" : "CamilloBruni 2/23/2011 17:08",
 		"renderContentOn:" : "CamilloBruni 2/24/2011 15:39",
 		"renderMethodViewOn:" : "CamilloBruni 2/24/2011 15:38",
+		"selectClass:" : "BenjaminVanRyseghem 2/24/2011 19:15",
+		"selectMethod:" : "BenjaminVanRyseghem 2/24/2011 19:17",
+		"selectPackage:" : "BenjaminVanRyseghem 2/24/2011 19:15",
 		"style" : "CamilloBruni 2/24/2011 17:41",
 		"updateRoot:" : "CamilloBruni 2/24/2011 17:44" } }
