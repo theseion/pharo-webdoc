@@ -1,3 +1,3 @@
 accessing
-selectMethod: anObject
+method: anObject
 	selectedMethod := anObject

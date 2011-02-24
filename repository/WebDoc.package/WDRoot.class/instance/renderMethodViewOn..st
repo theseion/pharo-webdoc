@@ -1,5 +1,5 @@
 as yet unclassified
 renderMethodViewOn: html
 	
-	methodView selectMethod: classView selectedMethod.
+	methodView method: classView method.
 	html render: methodView.

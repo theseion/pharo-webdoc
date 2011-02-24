@@ -1,5 +1,9 @@
 as yet unclassified
 renderContentOn: html
-	selectedMethod ifNil: [ ^ html text: 'no method selected' ].
-	self renderMethodTitle: selectedMethod on: html.
-	self renderSource: selectedMethod on: html.
+	html div
+		class: 'method_details';
+		with: [
+			self renderSignatureOn: html.
+			self renderCommentOn: html.
+			self renderOverridesOn: html.
+			self renderSourceOn: html]

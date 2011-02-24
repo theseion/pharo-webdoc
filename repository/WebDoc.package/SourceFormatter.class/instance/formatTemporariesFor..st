@@ -7,8 +7,7 @@ formatTemporariesFor: aSequenceNode
 		class: 'stTemporaries';
 		with: [
 			html text: '| '.
-			temps do: 
-					[:each | 
-					self visitArgument: each.
-					html space ].
+			temps do: [:each | 
+				self visitArgument: each.
+				html space ].
 			html text: $|].

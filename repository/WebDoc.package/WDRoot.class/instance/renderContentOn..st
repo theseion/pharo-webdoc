@@ -5,5 +5,4 @@ renderContentOn: html
 	html div 
 		class: 'classMethodContainer';
 		with: [
-			self renderClassViewOn: html.
-			self renderMethodViewOn: html]
+			self renderClassViewOn: html]

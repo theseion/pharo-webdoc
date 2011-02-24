@@ -1,10 +1,13 @@
 {
 	"class" : {
-		 },
+		"for:" : "CamilloBruni 2/24/2011 15:37" },
 	"instance" : {
-		"renderContentOn:" : "CamilloBruni 2/24/2011 12:00",
-		"renderMethodOverrides:on:" : "CamilloBruni 2/24/2011 12:01",
-		"renderMethodTitle:on:" : "CamilloBruni 2/24/2011 12:00",
-		"renderSource:on:" : "CamilloBruni 2/23/2011 21:11",
-		"selectMethod:" : "CamilloBruni 2/23/2011 16:42",
-		"selectedMethod" : "CamilloBruni 2/23/2011 16:41" } }
+		"method" : "CamilloBruni 2/24/2011 15:38",
+		"method:" : "CamilloBruni 2/24/2011 15:38",
+		"renderChildrenOverridesOn:" : "CamilloBruni 2/24/2011 16:04",
+		"renderCommentOn:" : "CamilloBruni 2/24/2011 15:50",
+		"renderContentOn:" : "CamilloBruni 2/24/2011 15:49",
+		"renderOverridesOn:" : "CamilloBruni 2/24/2011 16:01",
+		"renderSignatureOn:" : "CamilloBruni 2/24/2011 15:50",
+		"renderSourceOn:" : "CamilloBruni 2/24/2011 15:45",
+		"renderSuperOverridesOn:" : "CamilloBruni 2/24/2011 16:04" } }

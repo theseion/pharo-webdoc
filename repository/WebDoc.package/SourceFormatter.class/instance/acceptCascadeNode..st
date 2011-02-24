@@ -6,5 +6,5 @@ acceptCascadeNode: aCascadeNode
 	self indent: [
 		 messages 
 			do: [:each | 
-				self indent: [self formatMessage: each cascade: true]]
+				self formatMessage: each cascade: true]
 			separatedBy: [html text: $;]]

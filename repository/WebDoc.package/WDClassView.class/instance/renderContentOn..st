@@ -7,7 +7,9 @@ renderContentOn: html
 		with: [
 			self renderClassName: selectedClass name on: html.
 			self renderClassDefinition: selectedClass on: html.
-			self renderClassComment: selectedClass comment on: html].
-	html div 
+			self renderClassComment: selectedClass comment on: html.
+			self renderInstanceMethodsSummaryFor: selectedClass on: html.
+			self renderInstanceMethodsDetailsFor: selectedClass on: html.].
+	"html div 
 		class: 'selectorList';
-		with: [self renderSelectorsOfClass: selectedClass on: html].
+		with: [self renderSelectorsOfClass: selectedClass on: html]."

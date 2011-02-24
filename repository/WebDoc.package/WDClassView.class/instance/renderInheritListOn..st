@@ -5,7 +5,8 @@ renderInheritListOn: html
 			html span
 				class: 'inheritName';
 				with: [ self renderClassLink: selectedClass superclass on: html ].
+				
 			self renderFullInheritanceTreeOn: html.
+			
 			html anchor
-				with: 'show all'.
-				]	
+				with: 'show all']	

@@ -6,5 +6,5 @@ renderSelector: aSelector ofClass: aClass on: html
 		html anchor 
 			class:'name'; 
 			class:'class-side' if: (aClass class localSelectors includes:aSelector);
-			callback: [ self selectMethod: (aClass methodDict at: aSelector)];
+			callback: [ self method: (aClass methodDict at: aSelector)];
 			with: aSelector.]

@@ -2,4 +2,8 @@ as yet unclassified
 renderClassComment: aString on: html
 	html div 
 		class: 'classComment'; 
-		with: aString string.
+		with: [
+			self renderSectionTitle: 'Overview' on: html.
+			html div
+				class: 'docString';
+				with: aString string]

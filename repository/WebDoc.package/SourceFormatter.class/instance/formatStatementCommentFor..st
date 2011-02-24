@@ -4,7 +4,7 @@ formatStatementCommentFor: aNode
 	aNode statementComments ifEmpty: [ ^ self].
 	source := aNode source.
 	source isNil ifTrue: [^self].
-	self halt.
+	
 	html span
 		class: 'stComment';
 		with: [

@@ -6,6 +6,7 @@
 		 ],
 	"commentStamp" : "",
 	"instvars" : [
+		"renderComment",
 		"method",
 		"parseTree",
 		"html",

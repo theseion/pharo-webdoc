@@ -64,4 +64,8 @@ BODY {
 }
 
 .stFalse, .stTrue, .stNil {color: #660000;}
+
+.method_details {
+	clear: both;
+}
 	'

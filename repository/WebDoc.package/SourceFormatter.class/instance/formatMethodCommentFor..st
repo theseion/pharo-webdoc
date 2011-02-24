@@ -1,6 +1,7 @@
 as yet unclassified
 formatMethodCommentFor: aNode
 	| source |
+	renderComment ifFalse: [^ self].
 	aNode methodComments ifEmpty: [ ^ self].
 	
 	source := aNode source.
