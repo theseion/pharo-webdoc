@@ -1,0 +1,23 @@
+{
+	"category" : "WebDoc",
+	"classinstvars" : [
+		 ],
+	"classvars" : [
+		 ],
+	"commentStamp" : "",
+	"instvars" : [
+		"method",
+		"parseTree",
+		"html",
+		"allClassVariables",
+		"tempNames",
+		"argumentNames",
+		"allClassVarNames",
+		"classVarNames",
+		"instVarNames",
+		"inLiteralArray" ],
+	"name" : "SourceFormatter",
+	"pools" : [
+		 ],
+	"super" : "RBProgramNodeVisitor",
+	"type" : "normal" }

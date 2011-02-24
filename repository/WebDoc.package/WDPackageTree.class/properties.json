@@ -1,0 +1,16 @@
+{
+	"category" : "WebDoc",
+	"classinstvars" : [
+		 ],
+	"classvars" : [
+		"HtmlCache" ],
+	"commentStamp" : "",
+	"instvars" : [
+		"selectedPackage",
+		"packages",
+		"selectedClass" ],
+	"name" : "WDPackageTree",
+	"pools" : [
+		 ],
+	"super" : "WAComponent",
+	"type" : "normal" }

@@ -1,0 +1,21 @@
+{
+	"category" : "WebDoc",
+	"classinstvars" : [
+		 ],
+	"classvars" : [
+		"HtmlCache" ],
+	"commentStamp" : "",
+	"instvars" : [
+		"selectedPackage",
+		"selectedClass",
+		"selectedMethod",
+		"document",
+		"root",
+		"classView",
+		"methodView",
+		"packageTree" ],
+	"name" : "WDRoot",
+	"pools" : [
+		 ],
+	"super" : "WAComponent",
+	"type" : "normal" }

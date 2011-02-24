@@ -1,0 +1,15 @@
+{
+	"category" : "WebDoc",
+	"classinstvars" : [
+		 ],
+	"classvars" : [
+		"HtmlCache" ],
+	"commentStamp" : "",
+	"instvars" : [
+		"selectedClass",
+		"selectedMethod" ],
+	"name" : "WDClassView",
+	"pools" : [
+		 ],
+	"super" : "WAComponent",
+	"type" : "normal" }
