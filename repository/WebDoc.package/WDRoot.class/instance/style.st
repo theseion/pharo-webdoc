@@ -3,6 +3,12 @@ style
 	^ '
 BODY {
 	margin: 0px;
+	padding: 0px;
+}
+
+HTML {
+	margin: 0px;
+	padding: 0px;
 }
 
 #packageTree {
@@ -20,7 +26,7 @@ BODY {
 }
 .classMethodContainer {
 	position: absolute;
-	left: 620px;
+	left: 300px;
 }
 .classView {
 	float: left;

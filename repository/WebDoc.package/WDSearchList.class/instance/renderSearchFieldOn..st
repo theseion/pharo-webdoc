@@ -1,8 +1,8 @@
 as yet unclassified
 renderSearchFieldOn: html
 	html div 
-		id: 'searchField';
+		id: 'search';
 		with: [
-			html text: 'search:'.
+			html text: 'Search:'.
 			html searchInput].
 		

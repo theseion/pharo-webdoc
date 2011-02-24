@@ -7,7 +7,7 @@
 	"commentStamp" : "",
 	"instvars" : [
 		 ],
-	"name" : "WDCSSFileLibrary",
+	"name" : "WDFileLibrary",
 	"pools" : [
 		 ],
 	"super" : "WAFileLibrary",

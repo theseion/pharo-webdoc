@@ -2,7 +2,10 @@
 	"class" : {
 		"initialize" : "CamilloBruni 2/24/2011 17:27" },
 	"instance" : {
+		"appJs" : "CamilloBruni 2/24/2011 17:39",
 		"commonCss" : "CamilloBruni 2/24/2011 17:28",
 		"fulllistCss" : "CamilloBruni 2/24/2011 17:28",
+		"fulllistJs" : "CamilloBruni 2/24/2011 17:49",
+		"jqueryJs" : "CamilloBruni 2/24/2011 17:39",
 		"stcodeCss" : "CamilloBruni 2/24/2011 17:28",
 		"styleCss" : "CamilloBruni 2/24/2011 17:28" } }

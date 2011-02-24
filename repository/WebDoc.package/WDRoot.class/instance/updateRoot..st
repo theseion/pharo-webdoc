@@ -3,10 +3,17 @@ updateRoot: anHtmlRoot
 	super updateRoot: anHtmlRoot.
 	
 	anHtmlRoot stylesheet 
-		url: WDCSSFileLibrary / #commonCss.
+		url: WDFileLibrary / #commonCss.
 	anHtmlRoot stylesheet 
-		url: WDCSSFileLibrary / #fulllistCss.
+		url: WDFileLibrary / #fulllistCss.
 	anHtmlRoot stylesheet 
-		url: WDCSSFileLibrary / #stcodeCss.
+		url: WDFileLibrary / #stcodeCss.
 	anHtmlRoot stylesheet 
-		url: WDCSSFileLibrary / #styleCss.
+		url: WDFileLibrary / #styleCss.
+		
+	anHtmlRoot script 
+		url: WDFileLibrary / #jqueryJs.
+	anHtmlRoot script 
+		url: WDFileLibrary / #appJs.
+	anHtmlRoot script 
+		url: WDFileLibrary / #fulllistJs.
