@@ -1,5 +1,7 @@
 *WebDoc-test
 aaaa
-	|a b|
-	b := #(12 asdasd 123 asdfasdf asdf ClassMe).
-	a :=	{ 'a'. 3. #asdfasdfasdf}.
+	self  zork
+		acceptMethodNode:  [ 
+			self foundMatch 
+				ifFalse: [ 3]
+				ifTrue: [4]].

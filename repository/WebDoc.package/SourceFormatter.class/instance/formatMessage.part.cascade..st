@@ -18,5 +18,4 @@ formatMessage: aMessageNode part: i cascade: cascadeBoolean
 	(self selectorForcesLineBreak: selector value)
 		ifFalse: sendBlock
 		ifTrue: [ 
-			html break.
 			self indent: sendBlock]
