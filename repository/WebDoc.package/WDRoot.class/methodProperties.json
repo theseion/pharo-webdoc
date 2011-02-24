@@ -4,7 +4,9 @@
 		"initialize" : "CamilloBruni 2/23/2011 15:58" },
 	"instance" : {
 		"initialize" : "CamilloBruni 2/24/2011 14:15",
+		"library" : "CamilloBruni 2/24/2011 17:25",
 		"renderClassViewOn:" : "CamilloBruni 2/23/2011 17:08",
 		"renderContentOn:" : "CamilloBruni 2/24/2011 15:39",
 		"renderMethodViewOn:" : "CamilloBruni 2/24/2011 15:38",
-		"style" : "CamilloBruni 2/24/2011 15:48" } }
+		"style" : "CamilloBruni 2/24/2011 17:05",
+		"updateRoot:" : "CamilloBruni 2/24/2011 17:28" } }
