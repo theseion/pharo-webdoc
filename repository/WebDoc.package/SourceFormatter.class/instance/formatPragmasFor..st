@@ -4,4 +4,4 @@ formatPragmasFor: aMethodNode
 	html span 
 		class: 'stPragmas';
 		with: [
-			aMethodNode pragmas do: [ :each | self visitNode: each; indent ]]
+			aMethodNode pragmas do: [ :each | self visitNode: each]]

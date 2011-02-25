@@ -1,6 +1,6 @@
 rendering-formatting
 formatStatementCommentFor: aNode 
-	| source |
+	| source comment |
 	aNode statementComments ifEmpty: [ ^ self].
 	source := aNode source.
 	source isNil ifTrue: [^self].
@@ -12,4 +12,6 @@ formatStatementCommentFor: aNode
 				| crs |
 				crs := self newLinesFor: source startingAt: each first.
 				(crs - 1 max: 0) timesRepeat: [ self break].
-				html text: (source copyFrom: each first to: each last)]]
+				comment := source copyFrom: each first to: each last.
+				html text: comment.
+				comment size > 30 ifTrue: [ self break].]]
