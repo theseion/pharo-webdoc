@@ -5,4 +5,5 @@ renderClassDefinition: class on: html
 		with: [
 			html definitionTerm 
 				with: 'Inherits: '.
-			self renderInheritListOn: html] 
+			self renderInheritListOn: html].
+	html div clear

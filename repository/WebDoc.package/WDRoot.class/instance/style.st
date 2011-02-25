@@ -1,6 +1,7 @@
 hooks
 style
-	^ '
+	^ ''
+	"^ '
 BODY {
 	margin: 0px;
 	padding: 0px;
@@ -50,4 +51,4 @@ HTML {
 .method_details {
 	clear: both;
 }
-	'
+	'"

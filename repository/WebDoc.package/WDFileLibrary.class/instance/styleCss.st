@@ -75,7 +75,7 @@ dl.box dt {
   text-align: right;
   font-weight: bold;
   border: 1px solid #aaa;
-  border-width: 1px 0px 0px 1px;
+  border-width: 1px 0 1px 1px;
   padding: 6px 0;
   padding-right: 10px;
 }
@@ -87,7 +87,7 @@ dl.box dd {
   padding: 6px 0;
   padding-right: 20px;
   border: 1px solid #aaa;
-  border-width: 1px 1px 0 0;
+  border-width: 1px 1px 1px 0;
 }
 dl.box .last {
   border-bottom: 1px solid #aaa;

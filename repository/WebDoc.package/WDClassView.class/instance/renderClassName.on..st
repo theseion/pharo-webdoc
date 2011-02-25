@@ -1,5 +1,6 @@
 rendering
 renderClassName: aString on: html
-	html div
+	html heading
+		level1;
 		class: 'className';
 		with: selectedClass name.

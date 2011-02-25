@@ -1,5 +1,6 @@
 rendering
 renderSectionTitle: aString  on: html
-	html div
+	html heading
+			level2;
 			class: 'title';
 			with: aString.

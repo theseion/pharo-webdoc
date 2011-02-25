@@ -9,4 +9,5 @@ renderInheritListOn: html
 			self renderFullInheritanceTreeOn: html.
 			
 			html anchor
+				class: 'inheritanceTree';
 				with: 'show all']	

@@ -8,7 +8,9 @@ renderContentOn: html
 			self renderClassName: selectedClass name on: html.
 			self renderClassDefinition: selectedClass on: html.
 			self renderClassComment: selectedClass comment on: html.
+			self renderClassMethodsSummaryFor: selectedClass on: html.
 			self renderInstanceMethodsSummaryFor: selectedClass on: html.
+			self renderClassMethodsDetailsFor: selectedClass on: html.
 			self renderInstanceMethodsDetailsFor: selectedClass on: html.].
 	"html div 
 		class: 'selectorList';
