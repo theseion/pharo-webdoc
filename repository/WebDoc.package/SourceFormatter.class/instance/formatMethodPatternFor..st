@@ -1,9 +1,10 @@
-rendering-formatting
+as yet unclassified
 formatMethodPatternFor: aMethodNode 
 	| selectorParts arguments |
 	selectorParts := aMethodNode selectorParts.
 	arguments := aMethodNode arguments.
-	arguments isEmpty ifTrue: [ ^ self renderSelector: selectorParts first value].
+	arguments isEmpty 
+		ifTrue: [ ^ self renderSelector: selectorParts first value].
 	selectorParts with: arguments do: [:selector :arg | 
 			self renderSelector: selector.
 			html space.

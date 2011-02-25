@@ -1,4 +1,4 @@
-rendering
+as yet unclassified
 renderSignatureOn: html
 	html div
 		class: 'signature';
@@ -7,4 +7,4 @@ renderSignatureOn: html
 			html space; 
 				text: ' >> '; 
 				space;
-				text: method selector]
+				text: selector]

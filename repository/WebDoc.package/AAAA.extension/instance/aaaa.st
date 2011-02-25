@@ -2,7 +2,6 @@
 aaaa
 	self 
 		class;
-		foundMatch;
-		acceptArrayNode: self.
-	
+		foundMatch.
+		
 	self error: #zork.

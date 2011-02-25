@@ -1,5 +1,5 @@
-rendering
+as yet unclassified
 renderCommentOn: html
 	html div
 		class: 'docstring';
-		with: method comment.
+		withLineBreaks: method comment asString. "TODO format method using markdown"

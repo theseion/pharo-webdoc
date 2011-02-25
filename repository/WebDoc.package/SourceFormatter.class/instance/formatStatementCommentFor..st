@@ -1,4 +1,4 @@
-rendering-formatting
+as yet unclassified
 formatStatementCommentFor: aNode 
 	| source |
 	aNode statementComments ifEmpty: [ ^ self].
@@ -11,5 +11,5 @@ formatStatementCommentFor: aNode
 			aNode statementComments do: [:each | 
 				| crs |
 				crs := self newLinesFor: source startingAt: each first.
-				(crs - 1 max: 0) timesRepeat: [ html break].
+				(crs - 1 max: 0) timesRepeat: [ self break].
 				html text: (source copyFrom: each first to: each last)]]

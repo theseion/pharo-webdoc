@@ -1,4 +1,4 @@
-rendering-formatting
+as yet unclassified
 formatMethodCommentFor: aNode
 	| source |
 	renderComment ifFalse: [^ self].
@@ -7,9 +7,9 @@ formatMethodCommentFor: aNode
 	source := aNode source.
 	source isNil ifTrue: [^self].
 	
-	html div 
+	html span 
 		class: 'stMethodComment';
 		with: [
 			aNode methodComments do: [:comment | 
-				html text: (aNode source copyFrom: comment first to: comment last);
-					break.]].
+				html text: (aNode source copyFrom: comment first to: comment last).
+				self break.]].

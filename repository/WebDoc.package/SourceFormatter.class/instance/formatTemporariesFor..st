@@ -1,8 +1,9 @@
-rendering-formatting
+as yet unclassified
 formatTemporariesFor: aSequenceNode 
 	| temps |
 	temps := aSequenceNode temporaries.
 	temps isEmpty ifTrue: [^self].
+	
 	html span
 		class: 'stTemporaries';
 		with: [
@@ -11,3 +12,4 @@ formatTemporariesFor: aSequenceNode
 				self visitArgument: each.
 				html space ].
 			html text: '| '].
+	aSequenceNode parent isMethod ifTrue: [ self break ].
