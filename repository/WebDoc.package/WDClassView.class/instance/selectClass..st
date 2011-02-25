@@ -1,4 +1,4 @@
 dispatch
 selectClass: anObject
-	selectedClass := anObject.
-	selectedMethod := nil
+	
+	self root selectClass: anObject

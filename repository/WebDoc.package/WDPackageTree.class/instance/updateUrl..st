@@ -2,7 +2,7 @@ updating
 updateUrl: aUrl
 
 	super updateUrl: aUrl.		
-	selectedClass 	
+"	selectedClass 	
 		ifNotNil: [:class | aUrl path
 							add: 'class' after: 'doc';
-							add: class name after: 'class']
+							add: class name after: 'class']"

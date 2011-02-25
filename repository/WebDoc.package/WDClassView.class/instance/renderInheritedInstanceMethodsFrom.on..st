@@ -5,4 +5,4 @@ renderInheritedInstanceMethodsFrom: class on: html
 		with: [
 			html text: 'Methods inherited from '.
 			self renderClassLink: class on: html.
-			self renderSelectorList: class selectors asArray sort  in: class on: html]
+			self renderSelectorList: (class methodDict values asArray sort: [:a :b | a selector <= b selector])  in: class on: html]

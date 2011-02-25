@@ -1,6 +1,7 @@
 private
 inferReceiverContext: aMessage
 	| receiver |
+	aMessage isPragma ifTrue: [^nil].
 	aMessage isSuperSend  ifTrue: [ ^self superSendTarget ].
 	aMessage isSelfSend ifTrue: [ ^ self selfSendTarget: aMessage selector].
 	

@@ -4,7 +4,7 @@ renderInheritListOn: html
 		with: [
 			html span
 				class: 'inheritName';
-				with: [ self renderClassLink: selectedClass superclass on: html ].
+				with: [ self renderClassLink: self selectedClass superclass on: html ].
 				
 			self renderFullInheritanceTreeOn: html.
 			

@@ -11,7 +11,11 @@
 		"classView",
 		"methodView",
 		"packageTree",
-		"selectorList" ],
+		"selectorList",
+		"selectedPackage",
+		"selectedClass",
+		"selectedMethod",
+		"session" ],
 	"name" : "WDRoot",
 	"pools" : [
 		 ],

@@ -1,3 +1,4 @@
 dispatch
 selectPackage: aPackage
-	selectedPackage := aPackage.
+	
+	self root selectPackage: aPackage

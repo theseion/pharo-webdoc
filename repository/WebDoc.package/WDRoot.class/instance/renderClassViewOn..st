@@ -1,5 +1,5 @@
 rendering
 renderClassViewOn: html.
 	
-	classView selectClass: packageTree selectedClass.
+	self selectClass: packageTree selectedClass.
 	html render: classView.

@@ -1,5 +1,6 @@
-dispatch
+accessing
 selectMethod: aMethod
 
-	classView selectMethod: aMethod.
-	methodView selectMethod: aMethod
+	selectedMethod := aMethod.
+	aMethod 
+		ifNotNil: [session jumpToAnchor: self selectedClass name,aMethod selector]

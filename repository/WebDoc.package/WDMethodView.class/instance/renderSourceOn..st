@@ -3,4 +3,4 @@ renderSourceOn: html
 	"html preformatted: method getSource."
 	html code
 		class: 'methodSource'; 
-		with: (SourceFormatter with: method).
+		with: (SourceFormatter with: self method).

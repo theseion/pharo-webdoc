@@ -6,9 +6,9 @@
 		"HtmlCache" ],
 	"commentStamp" : "",
 	"instvars" : [
-		"method",
-		"class",
-		"selector" ],
+		"selector",
+		"root",
+		"method" ],
 	"name" : "WDMethodView",
 	"pools" : [
 		 ],

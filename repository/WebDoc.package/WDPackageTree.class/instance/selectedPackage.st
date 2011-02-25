@@ -1,3 +1,4 @@
 accessing
 selectedPackage
-	^ selectedPackage
+
+	^ self root selectedPackage

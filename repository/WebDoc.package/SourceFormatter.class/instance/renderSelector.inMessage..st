@@ -9,9 +9,9 @@ renderSelector: aSelector inMessage: aMessage
 	receiverContext := self inferReceiverContext: aMessage.
 	
 	receiverContext 
-		ifNil: [ url := '/selector/', aMessage selector ]
+		ifNil: [ url := '/doc/selector/', aMessage selector ]
 		ifNotNilDo: [ :receiver|
-			 url := '/class/', receiver name, '/method/', aMessage selector].
+			 url := '/doc/class/', receiver name, '/method/', aMessage selector].
 		
 	^ html anchor 
 		class: 'stSelector';

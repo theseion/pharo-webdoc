@@ -1,5 +1,6 @@
-dispatch
+accessing
 selectClass: aClass
 	
-	packageTree selectClass: aClass.
-	classView selectClass: aClass.
+	selectedPackage := RPackageOrganizer default packageOfClassNamed: aClass name.
+	selectedClass := aClass.
+	self selectMethod: nil.

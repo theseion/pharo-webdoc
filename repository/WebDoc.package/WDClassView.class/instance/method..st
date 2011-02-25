@@ -1,3 +1,4 @@
 accessing
 method: anObject
-	selectedMethod := anObject
+	
+	self root selectMethod: anObject

@@ -10,6 +10,6 @@ renderMethodsSummarySectionFor: class title: title htmlClass: htmlClass on: html
 				class: 'summary';
 				class: 'compact';
 				with: [ self renderMethodSummaryFor: class selectors sort in: class on: html ].
-			superclasses := class allSuperclasses allButLast: 2. "ignore Object and ProtoObject"
+			superclasses := class allSuperclasses allButLast: 2. "ignore Object and ProtoObject | could be wrong for PseudoContext"
 			superclasses do: [ :each |
 				self renderInheritedInstanceMethodsFrom: each on: html ] ]

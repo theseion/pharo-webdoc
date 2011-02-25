@@ -1,8 +1,8 @@
 rendering
-renderSelectorList:  selectors in: class on: html
+renderSelectorList: methods in: class on: html
 	html paragraph
 		class: 'inheritedMethodList';
 		with: [ 
-			selectors  
-				do: [ :selector| self renderSelectorLink: selector in: class on: html]
+			methods  
+				do: [ :method| self renderSelectorLink: method in: class on: html]
 				separatedBy: [html text: ', ']]

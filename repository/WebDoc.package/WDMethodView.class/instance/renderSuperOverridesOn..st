@@ -1,8 +1,8 @@
 rendering
 renderSuperOverridesOn: html
 	| classes |
-	classes := class allSuperclasses select: [ :superclass|
-		(superclass selectors includes: method selector)].
+	classes := self viewClass allSuperclasses select: [ :superclass|
+		(superclass selectors includes: self method selector)].
 	
 	classes ifEmpty: [ ^ self].
 	
@@ -11,4 +11,4 @@ renderSuperOverridesOn: html
 		with: [
 			html text: 'Overrides:'.
 			classes do: [:superclass| 
-				self renderSelectorLink: method selector class: superclass on: html]]
+				self renderSelectorLink: self method class: superclass on: html]]

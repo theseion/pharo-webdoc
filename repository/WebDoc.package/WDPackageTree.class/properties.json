@@ -6,9 +6,9 @@
 		 ],
 	"commentStamp" : "",
 	"instvars" : [
+		"root",
 		"selectedPackage",
-		"packages",
-		"selectedClass" ],
+		"packages" ],
 	"name" : "WDPackageTree",
 	"pools" : [
 		 ],

@@ -1,3 +1,4 @@
 accessing
 selectedClass
-	^ selectedClass
+
+	^ self root  selectedClass

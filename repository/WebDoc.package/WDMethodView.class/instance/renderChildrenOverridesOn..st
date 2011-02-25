@@ -1,7 +1,7 @@
 as yet unclassified
 renderChildrenOverridesOn: html		
 	| classes |
-	classes := class subclasses select: [ :superclass|
+	classes := self viewClass subclasses select: [ :superclass|
 		(superclass selectors includes: selector)].
 	
 	classes ifEmpty: [ ^ self].
@@ -11,4 +11,4 @@ renderChildrenOverridesOn: html
 		with: [
 			html text: 'Overriden in:'.
 			classes do: [:superclass| 
-				self renderSelectorLink: selector class: superclass on: html]]
+				self renderSelectorLink: self method class: superclass on: html]]

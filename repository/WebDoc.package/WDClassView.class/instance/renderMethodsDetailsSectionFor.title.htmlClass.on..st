@@ -6,4 +6,4 @@ renderMethodsDetailsSectionFor: class title: title htmlClass: htmlClass on: html
 		with: [
 			self renderSectionTitle: title on: html.
 			class selectors asArray sort do: [ :selector|
-				html render: (WDMethodView for: (class methodDict at: selector))]].
+				html render: (WDMethodView for: (class methodDict at: selector) root: self root)]].

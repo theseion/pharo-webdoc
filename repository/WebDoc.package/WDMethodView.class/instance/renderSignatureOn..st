@@ -3,7 +3,7 @@ renderSignatureOn: html
 	html div
 		class: 'signature';
 		with: [
-			self renderClassLink: class on: html.
+			self renderClassLink: self viewClass on: html.
 			html space; 
 				text: ' >> '; 
 				space;

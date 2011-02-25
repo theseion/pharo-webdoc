@@ -1,5 +1,4 @@
 dispatch
-selectClass: class
-
-	selectedClass := class
+selectClass: aClass
 	
+	self root selectClass: aClass
