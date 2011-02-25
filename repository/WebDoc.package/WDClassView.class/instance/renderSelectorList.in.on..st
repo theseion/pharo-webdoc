@@ -1,6 +1,7 @@
 rendering
 renderSelectorList: methods in: class on: html
 	html paragraph
+		class: 'inherited';
 		class: 'inheritedMethodList';
 		with: [ 
 			methods  
