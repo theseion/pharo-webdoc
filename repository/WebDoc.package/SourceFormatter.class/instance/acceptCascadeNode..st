@@ -1,4 +1,4 @@
-as yet unclassified
+visitor-double dispatching
 acceptCascadeNode: aCascadeNode 
 	| messages |
 	messages := aCascadeNode messages.

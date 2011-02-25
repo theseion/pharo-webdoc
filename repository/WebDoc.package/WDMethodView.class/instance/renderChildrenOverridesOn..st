@@ -1,4 +1,4 @@
-as yet unclassified
+rendering
 renderChildrenOverridesOn: html		
 	| classes |
 	classes := self viewClass subclasses select: [ :superclass|

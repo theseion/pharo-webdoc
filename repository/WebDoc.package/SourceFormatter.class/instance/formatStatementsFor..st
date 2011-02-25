@@ -1,4 +1,4 @@
-as yet unclassified
+rendering-formatting
 formatStatementsFor: aSequenceNode 
 	| statements |
 	statements := aSequenceNode statements.

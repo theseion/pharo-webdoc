@@ -1,4 +1,4 @@
-as yet unclassified
+rendering
 dot: aNode
 	aNode isPragma ifTrue: [^self].
 	aNode needsDot ifTrue: [html text: $. ].

@@ -1,4 +1,4 @@
-as yet unclassified
+rendering-formatting
 formatTemporariesFor: aSequenceNode 
 	| temps |
 	temps := aSequenceNode temporaries.

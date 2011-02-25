@@ -1,15 +1,12 @@
 rendering
 renderContentOn: html
-	html iframe 
-		name: 'searchingToolbar';
-		contents: packageTree;
-		height: 600.
-	"html render: selectorList."
-	self selectClass: packageTree selectedClass.
 
-	html iframe 
+	html div id: 'header';
+		with: [ self renderHeaderOn: html ].
+
+	html div id: 'content';
 		class: 'classMethodContainer';
-		name: 'bodyFrame';
-		contents: classView;
-		height: 600;
-		width: 600
+		with: [ self renderClassViewOn: html ].
+	
+	html div id: 'footer';
+		with: 'Here be credits'

@@ -1,4 +1,4 @@
-as yet unclassified
+rendering-formatting
 formatStatementCommentFor: aNode 
 	| source |
 	aNode statementComments ifEmpty: [ ^ self].

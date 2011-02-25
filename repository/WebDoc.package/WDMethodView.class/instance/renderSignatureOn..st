@@ -1,4 +1,4 @@
-as yet unclassified
+rendering
 renderSignatureOn: html
 	html div
 		class: 'signature';

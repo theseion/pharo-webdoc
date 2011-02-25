@@ -1,4 +1,4 @@
-as yet unclassified
+rendering
 renderPackage: package at: index on: html
 	index > 1 ifTrue: [ ^ self].
 	(self listItemAt: index on: html)
