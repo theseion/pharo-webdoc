@@ -1,5 +1,6 @@
 rendering
 renderContentOn: html
+
 	self selectedClass ifNil: [ ^ html text: 'no class selected' ].
 	
 	html div
@@ -11,7 +12,4 @@ renderContentOn: html
 			self renderClassMethodsSummaryFor: self selectedClass on: html.
 			self renderInstanceMethodsSummaryFor: self selectedClass on: html.
 			self renderClassMethodsDetailsFor: self selectedClass on: html.
-			self renderInstanceMethodsDetailsFor: self selectedClass on: html.].
-	"html div 
-		class: 'selectorList';
-		with: [self renderSelectorsOfClass: self selectedClass on: html]."
+			self renderInstanceMethodsDetailsFor: self selectedClass on: html]

@@ -7,7 +7,6 @@
 	"commentStamp" : "",
 	"instvars" : [
 		"document",
-		"root",
 		"classView",
 		"methodView",
 		"packageTree",

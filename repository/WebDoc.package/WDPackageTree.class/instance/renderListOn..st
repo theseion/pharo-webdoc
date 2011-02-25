@@ -1,4 +1,8 @@
 rendering
 renderListOn: html 
-	packages doWithIndex: [ :package :index|
-		self renderPackage: package at: index on: html]
+"Transcript << 'redraw';cr."
+	html anchor
+		target: '_searchingToolbar';
+		with: [
+			packages doWithIndex: [ :package :index|
+				self renderPackage: package at: index on: html]]
