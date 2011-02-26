@@ -1,6 +1,11 @@
 uploaded
 stcodeCss
-	^ '.stIndent {
+	^ '
+code {
+	font-family: Monaco, Consolas, Courier;
+}
+
+.stIndent {
 	margin-left: 3em;r
 }
 
@@ -26,6 +31,11 @@ stcodeCss
 
 .stSuper {
 	color: #AA0000;
+}
+
+.stComment {
+	color: #009900;
+	font-family: Georgia;
 }
 
 .stFalse, .stTrue, .stNil {

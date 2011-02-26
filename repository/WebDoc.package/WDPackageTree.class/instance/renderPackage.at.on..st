@@ -1,6 +1,6 @@
 rendering
 renderPackage: package at: index on: html
-	index > 1 ifTrue: [ ^ self].
+	index > 2 ifTrue: [ ^ self].
 	(self listItemAt: index on: html)
 		with: [
 			html anchor
