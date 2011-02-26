@@ -10,7 +10,7 @@ renderContentOn: html
 					with: [
 						self renderSignatureOn: html.
 						self renderCommentOn: html.
-						self renderOverridesOn: html.
+						self renderTagsOn: html.
 						self renderSourceOn: html]].
 		.
 	"html anchor: class name, '>>#', method selector"

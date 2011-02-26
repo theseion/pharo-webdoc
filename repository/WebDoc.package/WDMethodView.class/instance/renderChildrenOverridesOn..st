@@ -1,14 +1,14 @@
 rendering
 renderChildrenOverridesOn: html		
 	| classes |
-	classes := self viewClass subclasses select: [ :superclass|
-		(superclass selectors includes: selector)].
+	classes := self viewClass subclasses select: [ :subclass|
+		(subclass selectors includes: selector)].
+	self flag: 'subclasses is wrong, need to look further than direct subclasses only'.
 	
 	classes ifEmpty: [ ^ self].
 	
-	html div 
-		class: 'methodOverrideChildren';
-		with: [
-			html text: 'Overriden in:'.
-			classes do: [:superclass| 
-				self renderSelectorLink: self method class: superclass on: html]]
+	html heading level3 with: 'Overriden in:'.
+	html unorderedList class: 'overload'; "meh, wrong term" with: [
+		classes do: [:subclass| 
+			html listItem class: 'overload_item'; with: [
+				self renderSelectorLink: self method class: subclass on: html ] ] ]

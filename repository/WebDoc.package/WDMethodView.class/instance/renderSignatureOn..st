@@ -1,10 +1,7 @@
 rendering
 renderSignatureOn: html
-	html div
+	html paragraph
 		class: 'signature';
 		with: [
 			self renderClassLink: self viewClass on: html.
-			html space; 
-				text: ' >> '; 
-				space;
-				text: selector]
+			html text: ' >> ' , selector ]

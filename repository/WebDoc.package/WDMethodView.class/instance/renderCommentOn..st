@@ -2,4 +2,8 @@ rendering
 renderCommentOn: html
 	html div
 		class: 'docstring';
-		withLineBreaks: (self method comment ifNil: ['Not commented yet'] ifNotNil:[:comment | comment asString]) . "TODO format method using markdown"
+		with: [
+			self method comment ifNotNil: [ :comment |
+				html div class: 'discussion';
+					withLineBreaks: comment asString ] ].
+	self flag: 'TODO format method using markdown'
