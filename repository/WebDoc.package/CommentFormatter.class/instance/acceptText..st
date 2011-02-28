@@ -1,3 +1,7 @@
 visiting
 acceptText: aTextNode
-	html text: aTextNode text.
+	aTextNode text
+		regex: ('([^ ]*)')
+		matchesDo: [ :word| 
+			self renderWord: word.
+			html space]

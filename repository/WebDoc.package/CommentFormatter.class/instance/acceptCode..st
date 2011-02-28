@@ -3,10 +3,12 @@ acceptCode: aCodeNode
 	|formatter ast parser code|
 	code :=  aCodeNode text.
 	parser := RBParser new.
-	parser errorBlock: [ 
-		^ html code
+	parser errorBlock: [ :error :position|
+		html code
 			class: 'code';
-			with: code].
+			with: code.
+		html space.
+		^ self].
 	parser initializeParserWith: code.
 	ast := parser parseStatements: true.
 	
@@ -15,4 +17,5 @@ acceptCode: aCodeNode
 	html code 
 		class: 'code';
 		with: formatter.
+	html space.
 		 

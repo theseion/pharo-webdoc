@@ -2,10 +2,15 @@
 	"class" : {
 		"comment:method:" : "CamilloBruni 2/28/2011 20:45" },
 	"instance" : {
-		"acceptCode:" : "CamilloBruni 2/28/2011 20:51",
-		"acceptText:" : "CamilloBruni 2/28/2011 20:38",
+		"acceptCode:" : "CamilloBruni 2/28/2011 21:38",
+		"acceptText:" : "CamilloBruni 2/28/2011 21:24",
 		"comment" : "CamilloBruni 2/28/2011 20:26",
 		"comment:" : "CamilloBruni 2/28/2011 20:27",
+		"formatClass:" : "CamilloBruni 2/28/2011 21:31",
+		"formatClassVariable:" : "CamilloBruni 2/28/2011 21:31",
+		"formatSymbol:value:" : "CamilloBruni 2/28/2011 21:32",
+		"formatThisContext" : "CamilloBruni 2/28/2011 21:34",
 		"method" : "CamilloBruni 2/28/2011 20:28",
 		"method:" : "CamilloBruni 2/28/2011 20:28",
-		"renderOn:" : "CamilloBruni 2/28/2011 20:33" } }
+		"renderOn:" : "CamilloBruni 2/28/2011 20:33",
+		"renderWord:" : "CamilloBruni 2/28/2011 21:39" } }
