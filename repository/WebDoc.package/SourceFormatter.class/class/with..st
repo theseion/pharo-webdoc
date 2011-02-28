@@ -1,4 +1,6 @@
 instance creation
 with: aMethod
 	^ self new 
-		method: aMethod
+		method: aMethod;
+		parseTree: aMethod parseTree;
+		yourself

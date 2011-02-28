@@ -1,6 +1,7 @@
 {
 	"class" : {
-		"with:" : "CamilloBruni 2/23/2011 19:57" },
+		"ast:method:" : "CamilloBruni 2/28/2011 20:45",
+		"with:" : "CamilloBruni 2/28/2011 20:45" },
 	"instance" : {
 		"acceptArrayNode:" : "CamilloBruni 2/24/2011 11:50",
 		"acceptAssignmentNode:" : "CamilloBruni 2/24/2011 11:26",
@@ -53,13 +54,16 @@
 		"instVarNames" : "CamilloBruni 2/23/2011 21:56",
 		"maximumArgumentsPerLine" : "CamilloBruni 2/23/2011 20:39",
 		"method" : "CamilloBruni 2/23/2011 19:52",
-		"method:" : "CamilloBruni 2/24/2011 11:49",
+		"method:" : "CamilloBruni 2/28/2011 20:42",
 		"newLinesFor:startingAt:" : "CamilloBruni 2/24/2011 16:06",
-		"renderOn:" : "CamilloBruni 2/23/2011 20:17",
+		"parseTree:" : "CamilloBruni 2/28/2011 20:44",
+		"prepareTemporaries" : "CamilloBruni 2/28/2011 20:55",
+		"renderOn:" : "CamilloBruni 2/28/2011 20:54",
 		"renderSelector:" : "CamilloBruni 2/23/2011 22:48",
 		"renderSelector:inMessage:" : "BenjaminVanRyseghem 2/25/2011 14:38",
 		"selectorForcesLineBreak:" : "CamilloBruni 2/25/2011 07:02",
 		"selfSendTarget:" : "CamilloBruni 2/24/2011 18:26",
+		"source:" : "CamilloBruni 2/28/2011 20:41",
 		"superSendTarget" : "CamilloBruni 2/26/2011 14:47",
 		"tempNames" : "CamilloBruni 2/23/2011 21:43",
 		"useBreaks" : "CamilloBruni 2/25/2011 07:39",

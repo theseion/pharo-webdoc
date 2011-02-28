@@ -17,7 +17,8 @@
 		"classVarNames",
 		"instVarNames",
 		"inLiteralArray",
-		"useBreaks" ],
+		"useBreaks",
+		"source" ],
 	"name" : "SourceFormatter",
 	"pools" : [
 		 ],

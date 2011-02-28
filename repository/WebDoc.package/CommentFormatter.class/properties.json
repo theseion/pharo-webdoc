@@ -1,0 +1,17 @@
+{
+	"category" : "WebDoc",
+	"classinstvars" : [
+		 ],
+	"classvars" : [
+		 ],
+	"commentStamp" : "",
+	"instvars" : [
+		"comment",
+		"method",
+		"html",
+		"parseTree" ],
+	"name" : "CommentFormatter",
+	"pools" : [
+		 ],
+	"super" : "Object",
+	"type" : "normal" }

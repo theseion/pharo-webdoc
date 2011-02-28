@@ -5,5 +5,4 @@ renderCommentOn: html
 		with: [
 			self method comment ifNotNil: [ :comment |
 				html div class: 'discussion';
-					withLineBreaks: comment asString ] ].
-	self flag: 'TODO format method using markdown'
+					with: (CommentFormatter comment: comment method: method)]].
