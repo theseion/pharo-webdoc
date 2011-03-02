@@ -3,5 +3,5 @@ renderSignatureOn: html
 	html paragraph
 		class: 'signature';
 		with: [
-			self renderClassLink: self viewClass on: html.
+			self renderClassLink: method methodClass on: html.
 			html text: ' >> ' , selector ]

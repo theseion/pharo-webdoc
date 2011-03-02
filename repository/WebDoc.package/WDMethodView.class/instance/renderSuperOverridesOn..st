@@ -10,4 +10,4 @@ renderSuperOverridesOn: html
 	html unorderedList class: 'overload'; "meh, wrong term" with: [
 		classes do: [:superclass| 
 			html listItem class: 'overload_item'; with: [
-				self renderSelectorLink: self method class: superclass on: html ] ] ]
+				self renderSelectorLink: (superclass methodDict at: selector) class: superclass on: html ] ] ]

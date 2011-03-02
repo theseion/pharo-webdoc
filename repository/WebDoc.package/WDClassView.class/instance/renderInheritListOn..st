@@ -1,10 +1,14 @@
-rendering
+url
 renderInheritListOn: html
+	|superclass|
+	superclass := self selectedClass superclass.
 	html definitionData
 		with: [
 			html span
 				class: 'inheritName';
-				with: [ self renderClassLink: self selectedClass superclass on: html ].
+				with: [ superclass isNil
+						ifTrue: [ html text: 'nil']
+						ifFalse: [self renderClassLink: superclass on: html ]].
 				
 			self renderFullInheritanceTreeOn: html.
 			

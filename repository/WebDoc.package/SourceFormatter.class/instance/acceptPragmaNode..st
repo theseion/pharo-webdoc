@@ -5,4 +5,4 @@ acceptPragmaNode: aPragmaNode
 		with: [
 			html text:  $<.
 			self formatMessage: aPragmaNode cascade: false.	
-			html text:  $>]
+			html text:  $>; break]

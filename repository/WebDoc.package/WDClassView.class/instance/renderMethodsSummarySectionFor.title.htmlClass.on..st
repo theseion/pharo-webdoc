@@ -1,15 +1,15 @@
 rendering
 renderMethodsSummarySectionFor: class title: title htmlClass: htmlClass on: html
-	| superclasses |
-.
+	| selectors |
+.	selectors := class selectors sort.
 	html div
 		class: htmlClass;
+		style: ((selectors size > 10) ifTrue: [ 'style: hidden'] ifFalse: ['']);
 		with: [
 			self renderSectionTitle: title on: html.
 			html unorderedList
 				class: 'summary';
 				class: 'compact';
-				with: [ self renderMethodSummaryFor: class selectors sort in: class on: html ].
-			superclasses := class allSuperclasses allButLast: 2. "ignore Object and ProtoObject | could be wrong for PseudoContext"
-			superclasses do: [ :each |
-				self renderInheritedInstanceMethodsFrom: each on: html ] ]
+				with: [ self renderMethodSummaryFor: selectors in: class on: html ].
+			class allSuperclasses do: [ :each |
+				self renderInheritedInstanceMethodsFrom: each on: html ]]
