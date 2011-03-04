@@ -1,6 +1,6 @@
 rendering
 renderSelector: aSelector inMessage: aMessage
-	|url receiverContext |
+	|anchor receiverContext receiverClass |
 	aMessage ifNil: [
 		^ html span 
 			class: 'stSelector';
@@ -8,12 +8,14 @@ renderSelector: aSelector inMessage: aMessage
 		
 	receiverContext := self inferReceiverContext: aMessage.
 	
+	anchor := html anchor.
 	receiverContext 
-		ifNil: [ url := '/doc/selector/', aMessage selector ]
+		ifNil: [ anchor url: '/doc/selector/list/', aMessage selector ]
 		ifNotNilDo: [ :receiver|
-			 url := '/doc/class/', receiver class theNonMetaClass name, '#', (receiver class isMeta ifTrue: ['class/'] ifFalse: ['']), aMessage selector].
+			receiverClass := receiver isBehavior ifFalse: [ receiver class] ifTrue: [ receiver].
+			anchor url:'/doc/class/', receiverClass theNonMetaClass name, '#', (receiverClass isMeta ifTrue: ['class/'] ifFalse: ['']), aMessage selector.
+			anchor class: 'stFixedSelector'].
 		
-	^ html anchor 
+	^ anchor 
 		class: 'stSelector';
-		url: url;
 		with: aSelector value

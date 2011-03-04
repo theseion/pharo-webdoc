@@ -14,7 +14,8 @@
 		"selectedPackage",
 		"selectedClass",
 		"selectedMethod",
-		"session" ],
+		"session",
+		"popup" ],
 	"name" : "WDRoot",
 	"pools" : [
 		 ],

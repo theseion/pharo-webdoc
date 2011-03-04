@@ -3,8 +3,8 @@ renderOn: aRenderingCanvas
 	html := aRenderingCanvas.
 	parseTree := PPMarkdownParser parse: comment.
 	parseTree isCollection
-		 ifTrue: [ parseTree do: [:each| 
-				[each visit: self] on: Error do: []]]
+		 ifTrue: [ parseTree first do: [:each| 
+				each visit: self]]
 		ifFalse: [
 			parseTree first do: [ :each|
 					each visit: self]].

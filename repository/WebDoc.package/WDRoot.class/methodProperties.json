@@ -4,13 +4,14 @@
 		"initialize" : "CamilloBruni 2/23/2011 15:58" },
 	"instance" : {
 		"children" : "BenjaminVanRyseghem 2/24/2011 18:18",
-		"initialRequest:" : "BenjaminVanRyseghem 2/25/2011 14:48",
+		"initialRequest:" : "CamilloBruni 3/4/2011 02:12",
 		"initialize" : "BenjaminVanRyseghem 2/25/2011 14:09",
 		"library" : "CamilloBruni 2/24/2011 17:39",
 		"renderClassViewOn:" : "CamilloBruni 2/26/2011 10:48",
-		"renderContentOn:" : "CamilloBruni 2/26/2011 10:47",
+		"renderContentOn:" : "CamilloBruni 3/4/2011 00:22",
 		"renderHeaderOn:" : "DamienPollet 2/25/2011 20:38",
 		"renderMethodViewOn:" : "CamilloBruni 2/24/2011 15:38",
+		"renderPopupOn:" : "CamilloBruni 3/4/2011 02:14",
 		"selectClass:" : "BenjaminVanRyseghem 2/25/2011 13:17",
 		"selectMethod:" : "BenjaminVanRyseghem 2/25/2011 14:44",
 		"selectPackage:" : "BenjaminVanRyseghem 2/25/2011 12:59",
@@ -18,5 +19,5 @@
 		"selectedMethod" : "BenjaminVanRyseghem 2/25/2011 12:39",
 		"selectedPackage" : "BenjaminVanRyseghem 2/25/2011 12:39",
 		"style" : "DamienPollet 2/25/2011 00:48",
-		"updateRoot:" : "CamilloBruni 2/24/2011 17:44",
+		"updateRoot:" : "CamilloBruni 3/4/2011 01:42",
 		"updateUrl:" : "BenjaminVanRyseghem 2/25/2011 13:21" } }

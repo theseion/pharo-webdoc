@@ -1,8 +1,8 @@
 rendering
 renderCommentOn: html
+	self method comment ifNil: [ ^ self].
 	html div
 		class: 'docstring';
 		with: [
-			self method comment ifNotNil: [ :comment |
-				html div class: 'discussion';
-					with: (CommentFormatter comment: comment method: method)]].
+			html div class: 'discussion';
+				with: (CommentFormatter comment: self method comment method: method)].

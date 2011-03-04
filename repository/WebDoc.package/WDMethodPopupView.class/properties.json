@@ -6,11 +6,9 @@
 		 ],
 	"commentStamp" : "",
 	"instvars" : [
-		"selector",
-		"root",
-		"method" ],
-	"name" : "WDMethodView",
+		 ],
+	"name" : "WDMethodPopupView",
 	"pools" : [
 		 ],
-	"super" : "WDReflectionComponent",
+	"super" : "WDMethodView",
 	"type" : "normal" }

@@ -1,6 +1,7 @@
 uploaded
 appJs
-	^ 'function createSourceLinks() {
+	^ '
+function createSourceLinks() {
     $(''.method_details_list .source_code'').
         before("<span class=''showSource''>[<a href=''#'' class=''toggleSource''>View source</a>]</span>");
     $(''.toggleSource'').toggle(function() {
@@ -192,6 +193,50 @@ function generateTOC() {
   });
 }
 
+function createSelectorLinks() {
+    	xOffset = -10; // x distance from mouse
+   	yOffset = 10; // y distance from mouse  
+	$("a.stFixedSelector").unbind().hover(    
+        function(e) {
+            this.t = this.title;
+            this.title = ""; 
+            this.top = (e.pageY + yOffset); 
+            this.left = (e.pageX + xOffset);
+		
+            url=$(this).attr("href")
+		url = url.split("/"); 
+		classMethod = url[3].split("#");
+		url.splice(2,0,"popup");
+		url.splice(4, 1,classMethod[0]);
+		url.splice(5,0,"method");
+		url.splice(6,0,classMethod[1]);
+		url=url.join("/");
+            $("body")
+			.append( "<p id=''vtip''><img id=''vtipArrow'' /><iframe id=''fr'' src=''"+url+"''></iframe></p>" )
+                        
+            //$("p#vtip #vtipArrow").attr("src", "images/vtip_arrow.png");
+            $("p#vtip")
+                .css("top", this.top+"px")
+                .css("left", this.left+"px")
+                .show();
+            
+        },
+        function() {
+            this.title = this.t;
+            $("p#vtip").fadeOut("slow").remove();
+        })
+        .mousemove(
+            function(e) {
+                this.top = (e.pageY + yOffset);
+                this.left = (e.pageX + xOffset);
+                             
+                $("p#vtip")
+                    .css("top", this.top+"px")
+                    .css("left", this.left+"px");
+            }
+        );  
+}
+
 $(framesInit);
 $(createSourceLinks);
 $(createDefineLinks);
@@ -202,4 +247,5 @@ $(linkSummaries);
 $(keyboardShortcuts);
 $(summaryToggle);
 $(fixOutsideWorldLinks);
-$(generateTOC);'
+$(generateTOC);
+$(createSelectorLinks);'

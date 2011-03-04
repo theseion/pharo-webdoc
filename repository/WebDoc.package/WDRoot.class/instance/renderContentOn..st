@@ -1,6 +1,9 @@
 rendering
 renderContentOn: html
 
+	popup 
+		ifTrue: [ ^ self renderPopupOn: html].
+	
 	html div id: 'header';
 		with: [ self renderHeaderOn: html ].
 

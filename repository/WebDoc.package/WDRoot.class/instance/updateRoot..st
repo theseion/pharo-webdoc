@@ -10,9 +10,13 @@ updateRoot: anHtmlRoot
 		url: WDFileLibrary / #stcodeCss.
 	anHtmlRoot stylesheet 
 		url: WDFileLibrary / #styleCss.
+	anHtmlRoot stylesheet 
+		url: WDFileLibrary / #vtipCss.
 		
 	anHtmlRoot script 
-		url: WDFileLibrary / #jqueryJs.
+		url: JQDevelopmentLibrary / #jQueryJs.
+	anHtmlRoot script 
+		url: JQUiDevelopmentLibrary / #jQueryUiJs.
 	anHtmlRoot script 
 		url: WDFileLibrary / #appJs.
 	anHtmlRoot script 

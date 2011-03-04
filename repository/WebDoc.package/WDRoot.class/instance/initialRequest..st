@@ -4,6 +4,7 @@ initialRequest: aRequest
 	| uriList classIndex |
 	super initialRequest: aRequest.
 	uriList := aRequest uri path.
+	popup := uriList size >= 2 and: [uriList second = 'popup'].
 	classIndex := uriList indexOf: 'class'.
 	(classIndex > 0 and: [classIndex ~~ uriList size])
 		ifTrue: [
