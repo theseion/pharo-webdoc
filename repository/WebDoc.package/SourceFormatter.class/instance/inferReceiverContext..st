@@ -1,11 +1,22 @@
 private
 inferReceiverContext: aMessage
-	| receiver |
+	| receiver implementors |
 	aMessage isPragma ifTrue: [^nil].
-	aMessage isSuperSend  ifTrue: [ ^self superSendTarget ].
-	aMessage isSelfSend ifTrue: [ ^ self selfSendTarget: aMessage selector].
+	aMessage isSuperSend  ifTrue: [ ^ method methodClass].
+	aMessage isSelfSend ifTrue: [ ^ method methodClass].
 	
 	receiver := aMessage receiver.
+	
+	implementors := SystemNavigation default allImplementorsOf: receiver selector.
+	implementors size = 1 
+		ifTrue: [ ^ implementors first methodClass].
+		
+		
+	receiver isMessage 
+		ifTrue: [receiver selector = #class 
+			ifTrue: [ (self inferReceiverContext: receiver) 
+				ifNotNilDo: [:instance| ^ instance class]]].
+		
 	(receiver isLiteral or: [receiver isVariable]) ifFalse: [ ^ nil ].
 
 	receiver isLiteral ifTrue: [ ^ receiver value class].

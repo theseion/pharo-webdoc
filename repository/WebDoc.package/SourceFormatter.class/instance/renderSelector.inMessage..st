@@ -8,11 +8,17 @@ renderSelector: aSelector inMessage: aMessage
 		
 	receiverContext := self inferReceiverContext: aMessage.
 	
+	
 	anchor := html anchor.
 	receiverContext 
 		ifNil: [ anchor url: '/doc/selector/list/', aMessage selector ]
-		ifNotNilDo: [ :receiver|
-			receiverClass := receiver isBehavior ifFalse: [ receiver class] ifTrue: [ receiver].
+		ifNotNil: [
+			aMessage isSuperSend 
+				ifTrue: [ receiverContext := self superSendTarget ]
+				ifFalse: [ receiverContext := (receiverContext lookupSelector: aMessage selector) methodClass].
+			receiverClass := receiverContext isBehavior 
+				ifFalse: [ receiverContext class] 
+				ifTrue: [ receiverContext].
 			anchor url:'/doc/class/', receiverClass theNonMetaClass name, '#', (receiverClass isMeta ifTrue: ['class/'] ifFalse: ['']), aMessage selector.
 			anchor class: 'stFixedSelector'].
 		
