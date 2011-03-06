@@ -7,13 +7,14 @@ inferReceiverContext: aMessage
 	
 	receiver := aMessage receiver.
 	
-	implementors := SystemNavigation default allImplementorsOf: receiver selector.
-	implementors size = 1 
-		ifTrue: [ ^ implementors first methodClass].
-		
-		
+	self flag: 'Refactor out the method inferer into the compiler'.
+	
 	receiver isMessage 
-		ifTrue: [receiver selector = #class 
+		ifTrue: [
+			implementors := SystemNavigation default allImplementorsOf: receiver selector.
+		implementors size = 1 
+		ifTrue: [ ^ implementors first methodClass].
+			receiver selector = #class 
 			ifTrue: [ (self inferReceiverContext: receiver) 
 				ifNotNilDo: [:instance| ^ instance class]]].
 		
