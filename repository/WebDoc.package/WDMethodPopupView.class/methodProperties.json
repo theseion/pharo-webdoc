@@ -2,5 +2,6 @@
 	"class" : {
 		 },
 	"instance" : {
+		"initialize" : "CamilloBruni 3/6/2011 21:09",
 		"renderContentOn:" : "CamilloBruni 3/4/2011 00:19",
 		"renderSignatureOn:" : "CamilloBruni 3/4/2011 00:23" } }

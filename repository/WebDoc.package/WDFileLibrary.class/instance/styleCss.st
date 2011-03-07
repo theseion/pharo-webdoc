@@ -135,7 +135,7 @@ p.signature .aliases .names { font-family: Monaco, Consolas, Courier, monospace;
 .tags .examples h3 { margin-bottom: 10px; }
 .tags .examples h4 { padding: 0; margin: 0; margin-left: 15px; font-weight: bold; font-size: 0.9em; }
 
-.tags .overload .overload_item { list-style: none; margin-bottom: 25px; }
+.tags .overload .overload_item { list-style: none; }
 .tags .overload .overload_item .signature { 
   padding: 2px 8px;
   background: #e5e8ff; border: 1px solid #d8d8e5; -moz-border-radius: 3px; -webkit-border-radius: 3px;
@@ -147,7 +147,7 @@ p.signature .aliases .names { font-family: Monaco, Consolas, Courier, monospace;
 
 #method_missing_details .notice.this { position: relative; top: -8px; color: #888; padding: 0; margin: 0; }
 
-.showSource { font-size: 0.9em; }
+.showSource { font-size: 0.9em; float: right; display: block;}
 .showSource a:link, .showSource a:visited { text-decoration: none; color: #666; }
 
 #content a:link, #content a:visited { text-decoration: none; color: #05a; }
@@ -278,7 +278,7 @@ li.r2 { background: #fafafa; }
 #filecontents h1 + #toc.nofloat { margin-top: 0; }
 
 /* syntax highlighting */
-.source_code { display: none; padding: 3px 8px; border-left: 8px solid #ddd; margin-top: 5px; }
+.source_code { padding: 3px 8px; border-left: 8px solid #ddd; margin-top: 5px; }
 #filecontents pre.code, .docstring pre.code, .source_code pre { font-family: monospace; }
 #filecontents pre.code, .docstring pre.code { display: block; }
 .source_code .lines { padding-right: 12px; color: #555; text-align: right; }

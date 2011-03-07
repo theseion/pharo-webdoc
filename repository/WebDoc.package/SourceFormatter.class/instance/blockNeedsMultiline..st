@@ -3,7 +3,8 @@ blockNeedsMultiline: aBlockNode
 	| body statement |
 	body := aBlockNode body.
 	
-	body statements size > 1 ifTrue: [ ^ true].
+	body statements size > 1 
+		ifTrue: [ ^ true].
 	
 	statement := body statements first.
 	self halt.

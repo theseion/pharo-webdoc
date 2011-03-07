@@ -2,16 +2,53 @@ uploaded
 appJs
 	^ '
 function createSourceLinks() {
-    $(''.method_details_list .source_code'').
-        before("<span class=''showSource''>[<a href=''#'' class=''toggleSource''>View source</a>]</span>");
+	// on each method source 
+    $(".method_details").each(function(){
+		$(this).find(".signature")
+		.append("<span class=''showSource''>[<a href=''#'' class=''toggleSource''>View Sources</a>]<span>");
+		$(this).find(".source_code").css("display", "none");
+	});
+	// on the method detail sections
+	
+    $(".methodDetail").each(function(){
+		$(this).find("h2.title")
+		.append("<span class=''showSource''>[<a href=''#'' class=''toggleSource''>Show Sources</a>]<span>");
+	});
+	// trigger the slide up/ slide down
     $(''.toggleSource'').toggle(function() {
-       $(this).parent().next().slideDown(100);
-       $(this).text("Hide source");
+       $(this).text("Hide Sources");
+	$(this).parent().parent().parent().find(".source_code").slideDown(100);
     },
     function() {
-        $(this).parent().next().slideUp(100);
-        $(this).text("View source");
+        $(this).text("Show Sources");
+	$(this).parent().parent().parent().find(".source_code").slideUp(100);
     });
+}
+
+function createInheritedMethodLinks() {
+	// on each method link group
+	$(".inheritedMethod").each(function(){
+		if($(this).find(".inheritedMethodList").css("display") == "none") {
+			$(this).find("h3.inherited")
+			.append("<span class=''showSource''>[<a href=''#'' class=''toggleMethods''>Show</a>]<span>");
+		}
+	});
+	
+	// on each method link section (instance and class side)
+	$(".methodSummary").each(function(){
+		$(this).find("h2.title")
+			.append("<span class=''showSource''>[<a href=''#'' class=''toggleMethods''>Show all</a>]<span>");
+	});
+	// triger the slideup / slide down
+    $(''.toggleMethods'').toggle(function() {
+       $(this).parent().parent().parent().find(".inheritedMethodList").slideDown(100);
+       $(this).text("Hide all");
+    },
+    function() {
+        $(this).parent().parent().parent().find(".inheritedMethodList").slideUp(100);
+        $(this).text("Show all");
+    });
+	
 }
 
 function createDefineLinks() {
@@ -193,52 +230,71 @@ function generateTOC() {
   });
 }
 
+function selectorURL(item) {
+	url = item.attr("href");
+	url = url.split("/"); 
+	classMethod = url[3].split("#");
+	url.splice(2,0,"popup");
+	url.splice(4, 1,classMethod[0]);
+	url.splice(5,0,"method");
+	url.splice(6,0,classMethod[1]);
+	url=url.join("/");
+	return url;
+}
+
 function createSelectorLinks() {
-    	xOffset = -10; // x distance from mouse
-   	yOffset = 10; // y distance from mouse  
-	$("a.stFixedSelector").unbind().hover(    
+    	xOffset = 3;
+   	yOffset = -10; 
+	closeTimeout = 0;
+	timeout = 500;
+	
+	close = function() {
+            $("p#vtip").fadeOut("slow").remove();
+	};
+	
+	$("a.stSelector").unbind().hover(    
         function(e) {
-            this.t = this.title;
-            this.title = ""; 
-            this.top = (e.pageY + yOffset); 
-            this.left = (e.pageX + xOffset);
+		clearTimeout(closeTimeout);
+		position = $(this).position();
+            this.left = position.left + $(this).width()  + xOffset;
+            this.top = position.top + yOffset; 
 		
-            url=$(this).attr("href")
-		url = url.split("/"); 
-		classMethod = url[3].split("#");
-		url.splice(2,0,"popup");
-		url.splice(4, 1,classMethod[0]);
-		url.splice(5,0,"method");
-		url.splice(6,0,classMethod[1]);
-		url=url.join("/");
+            url=selectorURL($(this));
             $("body")
-			.append( "<p id=''vtip''><img id=''vtipArrow'' /><iframe id=''fr'' src=''"+url+"''></iframe></p>" )
-                        
+			.append( "<p id=''vtip''><img id=''vtipArrow'' /><iframe id=''fr''></iframe></p>" )
+            
+		$("iframe#fr")
+			.attr("src", url)
+			.load(function(){
+				$(this).contents()
+					.mousemove(function(){
+						clearTimeout(closeTimeout);
+					})
+				$(this).width($(this).contents().width());
+				$(this).height($(this).contents().height())
+			});
             //$("p#vtip #vtipArrow").attr("src", "images/vtip_arrow.png");
             $("p#vtip")
-                .css("top", this.top+"px")
-                .css("left", this.left+"px")
-                .show();
-            
+                	.css("top", this.top+"px")
+                	.css("left", this.left+"px")
+			.mousemove(function(){
+				clearTimeout(closeTimeout);
+			}).mouseleave(function(){
+				clearTimeout(closeTimeout);
+				closeTimeout = setTimeout(close, timeout);
+			})
+	            .show();
         },
         function() {
-            this.title = this.t;
-            $("p#vtip").fadeOut("slow").remove();
-        })
-        .mousemove(
-            function(e) {
-                this.top = (e.pageY + yOffset);
-                this.left = (e.pageX + xOffset);
-                             
-                $("p#vtip")
-                    .css("top", this.top+"px")
-                    .css("left", this.left+"px");
-            }
-        );  
+		clearTimeout(closeTimeout);
+		closeTimeout = setTimeout(close, timeout);
+        });
+	
 }
 
 $(framesInit);
 $(createSourceLinks);
+$(createInheritedMethodLinks);
 $(createDefineLinks);
 $(createFullTreeLinks);
 $(fixBoxInfoHeights);

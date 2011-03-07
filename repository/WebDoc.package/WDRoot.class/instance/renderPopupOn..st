@@ -1,4 +1,6 @@
 rendering
 renderPopupOn: html
-	self selectedMethod ifNil: [ ^ self].
-	html render: (WDMethodPopupView for: selectedMethod root: self)
+	self selectedMethod 
+		ifNotNil: [ ^ self renderMethodPopupOn: html].
+	self selectedSelector 
+		ifNotNil: [ ^ self renderSelectorPopupOn: html].

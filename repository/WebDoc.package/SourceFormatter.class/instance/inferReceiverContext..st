@@ -4,28 +4,32 @@ inferReceiverContext: aMessage
 	aMessage isPragma ifTrue: [^nil].
 	aMessage isSuperSend  ifTrue: [ ^ method methodClass].
 	aMessage isSelfSend ifTrue: [ ^ method methodClass].
-	
+
+	implementors := SystemNavigation default allImplementorsOf: aMessage selector.
+	implementors size = 1 
+		ifTrue: [ ^ implementors first methodClass].
+		
 	receiver := aMessage receiver.
 	
+			
 	self flag: 'Refactor out the method inferer into the compiler'.
 	
 	receiver isMessage 
 		ifTrue: [
-			implementors := SystemNavigation default allImplementorsOf: receiver selector.
-		implementors size = 1 
-		ifTrue: [ ^ implementors first methodClass].
 			receiver selector = #class 
 			ifTrue: [ (self inferReceiverContext: receiver) 
 				ifNotNilDo: [:instance| ^ instance class]]].
 		
-	(receiver isLiteral or: [receiver isVariable]) ifFalse: [ ^ nil ].
+	(receiver isLiteral not and: [receiver isVariable not]) 
+		ifTrue: [ ^ nil ].
 
-	receiver isLiteral ifTrue: [ ^ receiver value class].
+	receiver isLiteral 
+		ifTrue: [ ^ receiver value class].
 	
 	receiver := receiver name.
 	receiver = 'thisContext' ifTrue: [ ^ MethodContext ].
 	
 	Smalltalk at: receiver asSymbol
-		ifPresent: [:class| ^ class].
+		ifPresent: [:class| ^ class class].
 		
 	^ nil.

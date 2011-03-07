@@ -9,5 +9,5 @@ renderPackage: package at: index on: html
 				with: package name.
 			html small
 				class: 'search_info';
-				with: 'Package ', package name.	
-			self renderClassesOfPackage: package on: html]
+				with: 'Package ', package name].
+	self renderClassesOfPackage: package on: html

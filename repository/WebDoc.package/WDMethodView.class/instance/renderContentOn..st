@@ -3,7 +3,7 @@ renderContentOn: html
 	html anchor 
 		name: (self method methodClass isMeta ifTrue: ['class/'] ifFalse:['']), self method selector.
 	html  div
-		class: 'method_details';
+		class: contentSyleClass;
 		with: [
 			self renderSignatureOn: html.
 			self renderCommentOn: html.

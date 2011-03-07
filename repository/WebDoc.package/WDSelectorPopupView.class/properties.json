@@ -6,11 +6,9 @@
 		 ],
 	"commentStamp" : "",
 	"instvars" : [
-		"root",
-		"selector",
-		"implementors" ],
-	"name" : "WDSelectorList",
+		 ],
+	"name" : "WDSelectorPopupView",
 	"pools" : [
 		 ],
-	"super" : "WDSearchList",
+	"super" : "WDSelectorList",
 	"type" : "normal" }

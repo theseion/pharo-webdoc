@@ -4,7 +4,10 @@ renderMethodsSummarySectionFor: class title: title htmlClass: htmlClass on: html
 .	selectors := class selectors sort.
 	html div
 		class: htmlClass;
-		style: ((selectors size > 10) ifTrue: [ 'style: hidden'] ifFalse: ['']);
+		class: 'methodSummary';
+		style: ((selectors size > 10) 
+				ifTrue: [ 'style: hidden'] 
+				ifFalse: ['']);
 		with: [
 			self renderSectionTitle: title on: html.
 			html unorderedList
