@@ -44,6 +44,12 @@ h1 .note.title { font-size: 0.5em; font-weight: normal; padding: 3px 5px; positi
 .note.title.writeonly { color: #fff; background: #45a638; border-color: #2da31d; } 
 .note.title.readonly { color: #fff; background: #6a98d6; border-color: #6689d6; } 
 .note.title.private { background: #d5d5d5; border-color: #c5c5c5; }
+
+.discussion {
+	font-family: Georgia, Serif;
+	line-height: 1.5em;
+	font-size: 15px;
+}
 .discussion .note { margin-top: 6px; }
 .discussion .note:first-child { margin-top: 0; }
 
@@ -127,8 +133,8 @@ p.signature .extras { font-weight: normal; font-family: sans-serif; color: #444;
 p.signature .aliases { display: block; font-weight: normal; font-size: 0.9em; font-family: sans-serif; margin-top: 0px; color: #555; }
 p.signature .aliases .names { font-family: Monaco, Consolas, Courier, monospace; font-weight: bold; color: #000; font-size: 1.2em; }
 
-.tags h3 { font-size: 1em; margin-bottom: 0; }
-.tags ul { margin-top: 5px; padding-left: 30px; list-style: square; }
+.tags h3 { font-size: 1em; margin: 0; }
+.tags ul { margin: 0px; margin-top: 2px; padding-left: 30px; list-style: square; }
 .tags ul li { margin-bottom: 3px; }
 .tags ul .name { font-family: monospace; font-weight: bold; }
 .tags ul .note { padding: 3px 6px; }
@@ -140,13 +146,14 @@ p.signature .aliases .names { font-family: Monaco, Consolas, Courier, monospace;
 ul.override {
   	list-style: none;
 	display: inline-block;
+	padding-left: 0.5em;
 }
 .tags .override .override_item { 
 	list-style: none;
 	display: inline-block;
 /*}
 .tags .override .override_item .signature { */
-  	padding: 2px 8px;
+  	padding: 2px 4px;
   	background: #e5e8ff; 
 	border: 1px solid #d8d8e5; 
 	-moz-border-radius: 3px; 

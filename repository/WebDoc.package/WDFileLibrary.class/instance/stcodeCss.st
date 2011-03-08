@@ -35,7 +35,8 @@ code {
 
 .stComment {
 	color: #009900;
-	font-family: Georgia;
+	font-family: Georgia, Serif;
+	font-size: 15px;
 }
 
 .stFalse, .stTrue, .stNil {
