@@ -1,6 +1,5 @@
 rendering
 renderContentOn: html
-
 	popup 
 		ifTrue: [ ^ self renderPopupOn: html].
 	
@@ -12,4 +11,4 @@ renderContentOn: html
 		with: [ self renderClassViewOn: html ].
 	
 	html div id: 'footer';
-		with: 'Here be credits'
+		with: 'Here be credits'.

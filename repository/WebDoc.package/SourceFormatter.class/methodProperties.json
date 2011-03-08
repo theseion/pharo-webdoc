@@ -1,6 +1,9 @@
 {
 	"class" : {
 		"ast:method:" : "CamilloBruni 2/28/2011 20:45",
+		"implementors" : "CamilloBruni 3/8/2011 11:22",
+		"initialize" : "CamilloBruni 3/8/2011 11:22",
+		"updateImplementors" : "CamilloBruni 3/8/2011 11:22",
 		"with:" : "CamilloBruni 2/28/2011 20:45" },
 	"instance" : {
 		"acceptArrayNode:" : "CamilloBruni 2/24/2011 11:50",
@@ -50,7 +53,7 @@
 		"formatThisContext:" : "CamilloBruni 2/23/2011 21:16",
 		"formatTrue:" : "CamilloBruni 2/23/2011 22:41",
 		"indent:" : "CamilloBruni 2/25/2011 07:46",
-		"inferReceiverContext:" : "CamilloBruni 3/6/2011 16:10",
+		"inferReceiverContext:" : "CamilloBruni 3/8/2011 11:46",
 		"initialize" : "CamilloBruni 2/25/2011 07:50",
 		"instVarNames" : "CamilloBruni 2/23/2011 21:56",
 		"maximumArgumentsPerLine" : "CamilloBruni 2/23/2011 20:39",

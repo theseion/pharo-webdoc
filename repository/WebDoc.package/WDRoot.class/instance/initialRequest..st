@@ -11,6 +11,10 @@ initialRequest: aRequest
 			class := Smalltalk at: (uriList at: (classIndex +1)) asSymbol ifAbsent: [^self].
 			self selectClass: class.
 			methodIndex := uriList indexOf: 'method'.
+			(methodIndex > 0 and: [(methodIndex = (uriList size - 2)) 
+				and: [(uriList at: methodIndex+1) = 'class']])
+					ifTrue: [methodIndex := methodIndex + 1.
+						class := class class].
 			(methodIndex > 0 and: [methodIndex ~~ uriList size])
 				ifTrue: [
 					method := class methodDict at: ( uriList at: (methodIndex +1)) asSymbol ifAbsent:[^ self].

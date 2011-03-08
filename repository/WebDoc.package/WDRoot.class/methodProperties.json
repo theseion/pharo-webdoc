@@ -4,11 +4,11 @@
 		"initialize" : "CamilloBruni 2/23/2011 15:58" },
 	"instance" : {
 		"children" : "BenjaminVanRyseghem 2/24/2011 18:18",
-		"initialRequest:" : "CamilloBruni 3/6/2011 16:32",
+		"initialRequest:" : "CamilloBruni 3/8/2011 11:59",
 		"initialize" : "BenjaminVanRyseghem 2/25/2011 14:09",
 		"library" : "CamilloBruni 2/24/2011 17:39",
 		"renderClassViewOn:" : "CamilloBruni 2/26/2011 10:48",
-		"renderContentOn:" : "CamilloBruni 3/6/2011 20:59",
+		"renderContentOn:" : "CamilloBruni 3/8/2011 11:33",
 		"renderHeaderOn:" : "CamilloBruni 3/6/2011 16:22",
 		"renderMethodPopupOn:" : "CamilloBruni 3/6/2011 20:38",
 		"renderMethodViewOn:" : "CamilloBruni 2/24/2011 15:38",

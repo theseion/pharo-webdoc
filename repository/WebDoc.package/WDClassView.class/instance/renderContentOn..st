@@ -2,7 +2,6 @@ rendering
 renderContentOn: html
 
 	self selectedClass ifNil: [ ^ html text: 'no class selected' ].
-	
 	html div
 		class: 'content';
 		with: [

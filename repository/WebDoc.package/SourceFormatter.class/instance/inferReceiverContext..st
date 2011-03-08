@@ -1,13 +1,15 @@
 private
 inferReceiverContext: aMessage
-	| receiver implementors |
+	| receiver |
 	aMessage isPragma ifTrue: [^nil].
 	aMessage isSuperSend  ifTrue: [ ^ method methodClass].
 	aMessage isSelfSend ifTrue: [ ^ method methodClass].
 
-	implementors := SystemNavigation default allImplementorsOf: aMessage selector.
-	implementors size = 1 
-		ifTrue: [ ^ implementors first methodClass].
+	self class implementors 
+		at: aMessage selector 
+		ifPresent: [ :implementors|
+			implementors size = 1 
+				ifTrue: [ ^ implementors first methodClass]].
 		
 	receiver := aMessage receiver.
 	
