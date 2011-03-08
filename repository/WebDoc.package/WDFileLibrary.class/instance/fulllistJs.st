@@ -9,7 +9,7 @@ function fullListSearch() {
   // generate cache
   searchCache = [];
   $(''#full_list li'').each(function() {
-    var link = $(this).find(''object_link a'');
+    var link = $(this).find(''a.object_link'');
     searchCache.push({name:link.text(), node:$(this), link:link});
   });
   
@@ -20,7 +20,7 @@ function fullListSearch() {
       inSearch = null;
       $(''#full_list, #content'').removeClass(''insearch'');
       $(''#full_list li'').removeClass(''found'').each(function() {
-        var link = $(this).find(''object_link a'');
+        var link = $(this).find(''a.object_link'');
         link.text(link.text()); 
       });
       if (clicked) {

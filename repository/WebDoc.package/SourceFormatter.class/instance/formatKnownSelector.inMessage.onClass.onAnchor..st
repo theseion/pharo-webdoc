@@ -4,9 +4,7 @@ formatKnownSelector: aSelector inMessage: aMessage onClass: aClass onAnchor: anc
 	receiverContext := aClass.
 	anchor class: 'stFixedSelector'.
 	
-	aMessage isSuperSend 
-		ifTrue: [ receiverContext := self superSendTarget ]
-		ifFalse: [ receiverContext := (receiverContext lookupSelector: aMessage selector) methodClass].
+	receiverContext := self receiverContext: receiverContext FromMessage: aMessage.
 	
 	receiverClass := receiverContext isBehavior 
 							ifFalse: [ receiverContext class] 

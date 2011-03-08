@@ -4,4 +4,4 @@ acceptText: aTextNode
 		regex: ('([^\s]*)')
 		matchesDo: [ :word| 
 			self renderWord: word.
-			html space]
+			html text: ' ']
