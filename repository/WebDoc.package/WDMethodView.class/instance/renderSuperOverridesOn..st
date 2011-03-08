@@ -6,8 +6,4 @@ renderSuperOverridesOn: html
 	
 	classes ifEmpty: [ ^ self].
 	
-	html heading level3 with: 'Overrides:'.
-	html unorderedList class: 'overload'; "meh, wrong term" with: [
-		classes do: [:superclass| 
-			html listItem class: 'overload_item'; with: [
-				self renderSelectorLink: (superclass methodDict at: selector) class: superclass on: html ] ] ]
+	self renderOverrides: classes named: 'Overrides:' on: html.

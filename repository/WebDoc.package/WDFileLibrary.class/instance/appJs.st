@@ -232,7 +232,7 @@ function generateTOC() {
 
 function selectorURL(item) {
 	url = item.attr("href");
-	url = url.split("/"); 
+	url = url.split("/");
 	classMethod = url[3].split("#");
 	url.splice(2,0,"popup");
 	url.splice(4, 1,classMethod[0]);
@@ -289,6 +289,9 @@ function createSelectorLinks() {
 		clearTimeout(closeTimeout);
 		closeTimeout = setTimeout(close, timeout);
         });
+}
+
+function formatMethodOverrides() {
 	
 }
 
@@ -304,4 +307,5 @@ $(keyboardShortcuts);
 $(summaryToggle);
 $(fixOutsideWorldLinks);
 $(generateTOC);
-$(createSelectorLinks);'
+$(createSelectorLinks);
+$(formatMethodOverrides);'

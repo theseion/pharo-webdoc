@@ -120,7 +120,9 @@ p.signature {
   background: #e5e8ff; border: 1px solid #d8d8e5; -moz-border-radius: 3px; -webkit-border-radius: 3px;
 }
 p.signature tt { font-family: Monaco, Consolas, Courier, monospace; }
-p.signature .overload { display: block; }
+p.signature .override { d
+	isplay: block; 
+}
 p.signature .extras { font-weight: normal; font-family: sans-serif; color: #444; font-size: 1em; }
 p.signature .aliases { display: block; font-weight: normal; font-size: 0.9em; font-family: sans-serif; margin-top: 0px; color: #555; }
 p.signature .aliases .names { font-family: Monaco, Consolas, Courier, monospace; font-weight: bold; color: #000; font-size: 1.2em; }
@@ -135,13 +137,23 @@ p.signature .aliases .names { font-family: Monaco, Consolas, Courier, monospace;
 .tags .examples h3 { margin-bottom: 10px; }
 .tags .examples h4 { padding: 0; margin: 0; margin-left: 15px; font-weight: bold; font-size: 0.9em; }
 
-.tags .overload .overload_item { list-style: none; }
-.tags .overload .overload_item .signature { 
-  padding: 2px 8px;
-  background: #e5e8ff; border: 1px solid #d8d8e5; -moz-border-radius: 3px; -webkit-border-radius: 3px;
+ul.override {
+  	list-style: none;
+	display: inline-block;
 }
-.tags .overload .signature { margin-left: -15px; font-family: monospace; display: block; font-size: 1.1em; }
-.tags .overload .docstring { margin-top: 15px; }
+.tags .override .override_item { 
+	list-style: none;
+	display: inline-block;
+/*}
+.tags .override .override_item .signature { */
+  	padding: 2px 8px;
+  	background: #e5e8ff; 
+	border: 1px solid #d8d8e5; 
+	-moz-border-radius: 3px; 
+	-webkit-border-radius: 3px;
+}
+.tags .override .signature { margin-left: -15px; font-family: monospace; display: block; font-size: 1.1em; }
+.tags .override .docstring { margin-top: 15px; }
 
 .defines { display: none; }
 
