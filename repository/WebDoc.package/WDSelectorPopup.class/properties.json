@@ -1,0 +1,14 @@
+{
+	"category" : "WebDoc",
+	"classinstvars" : [
+		 ],
+	"classvars" : [
+		 ],
+	"commentStamp" : "",
+	"instvars" : [
+		 ],
+	"name" : "WDSelectorPopup",
+	"pools" : [
+		 ],
+	"super" : "WDSelectorList",
+	"type" : "normal" }

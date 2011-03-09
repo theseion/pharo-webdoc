@@ -230,7 +230,7 @@ function generateTOC() {
   });
 }
 
-function selectorURL(item) {
+function selectorPopupURL(item) {
 	url = item.attr("href");
 	url = url.split("/");
 	classMethod = url[3].split("#");
@@ -238,6 +238,14 @@ function selectorURL(item) {
 	url.splice(4, 1,classMethod[0]);
 	url.splice(5,0,"method");
 	url.splice(6,0,classMethod[1]);
+	url=url.join("/");
+	return url;
+}
+
+function classPopupURL(item) {
+	url = item.attr("href");
+	url = url.split("/");
+	url.splice(2,0,"popup");
 	url=url.join("/");
 	return url;
 }
@@ -252,47 +260,48 @@ function createSelectorLinks() {
             $("p#vtip").fadeOut("slow").remove();
 	};
 	
-	$("a.stSelector").unbind().hover(    
-        function(e) {
-		clearTimeout(closeTimeout);
-		position = $(this).position();
-            this.left = position.left + $(this).width()  + xOffset;
-            this.top = position.top + yOffset; 
-		
-            url=selectorURL($(this));
-            $("body")
-			.append( "<p id=''vtip''><img id=''vtipArrow'' /><iframe id=''fr''></iframe></p>" )
-            
-		$("iframe#fr")
-			.attr("src", url)
-			.load(function(){
-				$(this).contents()
-					.mousemove(function(){
-						clearTimeout(closeTimeout);
-					})
-				$(this).width($(this).contents().width());
-				$(this).height($(this).contents().height())
-			});
-            //$("p#vtip #vtipArrow").attr("src", "images/vtip_arrow.png");
-            $("p#vtip")
-                	.css("top", this.top+"px")
-                	.css("left", this.left+"px")
-			.mousemove(function(){
-				clearTimeout(closeTimeout);
-			}).mouseleave(function(){
-				clearTimeout(closeTimeout);
-				closeTimeout = setTimeout(close, timeout);
-			})
-	            .show();
-        },
-        function() {
-		clearTimeout(closeTimeout);
-		closeTimeout = setTimeout(close, timeout);
-        });
-}
-
-function formatMethodOverrides() {
+	create = function(selector, urlFunction) {
+		$(selector).unbind().hover(    
+	        function(e) {
+			clearTimeout(closeTimeout);
+			position = $(this).position();
+	            this.left  = position.left + $(this).width()  + xOffset;
+	            this.top  = position.top + yOffset; 
+			
+	            url         = urlFunction($(this));
+	            $("body")
+				.append( "<p id=''vtip''><img id=''vtipArrow'' /><iframe id=''fr''></iframe></p>" )
+	            
+			$("iframe#fr")
+				.attr("src", url)
+				.load(function(){
+					$(this).contents()
+						.mousemove(function(){
+							clearTimeout(closeTimeout);
+						})
+					$(this).width($(this).contents().width());
+					$(this).height($(this).contents().height())
+				});
+	            //$("p#vtip #vtipArrow").attr("src", "images/vtip_arrow.png");
+	            $("p#vtip")
+	                	.css("top", this.top+"px")
+	                	.css("left", this.left+"px")
+				.mousemove(function(){
+					clearTimeout(closeTimeout);
+				}).mouseleave(function(){
+					clearTimeout(closeTimeout);
+					closeTimeout = setTimeout(close, timeout);
+				})
+		            .show();
+	        },
+	        function() {
+			clearTimeout(closeTimeout);
+			closeTimeout = setTimeout(close, timeout);
+	        });
+	};
 	
+	create("a.stSelector", selectorPopupURL);
+	create("a.stClassLiteral, a.object_link", classPopupURL);
 }
 
 $(framesInit);
@@ -307,5 +316,4 @@ $(keyboardShortcuts);
 $(summaryToggle);
 $(fixOutsideWorldLinks);
 $(generateTOC);
-$(createSelectorLinks);
-$(formatMethodOverrides);'
+$(createSelectorLinks);'

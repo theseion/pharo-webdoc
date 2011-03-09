@@ -1,3 +1,3 @@
 rendering
 renderSelectorPopupOn: html
-	html render: (WDSelectorPopupView for: selectedSelector root: self)
+	html render: (WDSelectorPopup for: selectedSelector root: self)
