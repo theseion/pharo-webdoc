@@ -12,4 +12,4 @@ renderWord: aString
 	aString = 'thisContext'
 		 ifTrue: [ ^ self formatThisContext].
 	
-	html withUrls: aString.
+	html text: aString.
