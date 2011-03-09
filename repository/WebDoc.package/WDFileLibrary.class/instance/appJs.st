@@ -255,24 +255,43 @@ function createSelectorLinks() {
    	yOffset = -10; 
 	closeTimeout = 0;
 	timeout = 500;
+
+      $("body")
+		.append( "<p id=''vtip''><img id=''vtipArrow'' /><iframe id=''popupFrame''></iframe></p>" );
+		
+	toolTip = $("p#vtip");
+	toolTipFrame = $("iframe#popupFrame");
 	
+      //$("p#vtip #vtipArrow").attr("src", "images/vtip_arrow.png");
+	toolTip
+		.mousemove(function(){
+			clearTimeout(closeTimeout);
+		}).mouseleave(function(){
+			clearTimeout(closeTimeout);
+			closeTimeout = setTimeout(close, timeout);
+		});
+						
 	close = function() {
-            $("p#vtip").fadeOut("slow").remove();
+		clearTimeout(closeTimeout);
+            toolTip.fadeOut();
 	};
 	
 	create = function(selector, urlFunction) {
 		$(selector).unbind().hover(    
 	        function(e) {
-			clearTimeout(closeTimeout);
+			close();
+			toolTipFrame.attr("src", "");
+			
 			position = $(this).position();
-	            this.left  = position.left + $(this).width()  + xOffset;
-	            this.top  = position.top + yOffset; 
+	            left  = position.left + $(this).width()  + xOffset;
+	            top  = position.top + yOffset; 
+			toolTip
+		           	.css("top", top+"px")
+		          	.css("left", left+"px");
 			
 	            url         = urlFunction($(this));
-	            $("body")
-				.append( "<p id=''vtip''><img id=''vtipArrow'' /><iframe id=''fr''></iframe></p>" )
 	            
-			$("iframe#fr")
+			toolTipFrame
 				.attr("src", url)
 				.load(function(){
 					$(this).contents()
@@ -280,19 +299,10 @@ function createSelectorLinks() {
 							clearTimeout(closeTimeout);
 						})
 					$(this).width($(this).contents().width());
-					$(this).height($(this).contents().height())
+					$(this).height($(this).contents().height());
+					toolTip
+						.fadeIn();
 				});
-	            //$("p#vtip #vtipArrow").attr("src", "images/vtip_arrow.png");
-	            $("p#vtip")
-	                	.css("top", this.top+"px")
-	                	.css("left", this.left+"px")
-				.mousemove(function(){
-					clearTimeout(closeTimeout);
-				}).mouseleave(function(){
-					clearTimeout(closeTimeout);
-					closeTimeout = setTimeout(close, timeout);
-				})
-		            .show();
 	        },
 	        function() {
 			clearTimeout(closeTimeout);

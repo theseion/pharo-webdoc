@@ -21,6 +21,11 @@ initialRequest: aRequest
 					self selectMethod: method]].
 	
 	selectorIndex := uriList indexOf: 'selector'.
+	listSelectors := false.
+	(selectorIndex > 0 and: [(selectorIndex = (uriList size - 2)) 
+				and: [(uriList at: selectorIndex+1) = 'list']])
+					ifTrue: [selectorIndex := selectorIndex + 1.
+						listSelectors := true].
 	(selectorIndex > 0 and: [selectorIndex ~~ uriList size])
 		ifTrue: [
 			selectedSelector := (uriList at: selectorIndex +1) asSymbol].
