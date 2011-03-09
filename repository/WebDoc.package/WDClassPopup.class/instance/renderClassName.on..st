@@ -1,6 +1,5 @@
-rendering
+as yet unclassified
 renderClassName: aString on: html
 	html heading
-		level1;
-		class: 'className';
+		level3;
 		with: aString.

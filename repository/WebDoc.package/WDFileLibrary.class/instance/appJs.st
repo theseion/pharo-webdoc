@@ -300,8 +300,8 @@ function createSelectorLinks() {
 	        });
 	};
 	
-	create("a.stSelector", selectorPopupURL);
-	create("a.stClassLiteral, a.object_link", classPopupURL);
+	create("a.stSelector, a.method_link", selectorPopupURL);
+	create("a.stClassLiteral, a.class_link", classPopupURL);
 }
 
 $(framesInit);
