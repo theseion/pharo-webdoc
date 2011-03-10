@@ -3,6 +3,7 @@ stcodeCss
 	^ '
 code {
 	font-family: Monaco, Consolas, Courier;
+	font-size: 14px;
 }
 
 .stIndent {
