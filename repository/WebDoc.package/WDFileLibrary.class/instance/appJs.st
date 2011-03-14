@@ -237,7 +237,7 @@ function selectorPopupURL(item) {
 	url.splice(2,0,"popup");
 	url.splice(4, 1,classMethod[0]);
 	url.splice(5,0,"method");
-	url.splice(6,0,classMethod[1]);
+	url.splice(5,0,classMethod[1]);
 	url=url.join("/");
 	return url;
 }
@@ -294,12 +294,14 @@ function createSelectorLinks() {
 			toolTipFrame
 				.attr("src", url)
 				.load(function(){
-					$(this).contents()
+					self = $(this);
+					self.contents()
 						.mousemove(function(){
 							clearTimeout(closeTimeout);
-						})
-					$(this).width($(this).contents().width());
-					$(this).height($(this).contents().height());
+						});
+					
+					self.width(self.contents().width());
+					self.height(self.contents().height());
 					toolTip
 						.fadeIn();
 				});
@@ -310,7 +312,7 @@ function createSelectorLinks() {
 	        });
 	};
 	
-	create("a.stSelector, a.method_link", selectorPopupURL);
+	create("a.stSelector, a.method_link, a.stSymbolLiteral", selectorPopupURL);
 	create("a.stClassLiteral, a.class_link", classPopupURL);
 }
 
