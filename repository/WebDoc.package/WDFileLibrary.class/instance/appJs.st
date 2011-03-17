@@ -230,6 +230,7 @@ function generateTOC() {
   });
 }
 
+// ==============================================
 function selectorPopupURL(item) {
 	url = item.attr("href");
 	url = url.split("/");
@@ -237,9 +238,28 @@ function selectorPopupURL(item) {
 	url.splice(2,0,"popup");
 	url.splice(4, 1,classMethod[0]);
 	url.splice(5,0,"method");
-	url.splice(5,0,classMethod[1]);
+	url.splice(6,0,classMethod[1]);
 	url=url.join("/");
 	return url;
+}
+
+function summaryPopupURL(item) {
+	class = $("h1.className").html();
+	url = item.find("a").attr("href");
+	url = url.split("/");
+	classMethod = url[0].split("#");
+	if (url.length == 1) {
+		selector = classMethod[1];
+		classMethod = "";
+	} else {
+		selector = url[1];
+		if (classMethod[1].length > 1) {
+			classMethod = "class/";
+		} else {
+			classMethod = ""
+		}
+	}
+	return "/doc/popup/class/"+class+"/method/"+classMethod+"/"+selector;
 }
 
 function classPopupURL(item) {
@@ -314,6 +334,7 @@ function createSelectorLinks() {
 	
 	create("a.stSelector, a.method_link, a.stSymbolLiteral", selectorPopupURL);
 	create("a.stClassLiteral, a.class_link", classPopupURL);
+	create(".summary_signature", summaryPopupURL);
 }
 
 $(framesInit);
