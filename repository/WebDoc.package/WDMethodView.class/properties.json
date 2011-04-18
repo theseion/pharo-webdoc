@@ -10,7 +10,8 @@
 		"root",
 		"method",
 		"contentSyleClass",
-		"sourceStyleClass" ],
+		"sourceStyleClass",
+		"viewClass" ],
 	"name" : "WDMethodView",
 	"pools" : [
 		 ],

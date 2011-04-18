@@ -1,6 +1,7 @@
 uploaded
 fulllistCss
-	^ 'body { 
+	^ '
+body { 
   margin: 0;
   font-family: "Lucida Sans", "Lucida Grande", Verdana, Arial, sans-serif; 
   font-size: 13px;

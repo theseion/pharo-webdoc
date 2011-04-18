@@ -1,0 +1,14 @@
+{
+	"category" : "WebDoc",
+	"classinstvars" : [
+		 ],
+	"classvars" : [
+		 ],
+	"commentStamp" : "",
+	"instvars" : [
+		 ],
+	"name" : "WDMainView",
+	"pools" : [
+		 ],
+	"super" : "WDReflectionComponent",
+	"type" : "normal" }

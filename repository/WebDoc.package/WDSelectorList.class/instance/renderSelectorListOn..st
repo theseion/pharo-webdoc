@@ -1,10 +1,7 @@
-as yet unclassified
+rendering
 renderSelectorListOn: html
-	| name |
-	html unorderedList
-		with: [
-			implementors do: [:method|
-				html listItem
-					with: ["self renderSelectorLink: method class: method methodClass on: html."
-						name :=  method methodClass name, ' >> ',  method selector.
-						self renderSelector:  selector named: name in:  method methodClass on: html.]]].
+	| selectors |
+	selectors := SystemNavigation default allImplementedMessages select: [ :sel| sel beginsWith: category ].
+	selectors := selectors asArray sort.
+	selectors withIndexDo: [ :sel :index|
+		self renderSelector: sel at: index on: html ].	

@@ -1,11 +1,12 @@
 uploaded
 styleCss
-	^ 'body { 
-  padding: 0 20px;
+	^ '
+body { 
+  padding: 0;
   font-family: "Lucida Sans", "Lucida Grande", Verdana, Arial, sans-serif; 
   font-size: 13px;
 }
-body.frames { padding: 0 5px; }
+
 h1 { font-size: 25px; margin: 1em 0 0.5em; padding-top: 4px; border-top: 1px dotted #d5d5d5; }
 h1.noborder { border-top: 0px; margin-top: 0; padding-top: 4px; }
 h1.title { margin-bottom: 10px; }

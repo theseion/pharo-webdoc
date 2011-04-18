@@ -1,6 +1,7 @@
 rendering
 renderContentOn: html
-	popup 
+	html render: activeView.
+	"popup 
 		ifTrue: [ ^ self renderPopupOn: html].
 	
 	html div id: 'header';
@@ -15,4 +16,4 @@ renderContentOn: html
 				with: [ self renderClassViewOn: html ]].
 	
 	html div id: 'footer';
-		with: 'Here be credits'.
+		with: 'Here be credits'."

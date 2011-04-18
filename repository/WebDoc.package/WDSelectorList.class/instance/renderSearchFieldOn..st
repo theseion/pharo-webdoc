@@ -1,6 +1,7 @@
 as yet unclassified
 renderSearchFieldOn: html
-	implementors size > 10 
-		ifFalse: [^ self].
+
+	(category isNil and: [ selector isNil ])
+		ifTrue: [^ self].
 	super renderSearchFieldOn: html.
 	

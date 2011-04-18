@@ -2,7 +2,7 @@ visitor-double dispatching
 acceptBlockNode: aBlockNode startBlockString: startBlockString endBlockString: endBlockString 
 	| bodyBlock |
 	html text: startBlockString.
-	
+	html space.
 	html span
 		class: 'stBlockArgs';
 		with: [
@@ -17,4 +17,4 @@ acceptBlockNode: aBlockNode startBlockString: startBlockString endBlockString: e
 		class: 'stBlockBody';
 		with: [ self visitNode:  aBlockNode body ].
 		
-	html text: endBlockString.
+	html space text: endBlockString.

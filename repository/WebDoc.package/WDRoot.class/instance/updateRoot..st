@@ -1,7 +1,9 @@
 updating
 updateRoot: anHtmlRoot
 	super updateRoot: anHtmlRoot.
-	
+	activeView ifNotNil: [
+		activeView updateRoot: anHtmlRoot].
+	"
 	anHtmlRoot stylesheet 
 		url: WDFileLibrary / #commonCss.
 	anHtmlRoot stylesheet 
@@ -20,4 +22,4 @@ updateRoot: anHtmlRoot
 	anHtmlRoot script 
 		url: WDFileLibrary / #appJs.
 	anHtmlRoot script 
-		url: WDFileLibrary / #fulllistJs.
+		url: WDFileLibrary / #fulllistJs."

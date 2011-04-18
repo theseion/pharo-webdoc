@@ -1,8 +1,7 @@
 {
 	"class" : {
 		"for:" : "CamilloBruni 2/24/2011 15:37",
-		"for:root:" : "BenjaminVanRyseghem 2/25/2011 12:45",
-		"on:" : "BenjaminVanRyseghem 2/25/2011 12:35" },
+		"method:class:" : "CamilloBruni 4/14/2011 16:54" },
 	"instance" : {
 		"initialize" : "CamilloBruni 3/9/2011 11:45",
 		"method" : "BenjaminVanRyseghem 2/25/2011 14:18",
@@ -15,11 +14,10 @@
 		"renderSourceOn:" : "CamilloBruni 3/6/2011 21:09",
 		"renderSuperOverridesOn:" : "CamilloBruni 3/8/2011 17:14",
 		"renderTagsOn:" : "DamienPollet 2/26/2011 03:37",
-		"root" : "BenjaminVanRyseghem 2/25/2011 12:34",
-		"root:" : "BenjaminVanRyseghem 2/25/2011 12:34",
 		"selectClass:" : "BenjaminVanRyseghem 2/25/2011 13:59",
 		"selectMethod:" : "BenjaminVanRyseghem 2/25/2011 14:19",
 		"selectSelector:in:" : "BenjaminVanRyseghem 2/25/2011 14:17",
 		"selectedMethod" : "BenjaminVanRyseghem 2/25/2011 14:16",
 		"updateUrl:" : "BenjaminVanRyseghem 2/25/2011 12:48",
-		"viewClass" : "BenjaminVanRyseghem 2/25/2011 12:40" } }
+		"viewClass" : "CamilloBruni 4/14/2011 16:52",
+		"viewClass:" : "CamilloBruni 4/14/2011 16:52" } }

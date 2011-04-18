@@ -1,7 +1,12 @@
 rendering
-renderSelector: selector on: html
+renderSelector: aSymbol on: html
 	html anchor
 		class: 'selector_link';
-		url: ('/selector/', selector name);
-		"callback: [ self selectSelector: selector];"
-		with: selector.
+		class: 'object_link';
+		url: ('/doc/selector/list/', aSymbol);
+		title: aSymbol, ' (selector)';
+		with: aSymbol.
+		
+	html small
+		class: 'search_info';
+		with: aSymbol.

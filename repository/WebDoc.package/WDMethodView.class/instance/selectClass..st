@@ -1,4 +1,4 @@
-as yet unclassified
+accessing
 selectClass: aClass 
 
 	self root selectClass: aClass

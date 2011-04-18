@@ -5,14 +5,14 @@ function createSourceLinks() {
 	// on each method source 
     $(".method_details").each(function(){
 		$(this).find(".signature")
-		.append("<span class=''showSource''>[<a href=''#'' class=''toggleSource''>View Sources</a>]<span>");
+			.append("<span class=''showSource''>[<a href=''#'' class=''toggleSource''>View Sources</a>]<span>");
 		$(this).find(".source_code").css("display", "none");
 	});
 	// on the method detail sections
 	
     $(".methodDetail").each(function(){
 		$(this).find("h2.title")
-		.append("<span class=''showSource''>[<a href=''#'' class=''toggleSource''>Show Sources</a>]<span>");
+			.append("<span class=''showSource''>[<a href=''#'' class=''toggleSource''>Show Sources</a>]<span>");
 	});
 	// trigger the slide up/ slide down
     $(''.toggleSource'').toggle(function() {
