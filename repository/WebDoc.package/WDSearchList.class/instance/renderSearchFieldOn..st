@@ -5,6 +5,5 @@ renderSearchFieldOn: html
 		with: [
 			html text: 'Search: '.
 			html searchInput
-				accessKey: self accessKey;
-				accessKey: '4'].
+				accessKey: self accessKey].
 		

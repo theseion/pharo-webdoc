@@ -1,6 +1,8 @@
 routes
 class: aClassName classMethod: aSelector
 	<GET>
-	<Path: 'popup/class/{aClassName}/class/method/{aSelector}'>
-	self halt.
-	activeView := WDMainView new.
+	<Path: '/class/{aClassName}/class/method/{aSelector}'>
+	activeView := self methodView.
+	activeView viewClass: (Smalltalk at: aClassName asSymbol).
+	activeView selectClass: activeView viewClass class.
+	activeView selectMethodNamed: aSelector asSymbol.
