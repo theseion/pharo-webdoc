@@ -3,7 +3,7 @@ formatMessage: aMessageNode part: i cascade: cascadeBoolean
 	|selector sendBlock |
 	selector := aMessageNode selectorParts at: i.
 	sendBlock := [
-		self renderSelector:  selector inMessage: aMessageNode.
+		self renderSelector: selector inMessage: aMessageNode.
 		html space.
 		html span
 			class: 'stSendArgument';

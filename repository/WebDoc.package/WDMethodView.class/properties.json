@@ -11,7 +11,8 @@
 		"contentSyleClass",
 		"sourceStyleClass",
 		"viewClass",
-		"selectedClass" ],
+		"selectedClass",
+		"showClassLinks" ],
 	"name" : "WDMethodView",
 	"pools" : [
 		 ],

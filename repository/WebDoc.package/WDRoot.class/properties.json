@@ -16,7 +16,8 @@
 		"selectorView",
 		"packageClassView",
 		"methodPopup",
-		"selectorPopup" ],
+		"selectorPopup",
+		"classPopup" ],
 	"name" : "WDRoot",
 	"pools" : [
 		 ],

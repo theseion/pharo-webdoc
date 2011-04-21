@@ -1,5 +1,6 @@
 routes
-popUpClass: className
+popUpClass: aClassName
 	<GET>
-	<Path: 'popup/class/{className}'>
-	activeView := WDMainView new.
+	<Path: 'popup/class/{aClassName}'>
+	activeView := self classPopup.
+	activeView selectClass: (Smalltalk at: aClassName asSymbol).

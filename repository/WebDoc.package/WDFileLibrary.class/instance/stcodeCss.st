@@ -6,6 +6,10 @@ code {
 	font-size: 14px;
 }
 
+code a {
+	text-decoration: none;
+}
+
 .stIndent {
 	margin-left: 3em;r
 }

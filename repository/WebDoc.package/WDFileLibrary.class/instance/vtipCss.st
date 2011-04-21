@@ -8,9 +8,12 @@ p#vtip {
 	left: 5px; 
 	font-size: 0.8em; 
 	background-color: white; 
-	border: 1px solid #a6c9e2; 
+	border: 1px solid #999; 
 	-moz-border-radius: 5px; 
 	-webkit-border-radius: 5px; 
+	-moz-box-shadow: 0 0 5px 5px rgba(0,0,0,0.1);
+	-webkit-box-shadow: 0 0 5px 5px rgba(0,0,0,0.1);
+	box-shadow: 0 0 5px 5px rgba(0,0,0,0.1);
 	z-index: 9999 
 }
 
