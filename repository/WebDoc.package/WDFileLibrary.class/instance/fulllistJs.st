@@ -62,8 +62,7 @@ function searchItem() {
 
     if (searchCache.length == searchIndex + 1) {
       return searchDone();
-    }
-    else {
+    } else {
       searchIndex++;
     }
   }
@@ -95,17 +94,23 @@ function linkList() {
       }
     }
     if (clicked) clicked.removeClass(''clicked'');
-    var win = window.top.frames.main ? window.top.frames.main : window.parent;
-    if (this.tagName.toLowerCase() == "a") {
-      clicked = $(this).parent(''li'').addClass(''clicked'');
-      win.location = this.href;
-    }
-    else {
-      clicked = $(this).addClass(''clicked'');
-      win.location = $(this).find(''a:last'').attr(''href'');
+	 if (this.tagName.toLowerCase() == "a") {
+      	clickListLink($(this));
+    } else {
+		clickListLink($(this).find("a:first"));
     }
     return false;
   });
+}
+
+function clickListLink(a) {
+	clicked = a.parent(''li'').addClass(''clicked'');
+	var win = window.top.frames[a.attr("target")];
+	href = a.attr(''href'');
+	if (!win) {
+		win = window.parent;
+	}
+	win.location = href;
 }
 
 function collapse() {

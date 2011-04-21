@@ -3,16 +3,11 @@ updateRoot: anHtmlRoot
 	anHtmlRoot stylesheet 
 		url: WDFileLibrary / #commonCss.
 	anHtmlRoot stylesheet 
-		url: WDFileLibrary / #stcodeCss.
-	anHtmlRoot stylesheet 
-		url: WDFileLibrary / #styleCss.
-	anHtmlRoot stylesheet 
-		url: WDFileLibrary / #vtipCss.
+		url: WDFileLibrary / #fulllistCss.
 		
 	anHtmlRoot script 
 		url: JQDevelopmentLibrary / #jQueryJs.
 	anHtmlRoot script 
 		url: JQUiDevelopmentLibrary / #jQueryUiJs.
 	anHtmlRoot script 
-		url: WDFileLibrary / #appJs.
-	super updateRoot: anHtmlRoot.
+		url: WDFileLibrary / #fulllistJs.

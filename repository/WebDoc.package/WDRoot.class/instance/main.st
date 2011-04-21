@@ -1,4 +1,5 @@
-as yet unclassified
+routes
 main
 	<GET>
-	activeView := WDMainView new.
+	activeView := mainView.
+	activeView refreshClassView.

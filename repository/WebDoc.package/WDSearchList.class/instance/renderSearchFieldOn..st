@@ -3,6 +3,8 @@ renderSearchFieldOn: html
 	html div 
 		id: 'search';
 		with: [
-			html text: 'Search:'.
-			html searchInput].
+			html text: 'Search: '.
+			html searchInput
+				accessKey: self accessKey;
+				accessKey: '4'].
 		

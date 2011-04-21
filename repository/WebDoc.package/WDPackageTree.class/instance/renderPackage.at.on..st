@@ -1,13 +1,17 @@
 rendering
-renderPackage: package at: index on: html
-	index > 10 ifTrue: [ ^ self].
-	(self listItemAt: index on: html)
-		with: [
-			html anchor
-				callback: [ self selectPackage: package];
-				title: package name, ' (package)';
-				with: package name.
-			html small
-				class: 'search_info';
-				with: 'Package ', package name].
-	self renderClassesOfPackage: package on: html
+renderPackage: package at: anIndex on: html
+	hierarchy isEmpty
+		ifTrue: [ 
+			hierarchy push: package.
+			^ self privateRenderPackage: package at: anIndex on: html].
+			
+	(package name beginsWith: (hierarchy top name))
+		ifTrue: [ 
+			hierarchy push: package.
+			html unorderedList
+				with: [ 
+					self privateRenderPackage: package at: anIndex on: html.
+					self renderNextPackageOn: html]].
+	
+	hierarchy pop.
+	self renderNextPackageOn: html.

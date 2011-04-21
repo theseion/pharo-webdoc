@@ -13,7 +13,8 @@
 		"routes",
 		"activeView",
 		"mainView",
-		"selectorView" ],
+		"selectorView",
+		"packageClassView" ],
 	"name" : "WDRoot",
 	"pools" : [
 		 ],

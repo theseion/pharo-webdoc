@@ -1,6 +1,6 @@
 rendering
 renderInstanceMethodsDetailsFor: class on: html
-.	self
+	self
 		renderMethodsDetailsSectionFor: class
 		title: 'Instance Method Details'
 		htmlClass: 'instanceMethodDetail'

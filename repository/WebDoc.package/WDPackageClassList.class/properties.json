@@ -6,11 +6,9 @@
 		 ],
 	"commentStamp" : "",
 	"instvars" : [
-		"packages",
-		"hierarchy",
-		"renderPackages",
-		"index" ],
-	"name" : "WDPackageTree",
+		"selectedPackage",
+		"classes" ],
+	"name" : "WDPackageClassList",
 	"pools" : [
 		 ],
 	"super" : "WDSearchList",

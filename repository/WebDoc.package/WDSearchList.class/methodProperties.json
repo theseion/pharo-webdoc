@@ -3,5 +3,7 @@
 		 },
 	"instance" : {
 		"listItemAt:on:" : "CamilloBruni 2/24/2011 14:12",
-		"renderContentOn:" : "BenjaminVanRyseghem 2/25/2011 15:04",
-		"renderSearchFieldOn:" : "CamilloBruni 2/24/2011 17:43" } }
+		"renderContentOn:" : "CamilloBruni 4/21/2011 14:15",
+		"renderHeaderOn:" : "CamilloBruni 4/21/2011 15:01",
+		"renderSearchFieldOn:" : "CamilloBruni 4/21/2011 17:33",
+		"updateRoot:" : "CamilloBruni 4/21/2011 14:57" } }

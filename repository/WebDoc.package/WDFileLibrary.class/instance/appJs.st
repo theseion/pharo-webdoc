@@ -152,8 +152,7 @@ function summaryToggle() {
     if (next.hasClass(''compact'')) {
       next.toggle();
       next.next().toggle();
-    } 
-    else if (next.hasClass(''summary'')) {
+    } else if (next.hasClass(''summary'')) {
       var list = $(''<ul class="summary compact" />'');
       list.html(next.html());
       list.find(''.summary_desc, .note'').remove();
@@ -244,7 +243,7 @@ function selectorPopupURL(item) {
 }
 
 function summaryPopupURL(item) {
-	class = $("h1.className").html();
+	className = $("h1.className").html();
 	url = item.find("a").attr("href");
 	url = url.split("/");
 	classMethod = url[0].split("#");
@@ -259,7 +258,7 @@ function summaryPopupURL(item) {
 			classMethod = ""
 		}
 	}
-	return "/doc/popup/class/"+class+"/method/"+classMethod+"/"+selector;
+	return "/doc/popup/class/"+className+"/method/"+classMethod+"/"+selector;
 }
 
 function classPopupURL(item) {
@@ -271,12 +270,11 @@ function classPopupURL(item) {
 }
 
 function createSelectorLinks() {
-    	xOffset = 3;
+	xOffset = 3;
    	yOffset = -10; 
 	closeTimeout = 0;
 	timeout = 500;
-
-      $("body")
+	$("body")
 		.append( "<p id=''vtip''><img id=''vtipArrow'' /><iframe id=''popupFrame''></iframe></p>" );
 		
 	toolTip = $("p#vtip");

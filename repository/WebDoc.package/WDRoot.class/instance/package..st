@@ -2,4 +2,5 @@ routes
 package: aPackageName
 	<GET>
 	<Path: '/package/{aPackageName}'>
-	self halt.
+	activeView := self packageClassView.
+	activeView packageName: aPackageName asSymbol

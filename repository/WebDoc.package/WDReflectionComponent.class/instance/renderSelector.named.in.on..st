@@ -4,5 +4,6 @@ renderSelector:  selector named: name in: class on: html
 		class: 'object_link';
 		class: 'method_link';
 		class: 'stSelector';
+		target: 'classView';
 		url: '/doc/class/', class theNonMetaClass name, '#', (class isMeta ifTrue: [ 'class/'] ifFalse: ['']), selector;
 		with: name.

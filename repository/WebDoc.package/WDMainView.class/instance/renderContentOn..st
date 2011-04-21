@@ -3,10 +3,26 @@ renderContentOn: html
 	html div
 		id: 'sidebar';
 		with: [
-			html iframe	
-				name: 'list';
-				id: 'list';
-				url: '/doc/package'.
+			html div 
+				id: 'packages';
+				with: [
+					html div 
+						id: 'packagesIframe';
+						with: [
+							html iframe	
+								name: 'list';
+								id: 'list';
+								url: '/doc/package'].
+							
+					html div
+						id: 'vdragbar'.].
+			html div 
+				id: 'classes';
+				with: [
+					html iframe	
+						name: 'list2';
+						id: 'list2';
+						url: '/doc/package/Kernel'].
 			html div
 				id: 'dragbar'].
 				
@@ -14,7 +30,8 @@ renderContentOn: html
 		id: 'main';
 		with: [
 			html iframe
-				name: 'main';
+				name: 'classView';
+				url: classViewUrl;
 				width: '100%';
 				height: '100%'.
 		]

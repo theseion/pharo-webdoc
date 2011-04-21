@@ -1,6 +1,5 @@
 rendering
 renderMethodsDetailsSectionFor: class title: title htmlClass: htmlClass on: html
-.
 	html div
 		class: htmlClass;
 		class: 'methodDetail';

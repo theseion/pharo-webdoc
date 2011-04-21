@@ -2,6 +2,8 @@
 	"class" : {
 		 },
 	"instance" : {
-		"renderContentOn:" : "CamilloBruni 4/18/2011 14:03",
+		"initialize" : "CamilloBruni 4/19/2011 13:59",
+		"refreshClassView" : "CamilloBruni 4/19/2011 14:23",
+		"renderContentOn:" : "CamilloBruni 4/20/2011 20:08",
 		"renderHeaderOn:" : "CamilloBruni 4/14/2011 16:01",
 		"updateRoot:" : "CamilloBruni 4/14/2011 17:00" } }
