@@ -1,4 +1,7 @@
 as yet unclassified
 searchFor: aSearchString
 	searchTerm := aSearchString.
-	searchRegexp := RxMatcher forString: searchTerm.
+	[ searchRegexp := searchTerm asRegex ]
+		on: RegexSyntaxError
+		do: [ searchRegexp := '' asRegex].
+	searchResults := self searchResults.

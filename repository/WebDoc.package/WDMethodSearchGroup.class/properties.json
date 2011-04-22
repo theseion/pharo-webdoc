@@ -6,12 +6,9 @@
 		 ],
 	"commentStamp" : "",
 	"instvars" : [
-		"searchTerm",
-		"searchRegexp",
-		"searchResults",
-		"resultLimit" ],
-	"name" : "WDSearchGroup",
+		 ],
+	"name" : "WDMethodSearchGroup",
 	"pools" : [
 		 ],
-	"super" : "WDReflectionComponent",
+	"super" : "WDSearchGroup",
 	"type" : "normal" }

@@ -47,7 +47,9 @@ searchCss
 }
 
 #searchResults h1 { 
-	margin-bottom: 0;
+	padding-left: 7px;
+	font-size: 1.2em;
+	margin: 0;
 }
 #searchResults p { 
 	margin-top: 0; 
@@ -58,7 +60,8 @@ searchCss
 }
 #searchResults ul li { 
 	list-style-type: none;
-	line-height: 2em;
+	line-height: 2em; 
+	padding-left: 7px;
 }
 
 #searchResults ul li.r1 { 
@@ -83,9 +86,9 @@ form.search {
 	background: #05a; 
   	-moz-border-radius: 6px;
   	-webkit-border-radius: 6px;
-	-webkit-box-shadow: 0 0 6px 6px rgba(0,0,0,0.1);
-	-moz-box-shadow: 0 0 6px 6px rgba(0,0,0,0.1);
-	box-shadow: 0 0 6px 6px rgba(0,0,0,0.1);
+	-webkit-box-shadow: 0 0 10px 10px rgba(0,0,0,0.05), 0 0 3px 3px rgba(0,0,0,0.1);
+	-moz-box-shadow: 0 0 10px 10px rgba(0,0,0,0.05),  0 0 3px 2px rgba(0,0,0,0.1);
+	box-shadow: 0 0 10px 10px rgba(0,0,0,0.05), 0 0 2px 3px rgba(0,0,0,0.1);
   	margin-bottom: 10px;
 }
 

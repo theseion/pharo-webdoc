@@ -2,9 +2,10 @@
 	"class" : {
 		 },
 	"instance" : {
+		"initialize" : "CamilloBruni 4/22/2011 21:09",
 		"name" : "CamilloBruni 4/22/2011 19:36",
-		"renderContentOn:" : "CamilloBruni 4/22/2011 20:44",
+		"renderContentOn:" : "CamilloBruni 4/22/2011 21:15",
 		"renderSearchResult:on:" : "CamilloBruni 4/22/2011 20:25",
-		"renderSearchResultsOn:" : "CamilloBruni 4/22/2011 20:52",
-		"searchFor:" : "CamilloBruni 4/22/2011 19:45",
+		"renderSearchResultsOn:" : "CamilloBruni 4/22/2011 21:14",
+		"searchFor:" : "CamilloBruni 4/22/2011 21:11",
 		"searchResults" : "CamilloBruni 4/22/2011 19:35" } }
