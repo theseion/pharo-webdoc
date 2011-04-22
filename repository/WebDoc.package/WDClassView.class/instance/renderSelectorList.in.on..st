@@ -5,7 +5,6 @@ renderSelectorList: methods in: class on: html
 		class: 'inheritedMethodList';
 		style: ((methods size > 20) ifTrue: [ 'display: none;'] ifFalse: ['']);
 		with: [ 
-			methods 
-				do: [ :method| 
-					self renderSelectorLink: method in: class on: html]
-				separatedBy: [html text: ', ']]
+			methods do: [ :method| 
+				self renderSelectorLink: method in: class on: html.
+				html text: ' ']]

@@ -1,5 +1,6 @@
 as yet unclassified
 renderContentOn: html
+	self flag: 'split into submethods'.
 	html div
 		id: 'sidebar';
 		with: [

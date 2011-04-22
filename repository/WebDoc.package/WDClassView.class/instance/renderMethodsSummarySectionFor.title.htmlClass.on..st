@@ -1,7 +1,7 @@
 rendering
 renderMethodsSummarySectionFor: class title: title htmlClass: htmlClass on: html
 	| selectors |
-.	selectors := class selectors sort.
+	selectors := class selectors sort.
 	html div
 		class: htmlClass;
 		class: 'methodSummary';

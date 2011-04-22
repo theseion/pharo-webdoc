@@ -258,6 +258,9 @@ function defaultPopupURL(url) {
 	return url;
 }
 
+if (!document["useVtips"]) {
+	document["useVtips"] = true;
+}
 function createSelectorLinks() {
 	xOffset = 3;
    	yOffset = -10; 
@@ -280,23 +283,23 @@ function createSelectorLinks() {
 						
 	close = function() {
 		clearTimeout(closeTimeout);
-            toolTip.fadeOut();
+            toolTip.hide();
 	};
 	
 	create = function(selector, urlFunction) {
-		$(selector).unbind().hover(    
-	        function(e) {
+		$(selector).unbind().hover(function(e) {
 			close();
 			toolTipFrame.attr("src", "");
+			if (document["useVtips"] == false) { return };
 			
 			position = $(this).position();
-	            left  = position.left + $(this).width()  + xOffset;
-	            top  = position.top + yOffset; 
+	       left = position.left + $(this).width()  + xOffset;
+			top = position.top + yOffset; 
 			toolTip
-		           	.css("top", top+"px")
-		          	.css("left", left+"px");
+				.css("top", top+"px")
+				.css("left", left+"px");
 			
-	            url         = urlFunction($(this));
+			url = urlFunction($(this));
 	            
 			toolTipFrame
 				.attr("src", url)
@@ -306,17 +309,19 @@ function createSelectorLinks() {
 						.mousemove(function(){
 							clearTimeout(closeTimeout);
 						});
+					var oDoc = (self.get(0).contentWindow || self.get(0).contentDocument);
+				  	if (oDoc.document) oDoc = oDoc.document;
+				  	oDoc["useVtips"]= false;
 					
-					self.width(self.contents().width());
-					self.height(self.contents().height());
-					toolTip
-						.fadeIn();
+					self.width(Math.min(Math.max(self.contents().width()+10, 300), 450));
+					self.height(Math.min(Math.max(self.contents().height()+10, 100), 300));
+					toolTip.show();
 				});
 	        },
 	        function() {
 			clearTimeout(closeTimeout);
 			closeTimeout = setTimeout(close, timeout);
-	        });
+		});
 	};
 	
 	create("a.stSelector, a.method_link, a.stSymbolLiteral", selectorPopupURL);

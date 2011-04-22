@@ -6,4 +6,4 @@ renderSuperOverridesOn: html
 	
 	classes ifEmpty: [ ^ self].
 	
-	self renderOverrides: classes named: 'Overrides:' on: html.
+	self renderOverrides: classes named: 'Overrides method from:' on: html.

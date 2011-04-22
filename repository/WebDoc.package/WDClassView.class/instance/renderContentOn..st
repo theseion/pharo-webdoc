@@ -2,8 +2,9 @@ rendering
 renderContentOn: html
 
 	self selectedClass ifNil: [ ^ html text: 'no class selected' ].
+	self renderHeaderOn: html.
 	html div
-		class: 'content';
+		id: 'content';
 		with: [
 			self renderClassName: self selectedClass name on: html.
 			self renderClassDefinition: self selectedClass on: html.
