@@ -2,10 +2,12 @@
 	"class" : {
 		"on:" : "BenjaminVanRyseghem 2/25/2011 12:34" },
 	"instance" : {
+		"children" : "CamilloBruni 4/22/2011 19:15",
+		"initialize" : "CamilloBruni 4/22/2011 19:14",
 		"method" : "BenjaminVanRyseghem 2/25/2011 12:42",
 		"method:" : "BenjaminVanRyseghem 2/25/2011 12:41",
 		"renderClassComment:on:" : "CamilloBruni 3/8/2011 10:14",
-		"renderClassDefinition:on:" : "DamienPollet 2/25/2011 01:34",
+		"renderClassDefinition:on:" : "CamilloBruni 4/22/2011 18:03",
 		"renderClassMethodsDetailsFor:on:" : "CamilloBruni 4/21/2011 17:41",
 		"renderClassMethodsSummaryFor:on:" : "DamienPollet 2/25/2011 02:23",
 		"renderClassName:on:" : "CamilloBruni 3/9/2011 11:09",
@@ -20,7 +22,7 @@
 		"renderMethodSummaryFor:in:on:" : "CamilloBruni 2/24/2011 15:31",
 		"renderMethodsDetailsSectionFor:title:htmlClass:on:" : "CamilloBruni 4/21/2011 22:29",
 		"renderMethodsSummarySectionFor:title:htmlClass:on:" : "CamilloBruni 4/22/2011 13:08",
-		"renderSearchOn:" : "CamilloBruni 4/22/2011 13:31",
+		"renderSearchOn:" : "CamilloBruni 4/22/2011 19:14",
 		"renderSectionTitle:on:" : "CamilloBruni 3/6/2011 20:25",
 		"renderSelector:ofClass:on:" : "CamilloBruni 2/24/2011 15:37",
 		"renderSelectorList:in:on:" : "CamilloBruni 4/22/2011 13:10",

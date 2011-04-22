@@ -6,5 +6,7 @@ updateRoot: anHtmlRoot
 	anHtmlRoot script 
 		url: JQDevelopmentLibrary / #jQueryJs.
 	anHtmlRoot script 
+		url: WDFileLibrary / #bbqJs.
+	anHtmlRoot script 
 		url: WDFileLibrary / #mainJs.
 		

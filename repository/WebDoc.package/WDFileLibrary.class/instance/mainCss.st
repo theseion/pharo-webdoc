@@ -47,13 +47,13 @@ iframe {
 	bottom: 0px;
 }
 
-#list {
+#packageList {
 	width: 100%;
 	height: 100%;
 	float: left;
 }
 
-#list2 {
+#classList {
 	width: 100%;
 	height: 100%;
 	float: left;

@@ -4,6 +4,6 @@ renderClassDefinition: class on: html
 		class: 'box';
 		with: [
 			html definitionTerm 
-				with: 'Inherits: '.
+				with: 'Subclass of: '.
 			self renderInheritListOn: html].
 	html div clear

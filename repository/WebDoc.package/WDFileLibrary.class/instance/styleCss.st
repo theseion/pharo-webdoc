@@ -265,49 +265,6 @@ ul.fullTree li:last-child { padding-bottom: 0; }
 .showAll ul.fullTree { display: block; }
 .showAll .inheritName { display: none; }
 
-#search { position: absolute; right: 14px; top: 0px; }
-#search a:link, #search a:visited { 
-  display: block; float: left; margin-right: 4px;
-  padding: 8px 10px; text-decoration: none; color: #05a;
-  border: 1px solid #d8d8e5;
-  -moz-border-radius-bottomleft: 3px; -moz-border-radius-bottomright: 3px; 
-  -webkit-border-bottom-left-radius: 3px; -webkit-border-bottom-right-radius: 3px;
-  background: #eaf0ff;
-  -webkit-box-shadow: -1px 1px 3px #ddd;
-}
-#search a:hover { background: #f5faff; color: #06b; }
-#search a.active { 
-  background: #568; padding-bottom: 20px; color: #fff; border: 1px solid #457; 
-  -moz-border-radius-topleft: 5px; -moz-border-radius-topright: 5px;
-  -webkit-border-top-left-radius: 5px; -webkit-border-top-right-radius: 5px;
-}
-#search a.inactive { color: #999; }
-.frames #search { display: none; }
-.inheritanceTree, .toggleDefines { float: right; }
-#search_results h1 { margin-bottom: 0; }
-#search_results p { margin-top: 0; margin-bottom: 25px; }
-#search_results ul { list-style-position: inside; padding-left: 0; list-style: none; }
-#search_results ul li { padding: 7px 15px; font-size: 1.1em; }
-
-#search_frame { z-index: 9999; }
-
-form.search {
-  	position: relative;
-  	color: #fff;
-  	margin-top: 3px; 
-	padding: 7px; 
-	/*border: 1px solid #999;*/ 
-	width: 315px; 
-	background: #05a; 
-  	-moz-border-radius: 6px;
-  	-webkit-border-radius: 6px;
-	-webkit-box-shadow: 0 0 6px 6px rgba(0,0,0,0.1);
-	-moz-box-shadow: 0 0 6px 6px rgba(0,0,0,0.1);
-	box-shadow: 0 0 6px 6px rgba(0,0,0,0.1);
-  	margin-bottom: 10px;
-}
-form.search input { margin-left: 5px; width: 250px; border: 1px solid #99f; -moz-border-radius: 3px; font-family: monospace; }
-
 #menu { padding-top: 5px; }
 #content h1 { margin-top: 0; border-top: 0; }
 
@@ -361,7 +318,6 @@ form.search input { margin-left: 5px; width: 250px; border: 1px solid #99f; -moz
 .ac_over {
   background: #ddd; cursor: pointer; border: 1px dotted #fff; border-left-width: 0; border-right-width: 0;
 }
-form.search { position: absolute; right: 14px; top: -6px; padding-top: 10px; }  
 #menu .noframes { float: none; }  
 #menu { float: left; }  
 #content h1 { margin-top: 15px; }

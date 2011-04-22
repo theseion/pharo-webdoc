@@ -6,10 +6,9 @@
 		 ],
 	"commentStamp" : "",
 	"instvars" : [
-		"selectedClass",
-		"searchPanel" ],
-	"name" : "WDClassView",
+		 ],
+	"name" : "WDClassSearchGroup",
 	"pools" : [
 		 ],
-	"super" : "WDReflectionComponent",
+	"super" : "WDSearchGroup",
 	"type" : "normal" }

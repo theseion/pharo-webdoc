@@ -11,8 +11,8 @@ renderContentOn: html
 						id: 'packagesIframe';
 						with: [
 							html iframe	
-								name: 'list';
-								id: 'list';
+								name: 'packageList';
+								id: 'packageList';
 								url: '/doc/package'].
 							
 					html div
@@ -21,8 +21,8 @@ renderContentOn: html
 				id: 'classes';
 				with: [
 					html iframe	
-						name: 'list2';
-						id: 'list2';
+						name: 'classList';
+						id: 'classList';
 						url: '/doc/package/Kernel'].
 			html div
 				id: 'dragbar'].
@@ -32,6 +32,7 @@ renderContentOn: html
 		with: [
 			html iframe
 				name: 'classView';
+				id: 'classView';
 				url: classViewUrl;
 				width: '100%';
 				height: '100%'.

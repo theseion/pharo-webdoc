@@ -7,9 +7,10 @@
 	"commentStamp" : "",
 	"instvars" : [
 		"selectedClass",
-		"searchPanel" ],
-	"name" : "WDClassView",
+		"searchResult",
+		"searchTerm" ],
+	"name" : "WDSearchPanel",
 	"pools" : [
 		 ],
-	"super" : "WDReflectionComponent",
+	"super" : "WAComponent",
 	"type" : "normal" }

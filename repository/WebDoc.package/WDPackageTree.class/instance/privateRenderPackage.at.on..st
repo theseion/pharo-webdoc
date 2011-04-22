@@ -7,7 +7,7 @@ privateRenderPackage: package at: anIndex on: html
 				class: 'object_link';
 				url: '/doc/package/', package name; 
 				title: package name, ' (package)';
-				target: 'list2';
+				target: 'classList';
 				with: package name.
 			html small
 				class: 'search_info';
