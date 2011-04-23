@@ -1,7 +1,7 @@
 as yet unclassified
 renderContentOn: html
 	html form
-		class: 'search';
+		class: 'hidden';
 		id: 'search';
 		method: 'get';
 		with: [

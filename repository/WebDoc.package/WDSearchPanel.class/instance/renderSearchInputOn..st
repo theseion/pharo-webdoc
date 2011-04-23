@@ -6,7 +6,6 @@ renderSearchInputOn: html
 		name: 'q';
 		id: 'search_box';
 		size: '30';
-		class: 'ac_input';
 		value: searchTerm;
 		onKeyUp: (html jQuery ajax
 			callback: [ :value | 

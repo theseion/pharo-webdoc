@@ -39,12 +39,14 @@ function createFrameBookmark(iframe) {
 	iframe.load(function() {
 		var state = {}
 		var src = this.contentWindow.location.href;
-		if (src.indexOf("http://") == 0) {
-			state[this.name] =  src.substr(window.location.href.split("#")[0].length);
-		} else {
-			state[this.name] =  src;
+		if (src && src.length > 0) {
+			if (src.indexOf("http://") == 0) {
+				state[this.name] =  src.substr(window.location.href.split("#")[0].length);
+			} else {
+				state[this.name] =  src;
+			}
+			$.bbq.pushState(state);
 		}
-		$.bbq.pushState(state);
 	});
 	registeredFrames.push(iframe.get(0));
 }
@@ -52,9 +54,12 @@ function createFrameBookmark(iframe) {
 $(window).bind( "hashchange", function(e) {
 	for (i in registeredFrames) {
 		var frame = registeredFrames[i]
-		var url = window.location.href.split("#")[0] + $.bbq.getState(frame.name, true) || "";
-		if (frame.contentWindow.location.href != url) {
-			frame.src = url;
+		var url = $.bbq.getState(frame.name, true) || false;
+		if (url) {
+			url = window.location.href.split("#")[0] + url;
+			if (frame.contentWindow.location.href != url && url) {
+				frame.src = url;
+			}
 		}
 	}
 })
