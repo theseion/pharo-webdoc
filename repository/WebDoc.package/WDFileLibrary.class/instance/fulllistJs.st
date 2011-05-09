@@ -12,8 +12,17 @@ function fullListSearch() {
     var link = $(this).find(''a.object_link'');
     searchCache.push({name:link.text(), node:$(this), link:link});
   });
-  
-  $(''#search input'').keyup(function() {
+
+  key = {enter: 13, left: 37, up: 38, right: 39, down: 40 };
+
+  $(''#search input'').keyup(function(e) {
+	if (e.keyCode == key.down) {
+		return selectNext();
+	} else if (e.keyCode == key.up) {
+		return selectPrev();
+	} else if (e.keyCode == key.enter) {
+		return activateCurrentSelection();
+	}
     searchString = this.value.toLowerCase();
     if (searchString == "") {
       clearTimeout(inSearch);
@@ -29,10 +38,10 @@ function fullListSearch() {
         });
       }
       highlight();
-    }
-    else {
+    } else {
       if (inSearch) clearTimeout(inSearch);
       searchIndex = 0;
+		selectedItemIndex = undefined;
       lastRowClass = '''';
       $(''#full_list, #content'').addClass(''insearch'');
       $(''#noresults'').text('''');
@@ -44,14 +53,51 @@ function fullListSearch() {
   $(''#full_list'').after("<div id=''noresults''></div>")
 }
 
+// ==============================================================================
+var selectedItemIndex;
+var items;
+function selectFirst() {
+	items = $("#full_list").find("li").get();
+	select(0);
+}
+
+function select(itemIndex) {
+	deselectAll();
+	item = $(items[itemIndex]);
+	item.addClass("selected");
+	$("html,body").scrollTop(item.offset().top - item.height()*6);
+	selectedItemIndex = itemIndex;
+}
+
+function selectNext() {
+	if (selectedItemIndex == undefined) {
+		return selectFirst();
+	}
+	select(selectedItemIndex+1)
+}
+function selectPrev() {
+	if (selectedItemIndex == undefined) {
+		return selectFirst();
+	}
+	select(selectedItemIndex-1)
+}
+
+function deselectAll() {
+	$("#full_list").find("li").removeClass("selected");
+}
+
+function activateCurrentSelection() {
+	item.find("a").click();
+}
+
+// ==============================================================================
 var lastRowClass = '''';
 function searchItem() {
   for (var i = 0; i < searchCache.length / 50; i++) {
     var item = searchCache[searchIndex];
     if (item.name.toLowerCase().indexOf(searchString) == -1) {
       item.node.removeClass(''found'');
-    }
-    else {
+    } else {
       item.node.css(''padding-left'', ''10px'').addClass(''found'');
       item.node.removeClass(lastRowClass).addClass(lastRowClass == ''r1'' ? ''r2'' : ''r1'');
       lastRowClass = item.node.hasClass(''r1'') ? ''r1'' : ''r2'';
@@ -73,8 +119,7 @@ function searchDone() {
   highlight(true);
   if ($(''#full_list li:visible'').size() == 0) {
     $(''#noresults'').text(''No results were found.'').hide().fadeIn();
-  }
-  else {
+  } else {
     $(''#noresults'').text('''');
   }
   $(''#content'').removeClass(''insearch'');

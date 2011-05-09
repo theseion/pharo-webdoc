@@ -43,7 +43,7 @@ iframe {
 	position: absolute;
 	float: left;
 	width: 100%;
-	top: 355px;
+	top: 354px;
 	bottom: 0px;
 }
 
@@ -59,15 +59,6 @@ iframe {
 	float: left;
 }
 
-#vdragbar{
-	background-color: grey;
-	width: 100%;
-	height: 4px;
-	position: absolute;
-	left: 0px;
-	bottom: -4px;
-   cursor: row-resize;
-}
 
 #sidebar{
    width: 400px;
@@ -77,8 +68,18 @@ iframe {
    bottom: 0px;
 }
 
+#vdragbar{
+	background-color: #ccc;
+	width: 100%;
+	height: 4px;
+	position: absolute;
+	left: 0px;
+	bottom: -4px;
+   cursor: row-resize;
+}
+
 #dragbar{
-	background-color: grey;
+	background-color: #ccc;
 	height:100%;
 	width: 4px;
 	position: absolute;

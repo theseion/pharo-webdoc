@@ -16,7 +16,8 @@ body {
 	height: 22px;
 	padding: 4px;
 	vertical-align: middle;
-	background-color: #fff;
+	background-color: #05A;
+	color: #fff;
 	-webkit-box-shadow: 0 -6px 6px 6px #000;
 	-moz-box-shadow: 0 -6px 6px 6px #000;
 	box-shadow: 0 -6px 6px 6px #000;
@@ -120,6 +121,10 @@ li.r2 {
 
 li:hover { 
 	background: #ddd;
+}
+
+li.selected { 
+	background: #BDF;
 }
 
 li small:before { 

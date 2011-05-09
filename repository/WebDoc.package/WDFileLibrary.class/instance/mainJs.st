@@ -3,17 +3,21 @@ mainJs
 	^ '
 	
 function createFrameResizing() {
-   $("#dragbar").mousedown(function(e) {
-        e.preventDefault();
-        $(document).mousemove(function(e){
-          $("#position").html(e.pageX + ", " + e.pageY);
-          $("#sidebar").css("width", e.pageX-2);
-          $("#main").css("left", e.pageX+2);
-       })
+	$("#dragbar").draggable({ axis: "x", iframeFix: true});
+	$("#vdragbar").draggable({ 
+		axis: "y", 
+		iframeFix: true,
+		drag: function(e, ui) {
+	        $(document).mousemove(function(e){
+		          $("#position").html(e.pageX + ", " + e.pageY);
+		          $("#sidebar").css("width", e.pageX-2);
+		          $("#main").css("left", e.pageX+2);
+	       })}
     });
 
    $("#vdragbar").mousedown(function(e) {
         e.preventDefault();
+		
         $(document).mousemove(function(e){
           $("#position").html(e.pageX + ", " + e.pageY);
           $("#packages").css("height", e.pageY-2);

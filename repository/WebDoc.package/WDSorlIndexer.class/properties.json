@@ -1,0 +1,14 @@
+{
+	"category" : "WebDoc",
+	"classinstvars" : [
+		 ],
+	"classvars" : [
+		 ],
+	"commentStamp" : "",
+	"instvars" : [
+		"url" ],
+	"name" : "WDSorlIndexer",
+	"pools" : [
+		 ],
+	"super" : "Object",
+	"type" : "normal" }
