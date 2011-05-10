@@ -5,24 +5,24 @@ function createSourceLinks() {
 	// on each method source 
     $(".method_details").each(function(){
 		$(this).find(".signature")
-			.append("<span class=''showSource''>[<a href=''#'' class=''toggleSource''>View Sources</a>]<span>");
+			.append("<span class=''showSource''><a href=''#'' class=''toggleSource''>&oplus;</a><span>");
 		$(this).find(".source_code").css("display", "none");
 	});
 	// on the method detail sections
 	
     $(".methodDetail").each(function(){
 		$(this).find("h2.title")
-			.append("<span class=''showSource''>[<a href=''#'' class=''toggleSource''>Show Sources</a>]<span>");
+			.append("<span class=''showSource''><a href=''#'' class=''toggleSource''>&oplus;</a><span>");
 	});
 	// trigger the slide up/ slide down
     $(''.toggleSource'').toggle(function() {
-       $(this).text("Hide Sources");
-	$(this).parent().parent().parent().find(".source_code").slideDown(100);
-    },
-    function() {
-        $(this).text("Show Sources");
-	$(this).parent().parent().parent().find(".source_code").slideUp(100);
-    });
+	       $(this).html("&otimes;");
+			$(this).parent().parent().parent().find(".source_code").slideDown(100);
+	    },
+	    function() {
+	        $(this).html("&oplus;");
+			$(this).parent().parent().parent().find(".source_code").slideUp(100);
+	    });
 }
 
 function createInheritedMethodLinks() {
@@ -30,24 +30,24 @@ function createInheritedMethodLinks() {
 	$(".inheritedMethod").each(function(){
 		if($(this).find(".inheritedMethodList").css("display") == "none") {
 			$(this).find("h3.inherited")
-			.append("<span class=''showSource''>[<a href=''#'' class=''toggleMethods''>Show</a>]<span>");
+				.prepend("<span class=''showSource''><a href=''#'' class=''toggleMethods''>&#x25b6;</a><span>");
 		}
 	});
 	
 	// on each method link section (instance and class side)
 	$(".methodSummary").each(function(){
 		$(this).find("h2.title")
-			.append("<span class=''showSource''>[<a href=''#'' class=''toggleMethods''>Show all</a>]<span>");
+			.prepend("<span class=''showSource''><a href=''#'' class=''toggleMethods''>&#x25b6;</a><span>");
 	});
 	// triger the slideup / slide down
     $(''.toggleMethods'').toggle(function() {
-       $(this).parent().parent().parent().find(".inheritedMethodList").slideDown(100);
-       $(this).text("Hide all");
-    },
-    function() {
-        $(this).parent().parent().parent().find(".inheritedMethodList").slideUp(100);
-        $(this).text("Show all");
-    });
+	       $(this).parent().parent().parent().find(".inheritedMethodList").slideDown(100);
+	       $(this).html("&#x25bc;");
+	    },
+	    function() {
+	        $(this).parent().parent().parent().find(".inheritedMethodList").slideUp(100);
+	        $(this).html("&#x25b6;");
+	 });
 	
 }
 

@@ -2,6 +2,8 @@ as yet unclassified
 renderOn: aRenderingCanvas
 	html := aRenderingCanvas.
 	parseTree := PPMarkdownParser parse: comment.
+	parseTree isPetitFailure
+		ifTrue: [ ^ html text: comment].
 	parseTree isCollection
 		 ifTrue: [ parseTree do: [:each| 
 				self visitNode: each ]]

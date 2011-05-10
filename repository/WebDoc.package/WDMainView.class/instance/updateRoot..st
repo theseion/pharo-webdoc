@@ -1,5 +1,7 @@
 as yet unclassified
 updateRoot: anHtmlRoot
+	anHtmlRoot title: 'WebDoc a Pharo documentation'.
+	
 	anHtmlRoot stylesheet 
 		url: WDFileLibrary / #mainCss.
 		

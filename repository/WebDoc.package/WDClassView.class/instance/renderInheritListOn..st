@@ -1,7 +1,9 @@
 url
 renderInheritListOn: html
 	|superclass|
-	superclass := self selectedClass superclass.
+	self selectedClass isTrait 
+		ifTrue: [superclass  := Trait]
+		ifFalse:[	superclass := self selectedClass superclass].
 	html definitionData
 		with: [
 			html span
@@ -14,4 +16,4 @@ renderInheritListOn: html
 			
 			html anchor
 				class: 'inheritanceTree';
-				with: 'show all']	
+				with: [html html: '&oplus;']]	

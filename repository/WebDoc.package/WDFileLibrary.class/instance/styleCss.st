@@ -210,8 +210,24 @@ ul.override {
 
 #method_missing_details .notice.this { position: relative; top: -8px; color: #888; padding: 0; margin: 0; }
 
-.showSource { font-size: 0.9em; float: right; display: block;}
-.showSource a:link, .showSource a:visited { text-decoration: none; color: #666; }
+.inheritedMethod .showSource {
+	float: left;
+	margin-right: 0.2em;
+	font-size: 0.8em;
+	margin-top: 0.2em; 
+}
+
+.showSource { 
+	font-size: 1.5em;
+	margin-top: -0.3em; 
+	float: right; 
+	display: block;
+	font-weight: normal;
+}
+.showSource a:link, .showSource a:visited { 
+	text-decoration: none; 
+	color: #666; 
+}
 
 #content a:link, #content a:visited { text-decoration: none; color: #05a; }
 #content a:hover { background: #ffffa5; }

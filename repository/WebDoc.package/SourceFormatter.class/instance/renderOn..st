@@ -2,8 +2,13 @@ rendering
 renderOn: aRenderingCanvas
 	html := aRenderingCanvas.
 	inLiteralArray := false.
-	classVarNames := method methodClass theNonMetaClass allClassVarNames asSet.
-	instVarNames := method methodClass allInstVarNames asSet.
+	method isNil
+		ifTrue: [
+			classVarNames := #().
+			instVarNames := #().
+		] ifFalse: [
+			classVarNames := method methodClass theNonMetaClass allClassVarNames asSet.
+			instVarNames := method methodClass allInstVarNames asSet].
 	
 	self prepareTemporaries.
 	
