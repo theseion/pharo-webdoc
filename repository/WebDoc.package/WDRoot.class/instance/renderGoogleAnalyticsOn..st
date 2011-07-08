@@ -3,7 +3,7 @@ renderGoogleAnalyticsOn: html
 	self class uacct ifNil: [ ^ self ].
 	html script: '	
 	  var _gaq = _gaq || [];
-	  _gaq.push([''_setAccount'', ' , self class uacct , ']);
+	  _gaq.push([''_setAccount'', ''' , self class uacct , ''']);
 	  _gaq.push([''_trackPageview'']);
 	
 	  (function() {
