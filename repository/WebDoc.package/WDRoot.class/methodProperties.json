@@ -1,7 +1,9 @@
 {
 	"class" : {
 		"canBeRoot" : "CamilloBruni 2/23/2011 16:02",
-		"initialize" : "CamilloBruni 7/4/2011 14:22" },
+		"initialize" : "CamilloBruni 7/4/2011 14:22",
+		"uacct" : "DamienPollet 7/8/2011 18:34",
+		"uacct:" : "DamienPollet 7/8/2011 18:34" },
 	"instance" : {
 		"children" : "CamilloBruni 4/21/2011 17:49",
 		"class:" : "CamilloBruni 5/10/2011 17:18",
@@ -26,6 +28,7 @@
 		"popUpClass:instanceMethod:" : "CamilloBruni 4/21/2011 19:31",
 		"popUpSelector:" : "CamilloBruni 6/24/2011 18:22",
 		"renderContentOn:" : "CamilloBruni 4/14/2011 12:10",
+		"renderGoogleAnalyticsOn:" : "DamienPollet 7/8/2011 18:36",
 		"selector:" : "CamilloBruni 4/18/2011 13:56",
 		"selectorCategory:" : "CamilloBruni 4/18/2011 13:38",
 		"selectorPopup" : "CamilloBruni 7/4/2011 14:28",
