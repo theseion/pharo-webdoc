@@ -1,4 +1,4 @@
 accessing
 selectorPopup
 	^ selectorPopup ifNil: [ 
-			selectorPopup := WDSelectorPopup new].
+			selectorPopup := self newChildView: WDSelectorPopup].

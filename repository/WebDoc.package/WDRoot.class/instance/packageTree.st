@@ -1,4 +1,4 @@
 accessing
 packageTree
 	^ packageTree ifNil: [ 
-			packageTree := WDPackageTree new].
+			packageTree := self newChildView: WDPackageTree].

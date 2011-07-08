@@ -1,4 +1,4 @@
 accessing
 packageClassView
 	^ packageClassView ifNil: [ 
-			packageClassView := WDPackageClassList new].
+			packageClassView := self newChildView: WDPackageClassList].

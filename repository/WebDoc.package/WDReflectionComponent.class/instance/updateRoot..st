@@ -1,5 +1,6 @@
 as yet unclassified
 updateRoot: anHtmlRoot
+	rootURL := anHtmlRoot context actionBaseUrl withoutQuery asString.
 	anHtmlRoot stylesheet 
 		url: WDFileLibrary / #commonCss.
 	anHtmlRoot stylesheet 

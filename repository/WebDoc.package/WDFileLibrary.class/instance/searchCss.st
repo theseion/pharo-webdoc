@@ -110,6 +110,7 @@ searchCss
 	list-style-type: none;
 	line-height: 2em; 
 	padding-left: 7px;
+	width: 100%;
 }
 
 #searchResults ul li.r1 { 
@@ -118,6 +119,11 @@ searchCss
 
 #searchResults ul li.r2 { 
 	background: #fafafa;
+}
+
+.search_method_link {
+	font-family: Monaco, Monospace, sans-serif;
+	width: 100%;
 }
 
 	'

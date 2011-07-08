@@ -5,7 +5,7 @@ privateRenderPackage: package at: anIndex on: html
 		with: [
 			html anchor
 				class: 'object_link';
-				url: '/doc/package/', package name; 
+				url: rootURL,'/package/', package name; 
 				title: package name, ' (package)';
 				target: 'classList';
 				with: package name.

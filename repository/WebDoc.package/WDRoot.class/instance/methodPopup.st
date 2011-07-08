@@ -1,4 +1,4 @@
 accessing
 methodPopup
 	^ methodPopup ifNil: [ 
-			methodPopup := WDMethodPopup new].
+			methodPopup := self newChildView: WDMethodPopup].

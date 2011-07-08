@@ -1,4 +1,4 @@
 accessing
 selectorView
 	^ selectorView ifNil: [ 
-			selectorView := WDSelectorList new].
+			selectorView := self newChildView: WDSelectorList].

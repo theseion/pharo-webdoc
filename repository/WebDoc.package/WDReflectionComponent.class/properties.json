@@ -6,7 +6,7 @@
 		 ],
 	"commentStamp" : "",
 	"instvars" : [
-		 ],
+		"rootURL" ],
 	"name" : "WDReflectionComponent",
 	"pools" : [
 		 ],

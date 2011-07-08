@@ -15,13 +15,13 @@ function createSourceLinks() {
 			.append("<span class=''showSource''><a href=''#'' class=''toggleSource''>&oplus;</a><span>");
 	});
 	// trigger the slide up/ slide down
-    $(''.toggleSource'').toggle(function() {
+    $(''.toggleSource'').parent().toggle(function() {
 	       $(this).html("&otimes;");
-			$(this).parent().parent().parent().find(".source_code").slideDown(100);
+			$(this).parent().parent().find(".source_code").slideDown(100);
 	    },
 	    function() {
 	        $(this).html("&oplus;");
-			$(this).parent().parent().parent().find(".source_code").slideUp(100);
+			$(this).parent().parent().find(".source_code").slideUp(100);
 	    });
 }
 
@@ -40,12 +40,12 @@ function createInheritedMethodLinks() {
 			.prepend("<span class=''showSource''><a href=''#'' class=''toggleMethods''>&#x25b6;</a><span>");
 	});
 	// triger the slideup / slide down
-    $(''.toggleMethods'').toggle(function() {
-	       $(this).parent().parent().parent().find(".inheritedMethodList").slideDown(100);
+    $(''.toggleMethods'').parent().toggle(function() {
+	       $(this).parent().parent().find(".inheritedMethodList").slideDown(100);
 	       $(this).html("&#x25bc;");
 	    },
 	    function() {
-	        $(this).parent().parent().parent().find(".inheritedMethodList").slideUp(100);
+	        $(this).parent().parent().find(".inheritedMethodList").slideUp(100);
 	        $(this).html("&#x25b6;");
 	 });
 	
@@ -240,7 +240,7 @@ function selectorPopupURL(item) {
 	if (!className) {
 		className = $(".className:first").text();
 	}
-	return defaultPopupURL("/doc/class/"+className+"/"+url[1])
+	return defaultPopupURL("/class/"+className+"/"+url[1])
 }
 
 function summaryPopupURL(item) {
@@ -253,7 +253,7 @@ function classPopupURL(item) {
 
 function defaultPopupURL(url) {
 	url = url.split("/");
-	url.splice(2,0,"popup");
+	url.splice(1,0,"popup");
 	url=url.join("/");
 	return url;
 }
@@ -302,7 +302,7 @@ function createSelectorLinks() {
 			url = urlFunction($(this));
 	            
 			toolTipFrame
-				.attr("src", url)
+				.attr("src", location.href+url)
 				.load(function(){
 					self = $(this);
 					self.contents()

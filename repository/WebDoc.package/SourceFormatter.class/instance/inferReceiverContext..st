@@ -1,9 +1,9 @@
 private
 inferReceiverContext: aMessage
 	| receiver |
-	aMessage isPragma ifTrue: [^nil].
-	aMessage isSuperSend  ifTrue: [ ^ method methodClass].
-	aMessage isSelfSend ifTrue: [ ^ method methodClass].
+	aMessage isPragma ifTrue: [ ^ nil ].
+	aMessage isSuperSend  ifTrue: [ ^ method ifNotNil: [ method methodClass ]].
+	aMessage isSelfSend ifTrue: [ ^ method ifNotNil: [ method methodClass ]].
 
 	self class implementors 
 		at: aMessage selector 

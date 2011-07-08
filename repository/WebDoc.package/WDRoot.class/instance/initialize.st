@@ -1,5 +1,5 @@
 initialization
 initialize
 	super initialize.
-	mainView := WDMainView new.
+	mainView := self newChildView: WDMainView.
 	routes := WAByMethodRoutes routes: (WAPragmaBasedRouteBuilder createRoutesFor: self class).

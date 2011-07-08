@@ -3,4 +3,4 @@ classes
 	<GET>
 	<Path: '/class'>
 	self halt.
-	activeView := WDMainView new.
+	activeView := self newChildView: WDMainView.

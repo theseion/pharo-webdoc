@@ -13,7 +13,7 @@ renderContentOn: html
 							html iframe	
 								name: 'packageList';
 								id: 'packageList';
-								url: '/doc/package'].
+								url: rootURL,'/package'].
 							
 					html div
 						id: 'vdragbar'.].
@@ -23,7 +23,7 @@ renderContentOn: html
 					html iframe	
 						name: 'classList';
 						id: 'classList';
-						url: '/doc/package/Kernel'].
+						url: rootURL,'/package/Kernel'].
 			html div
 				id: 'dragbar'].
 				
