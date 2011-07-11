@@ -8,7 +8,7 @@ updateRoot: anHtmlRoot
 	anHtmlRoot script 
 		url: JQDevelopmentLibrary / #jQueryJs.
 	anHtmlRoot script 
-		url: JQUiDevelopmentLibrary / #jQueryUIJs.
+		url: JQUiDevelopmentLibrary / #jQueryUiJs.
 	anHtmlRoot script 
 		url: WDFileLibrary / #bbqJs.
 	anHtmlRoot script 
