@@ -18,7 +18,8 @@
 		"instVarNames",
 		"inLiteralArray",
 		"useBreaks",
-		"source" ],
+		"source",
+		"rootURL" ],
 	"name" : "SourceFormatter",
 	"pools" : [
 		 ],

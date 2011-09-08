@@ -6,4 +6,4 @@ renderSourceOn: html
 		with: [
 			html code
 				class: 'methodSource'; 
-				with: (SourceFormatter with: self method)].
+				with: (SourceFormatter with: self method rootURL: rootURL) ].

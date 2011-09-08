@@ -2,5 +2,5 @@ rendering-formatting
 formatTrue: aNode
 	html anchor
 		class: 'stTrue';
-		url: '/doc/class/True';
+		url: rootURL, '/class/True';
 		with: 'true'.

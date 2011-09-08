@@ -10,6 +10,6 @@ formatKnownSelector: aSelector inMessage: aMessage onClass: aClass onAnchor: anc
 							ifFalse: [ receiverContext class] 
 							ifTrue: [ receiverContext].
 							
-	anchor url: ('/doc/class/', receiverClass theNonMetaClass name, 
+	anchor url: (rootURL, '/class/', receiverClass theNonMetaClass name, 
 				'#', (receiverClass isMeta ifTrue: ['class/'] ifFalse: ['']), 'method/',
 				aMessage selector).

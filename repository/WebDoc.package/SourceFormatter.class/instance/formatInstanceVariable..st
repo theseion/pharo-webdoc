@@ -2,5 +2,5 @@ rendering-formatting
 formatInstanceVariable: aNode
 	html anchor
 		class: 'stInstanceVariable';
-		url: '/doc/class/', method methodClass name, '/instvar/', aNode name;
+		url: rootURL, '/class/', method methodClass name, '/instvar/', aNode name;
 		with: aNode name.

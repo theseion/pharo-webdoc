@@ -1,7 +1,7 @@
 rendering-formatting
 formatSymbol: aSymbol
 	| url |
-	url := '/doc/selectors/', aSymbol asString.
+	url := rootURL, '/selectors/', aSymbol asString.
 	
 	html anchor 
 		url: url;
