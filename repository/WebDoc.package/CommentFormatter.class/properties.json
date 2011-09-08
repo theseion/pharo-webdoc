@@ -9,7 +9,8 @@
 		"comment",
 		"method",
 		"html",
-		"parseTree" ],
+		"parseTree",
+		"rootURL" ],
 	"name" : "CommentFormatter",
 	"pools" : [
 		 ],

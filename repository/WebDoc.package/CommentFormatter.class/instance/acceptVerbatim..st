@@ -11,6 +11,7 @@ acceptVerbatim: aPPMarkdownVerbatim
 			^ self].
 	
 	formatter := SourceFormatter ast: ast method: method.
+	formatter rootURL: rootURL.
 	html div 
 		class: 'code';
 		with: formatter.

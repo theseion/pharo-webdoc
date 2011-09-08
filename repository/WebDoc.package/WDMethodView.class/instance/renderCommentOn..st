@@ -5,4 +5,8 @@ renderCommentOn: html
 		class: 'docstring';
 		with: [
 			html div class: 'discussion';
-				with: (CommentFormatter comment: self method comment method: method)].
+				with: (CommentFormatter new 
+							comment: self method comment;
+							method: method;
+							rootURL: rootURL;
+							yourself)].

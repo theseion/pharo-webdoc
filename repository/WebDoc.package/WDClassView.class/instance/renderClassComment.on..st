@@ -6,4 +6,4 @@ renderClassComment: aString on: html
 			self renderSectionTitle: 'Overview' on: html.
 			html div
 				class: 'docString';
-				with: (CommentFormatter with: aString string)]
+				with: (CommentFormatter with: aString string rootURL: rootURL)]

@@ -13,7 +13,9 @@ acceptCode: aCodeNode
 	ast := parser parseStatements: true.
 	
 	formatter := SourceFormatter ast: ast method: method.
-	formatter useBreaks: false.
+	formatter 
+		rootURL: rootURL;
+		useBreaks: false.
 	html code 
 		class: 'code';
 		with: formatter.
