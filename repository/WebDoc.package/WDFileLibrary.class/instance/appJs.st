@@ -15,14 +15,13 @@ function createSourceLinks() {
 			.append("<span class=''showSource''><a href=''#'' class=''toggleSource''>&oplus;</a><span>");
 	});
 	// trigger the slide up/ slide down
-    $(''.toggleSource'').parent().parent().toggle(
-		function() {
-	       	$(this).find(''.toggleSource'').html("&otimes;");
-			$(this).parent().find(".source_code").slideDown(100);
+    $(''.toggleSource'').parent().toggle(function() {
+	       $(this).html("&otimes;");
+			$(this).parent().parent().find(".source_code").slideDown(100);
 	    },
 	    function() {
-	        	$(this).find(''.toggleSource'').html("&oplus;");
-			$(this).parent().find(".source_code").slideUp(100);
+	        $(this).html("&oplus;");
+			$(this).parent().parent().find(".source_code").slideUp(100);
 	    });
 }
 
@@ -43,11 +42,11 @@ function createInheritedMethodLinks() {
 	// triger the slideup / slide down
     $(''.toggleMethods'').parent().toggle(function() {
 	       $(this).parent().parent().find(".inheritedMethodList").slideDown(100);
-	       $(this).find(''.toggleMethods'').html("&#x25bc;");
+	       $(this).html("&#x25bc;");
 	    },
 	    function() {
 	        $(this).parent().parent().find(".inheritedMethodList").slideUp(100);
-	        $(this).find(''.toggleMethods'').html("&#x25b6;");
+	        $(this).html("&#x25b6;");
 	 });
 	
 }
