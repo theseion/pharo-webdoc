@@ -5,5 +5,5 @@ formatMethod: aMethod value: aString
 	
 	html anchor 
 		url: url;
-		class: 'stSymbolLiteral'; 
+		class: 'stSelector'; 
 		with: aString.
