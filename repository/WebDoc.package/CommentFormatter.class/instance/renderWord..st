@@ -1,13 +1,15 @@
 visiting
 renderWord: aString
-	Smalltalk at: aString asSymbol 
+	| symbol |
+	symbol :=  aString asSymbol.
+	Smalltalk at: symbol 
 		ifPresent: [ :class| ^ self formatClass: class].
 		
-	((aString matchesRegex: '[a-z][\w:]+\:') and: [(Symbol lookup: aString) isNil not])
-		ifTrue: [ ^ self formatSymbol: aString value: aString].
+	(aString matchesRegex: '[a-z][\w:]+\:')
+		ifTrue: [ ^ self formatSymbol: symbol value: aString].
 	
-	((aString first = $#) and: [(Symbol lookup: aString allButFirst) isNil not])
-		ifTrue: [ ^ self formatSymbol: aString allButFirst value: aString].
+	(aString first = $#)
+		ifTrue: [ ^ self formatSymbol: aString allButFirst asSymbol value: aString].
 	
 	aString = 'thisContext'
 		 ifTrue: [ ^ self formatThisContext].

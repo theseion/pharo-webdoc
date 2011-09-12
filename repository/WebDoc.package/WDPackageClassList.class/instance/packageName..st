@@ -1,4 +1,4 @@
 as yet unclassified
 packageName: aPackageName
-	selectedPackage := RPackageOrganizer default packageNamed: aPackageName.
-	classes := selectedPackage allDefinedClasses sort: [ :a :b | a name <= b name ].
+	selectedPackage := PackageOrganizer default packageNamed: aPackageName ifAbsent: [ nil ].
+	classes := selectedPackage classes sort: [ :a :b | a name <= b name ].
