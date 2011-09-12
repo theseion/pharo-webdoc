@@ -14,6 +14,11 @@ code a {
 	margin-left: 0.5em;
 }
 
+.stReturn > a {
+	margin-left: 0.5em;
+}
+
+
 .stIndent {
 	margin-left: 3em;
 }
