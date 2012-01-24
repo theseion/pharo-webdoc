@@ -17,6 +17,15 @@ baseline01: spec
 				className: 'ConfigurationOfSeaside30';
 				version: #'stable';
 				repository: 'http://www.squeaksource.com/MetacelloRepository' ].
+			
+		spec project: 'Seaside-REST' with: [
+			spec
+				className: 'ConfigurationOfSeasideRest';
+				version: #'stable';
+				repository: 'http://www.squeaksource.com/MetacelloRepository' ].
+			
 		spec 
+		 	package: 'SimpleWebDoc' with: [ 
+				spec repository: 'http://www.squeaksource.com/SimpleWebDoc'];
 			package: 'WebDoc' with: [
-				spec requires: #('PetitMarkdown' 'Seaside30') ]]
+				spec requires: #('PetitMarkdown' 'Seaside30' 'Seaside-REST') ]]

@@ -8,4 +8,5 @@ version01: spec
 		spec author: 'CamilloBruni'.
 		spec timestamp: '1/24/2012 16:43'.
 		spec 
-			package: 'WebDoc' with: 'WebDoc-DamienPollet.70'].
+			package: 'WebDoc' with: 'WebDoc-DamienPollet.70';
+			package: 'SimpleWebDoc' with: 'SimpleWebDoc-DamienPollet.29'].
