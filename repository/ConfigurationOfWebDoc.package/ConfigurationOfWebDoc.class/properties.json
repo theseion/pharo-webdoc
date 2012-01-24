@@ -1,0 +1,14 @@
+{
+	"category" : "ConfigurationOfWebDoc",
+	"classinstvars" : [
+		 ],
+	"classvars" : [
+		 ],
+	"commentStamp" : "",
+	"instvars" : [
+		"project" ],
+	"name" : "ConfigurationOfWebDoc",
+	"pools" : [
+		 ],
+	"super" : "Object",
+	"type" : "normal" }
