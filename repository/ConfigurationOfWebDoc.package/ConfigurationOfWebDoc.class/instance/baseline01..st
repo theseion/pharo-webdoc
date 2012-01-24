@@ -9,13 +9,13 @@ baseline01: spec
 		spec project: 'PetitMarkdown' with: [
 			spec
 				className: 'ConfigurationOfPetitMarkdown';
-				version: 'development';
+				version: #'development';
 				repository: 'http://ss3.gemstone.com/ss/petitmarkdown' ].
 			
 		spec project: 'Seaside30' with: [
 			spec
 				className: 'ConfigurationOfSeaside30';
-				version: 'stable';
+				version: #'stable';
 				repository: 'http://www.squeaksource.com/MetacelloRepository' ].
 		spec 
 			package: 'WebDoc' with: [
