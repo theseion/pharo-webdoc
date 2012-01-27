@@ -4,9 +4,10 @@ version01: spec
 
 	spec for: #'common' do: [
 		spec blessing: #'development'.
-		spec description: 'First release'.
+		spec description: 'First release
+added some missing methods in SimpleWebDoc'.
 		spec author: 'CamilloBruni'.
-		spec timestamp: '1/24/2012 16:43'.
+		spec timestamp: '1/27/2012 18:00'.
 		spec 
 			package: 'WebDoc' with: 'WebDoc-DamienPollet.70';
-			package: 'SimpleWebDoc' with: 'SimpleWebDoc-DamienPollet.29'].
+			package: 'SimpleWebDoc' with: 'SimpleWebDoc-CamilloBruni.31'. ].
