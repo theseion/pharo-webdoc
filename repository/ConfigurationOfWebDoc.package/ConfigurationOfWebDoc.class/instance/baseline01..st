@@ -4,13 +4,13 @@ baseline01: spec
 	
 	spec for: #common do: [
 		spec blessing: #baseline.
-		spec repository: 'http://ss3.gemstone.com/ss/petitmarkdown'.
+		spec repository: 'http://smalltalkhub.com/mc/dh83/webdoc/main'.
 		
 		spec project: 'PetitMarkdown' with: [
 			spec
 				className: 'ConfigurationOfPetitMarkdown';
 				version: #'development';
-				repository: 'http://ss3.gemstone.com/ss/petitmarkdown' ].
+				repository: 'http://smalltalkhub.com/mc/dh83/petitmarkdown/main' ].
 			
 		spec project: 'Seaside30' with: [
 			spec
