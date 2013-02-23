@@ -4,13 +4,13 @@ baseline01: spec
 	
 	spec for: #common do: [
 		spec blessing: #baseline.
-		spec repository: 'http://smalltalkhub.com/mc/dh83/webdoc/main'.
+		spec repository: 'http://smalltalkhub.com/mc/dh83/webdoc/main/'.
 		
-		spec project: 'PetitMarkdown' with: [
+		spec project: 'Petit Markdown' with: [
 			spec
 				className: 'ConfigurationOfPetitMarkdown';
 				version: #'development';
-				repository: 'http://smalltalkhub.com/mc/dh83/petitmarkdown/main' ].
+				repository: 'http://smalltalkhub.com/mc/dh83/petitmarkdown/main/' ].
 			
 		spec project: 'Seaside30' with: [
 			spec
@@ -28,4 +28,4 @@ baseline01: spec
 		 	package: 'SimpleWebDoc' with: [ 
 				spec repository: 'http://www.squeaksource.com/SimpleWebDoc'];
 			package: 'WebDoc' with: [
-				spec requires: #('PetitMarkdown' 'Seaside30' 'Seaside-REST') ]]
+				spec requires: #('Petit Markdown' 'Seaside30' 'Seaside-REST') ]]

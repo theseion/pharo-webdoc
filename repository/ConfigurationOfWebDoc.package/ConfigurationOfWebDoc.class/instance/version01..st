@@ -9,5 +9,5 @@ added some missing methods in SimpleWebDoc'.
 		spec author: 'CamilloBruni'.
 		spec timestamp: '1/27/2012 18:00'.
 		spec 
-			package: 'WebDoc' with: 'WebDoc-DamienPollet.70';
+			package: 'WebDoc' with: 'WebDoc-CamilloBruni.71';
 			package: 'SimpleWebDoc' with: 'SimpleWebDoc-CamilloBruni.31'. ].
