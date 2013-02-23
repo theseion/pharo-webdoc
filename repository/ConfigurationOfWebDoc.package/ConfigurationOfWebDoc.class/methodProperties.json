@@ -18,8 +18,9 @@
 		"validate" : "CamilloBruni 1/24/2012 17:29" },
 	"instance" : {
 		"baseline01:" : "CamilloBruni 2/24/2013 00:11",
-		"development:" : "CamilloBruni 1/24/2012 17:29",
+		"development:" : "CamilloBruni 2/24/2013 00:57",
 		"project" : "CamilloBruni 1/24/2012 17:29",
 		"project:" : "CamilloBruni 1/24/2012 17:29",
 		"version01:" : "CamilloBruni 2/24/2013 00:33",
+		"version02:" : "CamilloBruni 2/24/2013 00:57",
 		"versionDoesNotExistError:" : "CamilloBruni 1/24/2012 17:29" } }
