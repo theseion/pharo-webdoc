@@ -1,9 +1,6 @@
 rendering
 renderCommentOn: html
-	[ self method comment ifNil: [ ^ self] ] 
-		on: Error
-		do: [ ^ self ].
-	
+	self method comment ifNil: [ ^ self].
 	html div
 		class: 'docstring';
 		with: [

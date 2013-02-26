@@ -10,17 +10,11 @@ code a {
 	text-decoration: none;
 }
 
-.stReturn > span {
-	margin-left: 0.5em;
-}
-
-.stReturn > a {
-	margin-left: 0.5em;
-}
-
-
 .stIndent {
 	margin-left: 3em;
+}
+
+.stReturn {
 }
 
 .stSelector {

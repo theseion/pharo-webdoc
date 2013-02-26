@@ -2,4 +2,4 @@ accessing
 method: anObject
 
 	method := anObject.
-	selector := anObject selector.
+	selector := anObject ifNotNil: [ anObject selector ].

@@ -1,5 +1,5 @@
 routes
 main
-	<get>
+	<GET>
 	activeView := mainView.
-	activeView refreshClassView
+	activeView refreshClassView.

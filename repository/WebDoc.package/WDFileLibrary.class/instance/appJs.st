@@ -234,7 +234,7 @@ function generateTOC() {
 function selectorPopupURL(item) {
 	url = item.attr("href");
 	if (url.indexOf("#") == -1) {
-		return defaultPopupURL(url);
+		return defaultPopupURL(url.split("/doc")[1]);
 	}
 	url = url.split("#");
 	className = url[0].split("/").pop();
@@ -254,14 +254,19 @@ function classPopupURL(item) {
 
 function defaultPopupURL(url) {
 	url = url.split("/");
-	url.splice(1,0,"popup");
+	url.splice(0,1,"popup");
 	url=url.join("/");
-	return url;
+	return detectRootURL() + url;
+}
+
+function detectRootURL() {
+	return window.location.href.split("/doc/")[0] + "/doc/"
 }
 
 if (!document["useVtips"]) {
 	document["useVtips"] = true;
 }
+
 function createSelectorLinks() {
 	xOffset = 3;
    	yOffset = -10; 
@@ -294,16 +299,18 @@ function createSelectorLinks() {
 			if (document["useVtips"] == false) { return };
 			
 			position = $(this).position();
-	       left = position.left + $(this).width()  + xOffset;
-			top = position.top + yOffset; 
+	       var left = position.left + $(this).width()  + xOffset;
+			var top = position.top + yOffset; 
 			toolTip
+				.css("position", "absolute")
 				.css("top", top+"px")
 				.css("left", left+"px");
+			$(toolTip).position(top, left);
 			
 			url = urlFunction($(this));
 	            
 			toolTipFrame
-				.attr("src", location.href+url)
+				.attr("src", url)
 				.load(function(){
 					self = $(this);
 					self.contents()
