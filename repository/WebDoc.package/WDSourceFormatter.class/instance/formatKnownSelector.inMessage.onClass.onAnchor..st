@@ -4,12 +4,10 @@ formatKnownSelector: aSelector inMessage: aMessage onClass: aClass onAnchor: anc
 	receiverContext := aClass.
 	anchor class: 'stFixedSelector'.
 	
-	receiverContext := self receiverContext: receiverContext FromMessage: aMessage.
+	receiverContext := self receiverContext: receiverContext fromMessage: aMessage.
 	
 	receiverClass := receiverContext isBehavior 
 							ifFalse: [ receiverContext class] 
 							ifTrue: [ receiverContext].
 							
-	anchor url: (rootURL, '/class/', receiverClass theNonMetaClass name, 
-				'#', (receiverClass isMeta ifTrue: ['class/'] ifFalse: ['']), 'method/',
-				aMessage selector).
+	anchor url: (self urlForMethod: receiverClass >> aMessage selector)

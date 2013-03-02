@@ -1,7 +1,7 @@
 routes
 selectors
 	<get>
-	<path: 'selector'>
+	<path: 'selector.html'>
 	activeView := self selectorView.
 	activeView category: nil.
 	activeView selector: nil

@@ -2,8 +2,12 @@
 	"class" : {
 		 },
 	"instance" : {
-		"baseUrlForClass:" : "CamilloBruni 3/2/2013 18:48",
+		"baseUrlForClass:" : "CamilloBruni 3/2/2013 19:02",
+		"selectorBaseURL" : "CamilloBruni 3/2/2013 18:59",
+		"uflHTMLSuffix" : "CamilloBruni 3/2/2013 19:02",
 		"urlForClass:" : "CamilloBruni 3/2/2013 18:48",
-		"urlForInstanceVariable:inClass:" : "CamilloBruni 3/2/2013 18:48",
+		"urlForInstanceVariable:inClass:" : "CamilloBruni 3/2/2013 19:02",
 		"urlForMethod:" : "CamilloBruni 3/2/2013 18:47",
-		"urlForSelector:" : "CamilloBruni 3/2/2013 18:37" } }
+		"urlForPackage:" : "CamilloBruni 3/2/2013 19:02",
+		"urlForSelector:" : "CamilloBruni 3/2/2013 19:02",
+		"urlForSelectorCategory:" : "CamilloBruni 3/2/2013 19:02" } }

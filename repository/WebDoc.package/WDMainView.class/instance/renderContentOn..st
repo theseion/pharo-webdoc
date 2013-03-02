@@ -23,7 +23,7 @@ renderContentOn: html
 					html iframe	
 						name: 'classList';
 						id: 'classList';
-						url: rootURL,'/package/Kernel'].
+						url: (self urlForPackage: 'Kernel')].
 			html div
 				id: 'dragbar'].
 				

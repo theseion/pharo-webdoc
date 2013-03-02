@@ -3,10 +3,11 @@
 		 },
 	"instance" : {
 		"initialize" : "CamilloBruni 7/4/2011 14:43",
-		"renderClassLink:on:" : "CamilloBruni 7/4/2011 14:47",
+		"renderClassLink:on:" : "CamilloBruni 3/2/2013 18:51",
 		"renderSelector:named:in:on:" : "CamilloBruni 7/4/2011 14:47",
 		"renderSelectorLink:class:on:" : "CamilloBruni 3/2/2011 14:59",
 		"renderSelectorLink:in:on:" : "CamilloBruni 3/8/2011 17:07",
 		"renderSelectorLink:on:" : "CamilloBruni 4/22/2011 21:00",
+		"rootURL" : "CamilloBruni 3/2/2013 18:56",
 		"rootURL:" : "CamilloBruni 3/2/2013 18:00",
 		"updateRoot:" : "CamilloBruni 7/4/2011 14:51" } }

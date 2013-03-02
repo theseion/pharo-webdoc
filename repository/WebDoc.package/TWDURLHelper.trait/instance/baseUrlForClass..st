@@ -1,3 +1,3 @@
 t-url
 baseUrlForClass: aClass
-	^ self rootURL, '/class/', aClass name
+	^ self rootURL, '/class/', aClass name, self uflHTMLSuffix

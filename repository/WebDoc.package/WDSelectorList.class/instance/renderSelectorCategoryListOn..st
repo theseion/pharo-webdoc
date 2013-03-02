@@ -7,5 +7,5 @@ renderSelectorCategoryListOn: html
 			with: [
 				html anchor
 					class: 'selector_link';
-					url: rootURL,'/selector/category/', symbolCategory;
+					url: (self urlForSelectorCategory: symbolCategory);
 					with: symbolCategory.]]

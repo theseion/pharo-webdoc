@@ -2,6 +2,7 @@
 	"category" : "WebDoc",
 	"classinstvars" : [
 		 ],
+	"classtraitcomposition" : "TWDURLHelper classTrait",
 	"classvars" : [
 		 ],
 	"commentStamp" : "",
@@ -13,4 +14,5 @@
 	"pools" : [
 		 ],
 	"super" : "WAComponent",
+	"traitcomposition" : "TWDURLHelper",
 	"type" : "normal" }

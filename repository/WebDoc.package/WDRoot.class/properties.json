@@ -2,6 +2,7 @@
 	"category" : "WebDoc",
 	"classinstvars" : [
 		 ],
+	"classtraitcomposition" : "TWDURLHelper classTrait",
 	"classvars" : [
 		"HtmlCache",
 		"Uacct" ],
@@ -23,4 +24,5 @@
 	"pools" : [
 		 ],
 	"super" : "WAComponent",
+	"traitcomposition" : "TWDURLHelper",
 	"type" : "normal" }

@@ -3,7 +3,7 @@ renderSelector: aSymbol on: html
 	html anchor
 		class: 'selector_link';
 		class: 'object_link';
-		url: (rootURL,'/selector/list/', aSymbol);
+		url: (self urlForSelector: aSymbol);
 		title: aSymbol, ' (selector)';
 		with: aSymbol.
 		
