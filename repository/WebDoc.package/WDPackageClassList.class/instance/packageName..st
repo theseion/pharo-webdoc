@@ -1,6 +1,8 @@
 accessing
 packageName: aPackageName
-	selectedPackage := PackageOrganizer default packageNamed: aPackageName ifAbsent: [ nil ].
+	selectedPackage := PackageOrganizer default 
+		packageNamed: aPackageName 
+		ifAbsent: [ self respondNotFound ].
 	
 	classes := selectedPackage isNil
 					ifTrue: [ #() ]
