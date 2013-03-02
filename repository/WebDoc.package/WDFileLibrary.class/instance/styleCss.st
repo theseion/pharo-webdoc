@@ -28,7 +28,6 @@ h1.alphaindex {
 h2 { 
   padding: 0;
   padding-bottom: 3px;
-  border-bottom: 1px #aaa solid;
   font-size: 1.4em;
   margin: 1.8em 0 0.5em;
 }
@@ -88,8 +87,8 @@ h1 .note.title { font-size: 0.5em; font-weight: normal; padding: 3px 5px; positi
 .note.title.readonly { color: #fff; background: #6a98d6; border-color: #6689d6; } 
 .note.title.private { background: #d5d5d5; border-color: #c5c5c5; }
 
-.discussion {
-	font-family: Georgia, Serif;
+.discussion .stComment {
+	font-family: "Lucida Sans", "Lucida Grande", Verdana, Arial, sans-serif;
 	line-height: 1.5em;
 	font-size: 15px;
 }
@@ -161,12 +160,16 @@ dl.constants .tags { padding-left: 32px; font-size: 0.9em; line-height: 0.8em; }
 dl.constants .discussion *:first-child { margin-top: 0; }
 dl.constants .discussion *:last-child { margin-bottom: 0; }
 
-.method_details { border-top: 1px dotted #aaa; margin-top: 15px; padding-top: 0; }
+.method_details { margin-top: 15px; padding-top: 0; }
 .method_details.first { border: 0; }
 p.signature { 
-  font-size: 1.1em; font-weight: normal; font-family: Monaco, Consolas, Courier, monospace; 
-  padding: 6px 10px; margin-top: 18px; 
-  background: #e5e8ff; border: 1px solid #d8d8e5; -moz-border-radius: 3px; -webkit-border-radius: 3px;
+	font-size: 1.1em; font-weight: normal; font-family: Monaco, Consolas, Courier, monospace; 
+	padding: 5px 10px; 
+	margin-top: 22px; 
+	margin-bottom: -4px;	
+	background: #e5e8ff; 
+	-moz-border-radius: 5px 5px 0px 0px; 
+	-webkit-border-radius: 5px 5px 0px 0px;
 }
 p.signature tt { font-family: Monaco, Consolas, Courier, monospace; }
 p.signature .override { d

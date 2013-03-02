@@ -1,6 +1,9 @@
 rendering
 renderMethodsDetailsSectionFor: class title: title htmlClass: htmlClass on: html
 	| methodView |
+	
+	class selectors ifEmpty: [ ^ self ].
+	
 	methodView := WDMethodView new.
 	methodView 
 		rootURL: rootURL;

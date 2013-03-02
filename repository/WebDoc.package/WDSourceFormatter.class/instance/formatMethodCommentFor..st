@@ -10,5 +10,7 @@ formatMethodCommentFor: aNode
 		class: 'stMethodComment';
 		with: [
 			aNode methodComments do: [:comment | 
-				html text: (aNode source copyFrom: comment first to: comment last).
-				self break.]].
+				((aNode source copyFrom: comment first to: comment last)
+					splitOn: Character cr)
+						do: [:commentLine| html text: commentLine ]
+						separatedBy: [ html break ]]].

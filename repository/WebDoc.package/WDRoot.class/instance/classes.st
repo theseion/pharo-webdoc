@@ -1,6 +1,6 @@
 routes
 classes
 	<get>
-	<path: '/class'>
+	<path: 'class'>
 	self halt.
 	activeView := self newChildView: WDMainView

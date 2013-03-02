@@ -49,7 +49,8 @@ code a {
 
 .stComment {
 	color: #009900;
-	font-family: Georgia, Serif;
+	font-family: "Lucida Sans", "Lucida Grande", Verdana, Arial, sans-serif;
+	line-height: 1.5em;
 	font-size: 15px;
 }
 

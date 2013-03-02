@@ -9,7 +9,9 @@ renderContentOn: html
 			self renderClassName: self selectedClass name on: html.
 			self renderClassDefinition: self selectedClass on: html.
 			self renderClassComment: self selectedClass comment on: html.
+			
 			self renderClassMethodsSummaryFor: self selectedClass on: html.
 			self renderInstanceMethodsSummaryFor: self selectedClass on: html.
+			
 			self renderClassMethodsDetailsFor: self selectedClass on: html.
 			self renderInstanceMethodsDetailsFor: self selectedClass on: html]
