@@ -5,7 +5,7 @@ renderWord: aString
 	Smalltalk at: symbol 
 		ifPresent: [ :class| ^ self formatClass: class].
 		
-	(aString matchesRegex: '[a-z][\w:]+\:')
+	(self symbolRegex matches: aString)
 		ifTrue: [ ^ self formatSymbol: symbol value: aString].
 	
 	(aString first = $#)

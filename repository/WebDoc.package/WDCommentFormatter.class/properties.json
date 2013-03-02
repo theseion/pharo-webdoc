@@ -11,7 +11,8 @@
 		"html",
 		"parseTree",
 		"rootURL",
-		"wordSplitRegex" ],
+		"wordSplitRegex",
+		"symbolRegex" ],
 	"name" : "WDCommentFormatter",
 	"pools" : [
 		 ],

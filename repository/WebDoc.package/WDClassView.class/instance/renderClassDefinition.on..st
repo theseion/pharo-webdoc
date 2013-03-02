@@ -7,7 +7,15 @@ renderClassDefinition: class on: html
 				with: 'Subclass of: '.
 			self renderInheritListOn: html].
 	html div clear.
+	
+	html text: 'View '.
 	html anchor
-       url: (SWYumlMe new setDirectionLeftRight; scale:75; inheritanceDiagramForClass: class );
+       url: (SWYumlMe new setDirectionLeftRight; inheritanceDiagramForClass: class);
 		relationship: 'external';
-		with: 'View inheritance diagram'.
+		with: 'inheritance diagram'.
+
+	html text: ' or '.
+	html anchor
+       url: (SWYumlMe new setDirectionLeftRight; packageDiagramForClass: class);
+		relationship: 'external';
+		with: 'package diagram'.
