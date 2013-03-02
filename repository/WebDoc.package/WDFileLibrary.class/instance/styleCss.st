@@ -26,10 +26,11 @@ h1.alphaindex {
 	font-size: 22px;
 }
 h2 { 
-  padding: 0;
-  padding-bottom: 3px;
-  font-size: 1.4em;
-  margin: 1.8em 0 0.5em;
+	padding: 0;
+	padding-bottom: 3px;
+	padding-right: 7px
+	font-size: 1.4em;
+	margin: 1.8em 0 0.5em;
 }
 h2 small { 
 	font-weight: normal; 

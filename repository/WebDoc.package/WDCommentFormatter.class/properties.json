@@ -10,7 +10,8 @@
 		"method",
 		"html",
 		"parseTree",
-		"rootURL" ],
+		"rootURL",
+		"wordSplitRegex" ],
 	"name" : "WDCommentFormatter",
 	"pools" : [
 		 ],

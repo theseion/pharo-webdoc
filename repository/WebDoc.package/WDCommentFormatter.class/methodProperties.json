@@ -14,7 +14,7 @@
 		"acceptParagraph:" : "CamilloBruni 3/8/2011 10:42",
 		"acceptRule:" : "CamilloBruni 5/10/2011 09:50",
 		"acceptStrong:" : "CamilloBruni 3/10/2011 09:02",
-		"acceptText:" : "CamilloBruni 3/8/2011 11:37",
+		"acceptText:" : "CamilloBruni 3/2/2013 14:53",
 		"acceptToken:" : "CamilloBruni 5/10/2011 11:03",
 		"acceptVerbatim:" : "CamilloBruni 3/2/2013 13:11",
 		"comment" : "CamilloBruni 3/2/2013 13:06",
@@ -31,4 +31,5 @@
 		"rootURL" : "DamienPollet 9/8/2011 18:24",
 		"rootURL:" : "DamienPollet 9/8/2011 18:24",
 		"visitNode:" : "CamilloBruni 5/10/2011 11:06",
-		"visitNodes:" : "CamilloBruni 5/9/2011 19:01" } }
+		"visitNodes:" : "CamilloBruni 5/9/2011 19:01",
+		"wordSplitRegex" : "CamilloBruni 3/2/2013 14:52" } }

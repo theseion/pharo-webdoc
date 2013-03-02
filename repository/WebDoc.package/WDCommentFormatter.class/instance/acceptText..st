@@ -1,6 +1,7 @@
 visiting
 acceptText: aTextNode
-	aTextNode text
-		regex: ('([^\s.,'']+)|([,.'' ]+)')
-		matchesDo: [ :word| 
+	self flag: 'HACK: fix it please'.
+	self wordSplitRegex
+		matchesIn: aTextNode text asString
+		do: [ :word| 
 			self renderWord: word.]
