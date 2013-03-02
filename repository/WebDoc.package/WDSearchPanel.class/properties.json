@@ -8,8 +8,7 @@
 	"instvars" : [
 		"selectedClass",
 		"searchResult",
-		"searchTerm",
-		"rootURL" ],
+		"searchTerm" ],
 	"name" : "WDSearchPanel",
 	"pools" : [
 		 ],

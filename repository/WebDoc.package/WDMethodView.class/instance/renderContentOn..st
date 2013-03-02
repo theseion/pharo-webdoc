@@ -1,9 +1,5 @@
 rendering
 renderContentOn: html
-	
-	method ifNil: [ ^ self ].
-	sourceOnly ifTrue: [^ self renderSourceOn: html].
-		
 	html anchor 
 		name: (self method methodClass isMeta ifTrue: ['class/'] ifFalse:['']), 'method/', self method selector.
 	html  div

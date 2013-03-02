@@ -5,14 +5,12 @@ renderMethodsSummarySectionFor: class title: title htmlClass: htmlClass on: html
 	html div
 		class: htmlClass;
 		class: 'methodSummary';
-		style: ((selectors size > 10) 
-				ifTrue: [ 'style: hidden'] 
-				ifFalse: ['']);
+		style: 'style: hidden';
 		with: [
 			self renderSectionTitle: title on: html.
 			html unorderedList
 				class: 'summary';
 				class: 'compact';
 				with: [ self renderMethodSummaryFor: selectors in: class on: html ].
-			class allSuperclasses do: [ :each |
-				self renderInheritedInstanceMethodsFrom: each on: html ]]
+			(self reducedSuperClassesOf: class) do: [ :each |
+				self renderInheritedMethodsFrom: each on: html ]]

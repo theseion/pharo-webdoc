@@ -12,8 +12,7 @@
 		"sourceStyleClass",
 		"viewClass",
 		"selectedClass",
-		"showClassLinks",
-		"sourceOnly" ],
+		"showClassLinks" ],
 	"name" : "WDMethodView",
 	"pools" : [
 		 ],

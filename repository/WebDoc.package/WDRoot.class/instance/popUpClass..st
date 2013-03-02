@@ -1,6 +1,6 @@
 routes
 popUpClass: aClassName
-	<GET>
-	<Path: 'popup/class/{aClassName}'>
+	<get>
+	<path: 'popup/class/{aClassName}'>
 	activeView := self classPopup.
-	activeView selectClass: (Smalltalk at: aClassName asSymbol).
+	activeView selectClass: (Smalltalk at: aClassName asSymbol)

@@ -1,8 +1,7 @@
 rendering
 renderClassListOn: html
 
-	implementors := SystemNavigation default allImplementorsOf: self selector.
-	implementors sort: [ :a :b| a methodClass name <= b methodClass name].
+	self prepareImplementors.
 	
 	html anchor
 		target: '_searchingToolbar';

@@ -1,5 +1,5 @@
 routes
 packages
-	<GET>
-	<Path: '/package'>
-	activeView := self packageTree.
+	<get>
+	<path: '/package'>
+	activeView := self packageTree

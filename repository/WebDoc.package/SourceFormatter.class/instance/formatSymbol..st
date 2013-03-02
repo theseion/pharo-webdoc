@@ -6,4 +6,6 @@ formatSymbol: aSymbol
 	html anchor 
 		url: url;
 		class: 'stSymbolLiteral'; 
-		with: (String streamContents: [ :s| aSymbol printOn: s]).
+		with: ( inLiteralArray 
+				ifTrue: [aSymbol]
+				ifFalse: ['#''', aSymbol, '''']).
