@@ -1,15 +1,10 @@
 rendering
-renderCommentOn: html
-	[ self method comment ifNil: [ ^ self] ] 
-		on: Error
-		do: [ ^ self ].
-	
+renderCommentOn: html	
 	html div
 		class: 'docstring';
 		with: [
 			html div class: 'discussion';
-				with: (CommentFormatter new 
-							comment: self method comment;
+				with: (WDCommentFormatter new 
 							method: method;
 							rootURL: rootURL;
 							yourself)].

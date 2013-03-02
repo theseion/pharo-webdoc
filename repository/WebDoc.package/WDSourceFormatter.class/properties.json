@@ -1,0 +1,27 @@
+{
+	"category" : "WebDoc",
+	"classinstvars" : [
+		"implementors" ],
+	"classvars" : [
+		 ],
+	"commentStamp" : "",
+	"instvars" : [
+		"renderComment",
+		"method",
+		"html",
+		"allClassVariables",
+		"tempNames",
+		"argumentNames",
+		"allClassVarNames",
+		"classVarNames",
+		"instVarNames",
+		"inLiteralArray",
+		"useBreaks",
+		"source",
+		"rootURL",
+		"ast" ],
+	"name" : "WDSourceFormatter",
+	"pools" : [
+		 ],
+	"super" : "RBProgramNodeVisitor",
+	"type" : "normal" }

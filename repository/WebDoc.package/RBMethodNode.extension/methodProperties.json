@@ -2,4 +2,6 @@
 	"class" : {
 		 },
 	"instance" : {
-		"needsMultipleLines" : "CamilloBruni 2/24/2011 18:44" } }
+		"methodComment" : "CamilloBruni 3/2/2013 13:04",
+		"needsMultipleLines" : "CamilloBruni 2/24/2011 18:44",
+		"sourceForInterval:" : "CamilloBruni 3/2/2013 12:59" } }

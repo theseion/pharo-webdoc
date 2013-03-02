@@ -1,0 +1,14 @@
+{
+	"category" : "WebDoc",
+	"classinstvars" : [
+		"default" ],
+	"classvars" : [
+		 ],
+	"commentStamp" : "",
+	"instvars" : [
+		 ],
+	"name" : "WDASTCache",
+	"pools" : [
+		 ],
+	"super" : "WeakKeyDictionary",
+	"type" : "normal" }

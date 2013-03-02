@@ -1,0 +1,18 @@
+{
+	"category" : "WebDoc",
+	"classinstvars" : [
+		 ],
+	"classvars" : [
+		 ],
+	"commentStamp" : "",
+	"instvars" : [
+		"comment",
+		"method",
+		"html",
+		"parseTree",
+		"rootURL" ],
+	"name" : "WDCommentFormatter",
+	"pools" : [
+		 ],
+	"super" : "Object",
+	"type" : "normal" }

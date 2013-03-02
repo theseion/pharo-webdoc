@@ -6,4 +6,4 @@ renderSourceOn: html
 		with: [
 			html code
 				class: 'methodSource'; 
-				with: (SourceFormatter with: self method rootURL: rootURL) ].
+				with: (WDSourceFormatter with: self method rootURL: rootURL) ].
