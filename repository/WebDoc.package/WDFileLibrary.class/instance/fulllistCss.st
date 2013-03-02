@@ -18,9 +18,9 @@ body {
 	vertical-align: middle;
 	background-color: #05A;
 	color: #fff;
-	-webkit-box-shadow: 0 -6px 6px 6px #000;
-	-moz-box-shadow: 0 -6px 6px 6px #000;
-	box-shadow: 0 -6px 6px 6px #000;
+	-webkit-box-shadow: 0 -6px 12px 6px #000;
+	-moz-box-shadow: 0 -6px 12px 6px #000;
+	box-shadow: 0 -6px 12px 6px #000;
 }
 
 #search { 
@@ -112,7 +112,7 @@ li.deprecated {
 }
 
 li.r1 { 
-	background: #f0f0f0;
+	/* background: #f0f0f0; */
 }
 
 li.r2 { 

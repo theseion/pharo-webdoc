@@ -1,6 +1,13 @@
 uploaded
 appJs
 	^ '
+String.prototype.endsWith = function(suffix) {
+    return this.indexOf(suffix, this.length - suffix.length) !== -1;
+};
+String.prototype.allButLast = function(suffixLength) {
+    return this.substring(0, this.length-suffixLength)
+};
+
 function createSourceLinks() {
 	// on each method source 
     $(".method_details").each(function(){
@@ -256,7 +263,7 @@ function defaultPopupURL(url) {
 	url = url.split("/");
 	url.splice(0,1,"popup");
 	url=url.join("/");
-	return detectRootURL() + url;
+	return detectRootURL() + url + ".html";
 }
 
 function detectRootURL() {

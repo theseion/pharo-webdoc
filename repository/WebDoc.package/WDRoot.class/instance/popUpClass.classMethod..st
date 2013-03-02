@@ -2,7 +2,9 @@ routes
 popUpClass: aClassName classMethod: aSelector
 	<get>
 	<path: 'popup/class/{aClassName}/class/method/{aSelector}.html'>
+   <produces: 'text/html'>
+	
 	activeView := self methodPopup.
-	activeView viewClass: (Smalltalk at: aClassName asSymbol).
+	activeView viewClass: (self classNamed: aClassName).
 	activeView selectClass: activeView viewClass class.
 	activeView selectMethodNamed: aSelector asSymbol
