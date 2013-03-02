@@ -1,7 +1,7 @@
 routes
 class: aClassName classMethod: aSelector
 	<get>
-	<path: 'class/{aClassName}/class/method/{aSelector}'>
+	<path: 'class/{aClassName}/class/method/{aSelector}.html'>
 	activeView := self methodView.
 	activeView viewClass: (Smalltalk at: aClassName asSymbol).
 	activeView selectClass: activeView viewClass class.

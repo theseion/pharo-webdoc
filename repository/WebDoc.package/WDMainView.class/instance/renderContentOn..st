@@ -13,7 +13,7 @@ renderContentOn: html
 							html iframe	
 								name: 'packageList';
 								id: 'packageList';
-								url: rootURL,'/package'].
+								url: self urlForPackage].
 							
 					html div
 						id: 'vdragbar'.].

@@ -1,3 +1,3 @@
 t-url
 urlForPackage: packageName
-	^ self rootURL, '/package/', packageName, self uflHTMLSuffix
+	^ self rootURL, '/package/', packageName, self urlHTMLSuffix

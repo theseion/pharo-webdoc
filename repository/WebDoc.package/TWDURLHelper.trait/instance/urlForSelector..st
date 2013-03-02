@@ -1,3 +1,3 @@
 t-url
 urlForSelector: aSelector
-	^ self selectorBaseURL, '/list/', aSelector, self uflHTMLSuffix
+	^ self selectorBaseURL, '/list/', aSelector, self urlHTMLSuffix

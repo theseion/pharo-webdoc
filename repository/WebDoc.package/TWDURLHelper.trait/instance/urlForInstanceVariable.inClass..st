@@ -1,3 +1,3 @@
 t-url
 urlForInstanceVariable: variableName inClass: aClass
-	^ (self baseUrlForClass: aClass), '/instvar/', variableName, self uflHTMLSuffix
+	^ (self baseUrlForClass: aClass), '/instvar/', variableName, self urlHTMLSuffix

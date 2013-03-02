@@ -1,3 +1,3 @@
 t-url
-uflHTMLSuffix
+urlHTMLSuffix
 	^ '.html'

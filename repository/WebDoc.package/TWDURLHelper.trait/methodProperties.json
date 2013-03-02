@@ -2,12 +2,13 @@
 	"class" : {
 		 },
 	"instance" : {
-		"baseUrlForClass:" : "CamilloBruni 3/2/2013 19:02",
+		"baseUrlForClass:" : "CamilloBruni 3/3/2013 00:12",
 		"selectorBaseURL" : "CamilloBruni 3/2/2013 18:59",
-		"uflHTMLSuffix" : "CamilloBruni 3/2/2013 19:02",
 		"urlForClass:" : "CamilloBruni 3/2/2013 18:48",
-		"urlForInstanceVariable:inClass:" : "CamilloBruni 3/2/2013 19:02",
+		"urlForInstanceVariable:inClass:" : "CamilloBruni 3/3/2013 00:12",
 		"urlForMethod:" : "CamilloBruni 3/2/2013 18:47",
-		"urlForPackage:" : "CamilloBruni 3/2/2013 19:02",
-		"urlForSelector:" : "CamilloBruni 3/2/2013 19:02",
-		"urlForSelectorCategory:" : "CamilloBruni 3/2/2013 19:02" } }
+		"urlForPackage" : "CamilloBruni 3/3/2013 00:18",
+		"urlForPackage:" : "CamilloBruni 3/3/2013 00:12",
+		"urlForSelector:" : "CamilloBruni 3/3/2013 00:12",
+		"urlForSelectorCategory:" : "CamilloBruni 3/3/2013 00:12",
+		"urlHTMLSuffix" : "CamilloBruni 3/3/2013 00:12" } }
