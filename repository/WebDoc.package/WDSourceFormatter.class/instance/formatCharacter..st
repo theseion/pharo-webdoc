@@ -1,6 +1,6 @@
 rendering-formatting
-formatCharacter: aChar
-	 html anchor 
-		url: rootURL, '/class/', aChar class name;
+formatCharacter: aCharacter
+	html anchor 
+		url: (self urlForClass: aCharacter class);
 		class: 'stCharacterLiteral'; 
-		with: '$', aChar asString.
+		with: '$', aCharacter asString.

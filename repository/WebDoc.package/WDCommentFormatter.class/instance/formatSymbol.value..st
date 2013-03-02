@@ -10,9 +10,7 @@ formatSymbol: aSymbol value: aString
 	implementors size = 1
 		ifTrue: [ ^ self formatMethod: implementors first value: aString ].
 	
-	url := rootURL,'/selector/list/', aSymbol asString.
-	
 	html anchor 
-		url: url;
+		url: (self urlForSelector: aSymbol);
 		class: 'stSymbolLiteral'; 
 		with: aString.

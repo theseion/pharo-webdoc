@@ -2,6 +2,7 @@
 	"category" : "WebDoc",
 	"classinstvars" : [
 		"implementors" ],
+	"classtraitcomposition" : "TWDURLHelper classTrait",
 	"classvars" : [
 		 ],
 	"commentStamp" : "",
@@ -24,4 +25,5 @@
 	"pools" : [
 		 ],
 	"super" : "RBProgramNodeVisitor",
+	"traitcomposition" : "TWDURLHelper",
 	"type" : "normal" }

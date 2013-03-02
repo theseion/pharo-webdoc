@@ -11,7 +11,7 @@ renderSelector: aSelector inMessage: aMessage
 	
 	anchor := html anchor.
 	receiverContext 
-		ifNil: [ anchor url: rootURL, '/selector/list/', aMessage selector ]
+		ifNil: [ anchor url: (self urlForSelector: aMessage selector) ]
 		ifNotNil: [
 			self 
 				formatKnownSelector: aSelector 

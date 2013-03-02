@@ -5,8 +5,8 @@ acceptSequenceNode: aSequenceNode
 	self formatMethodCommentFor: aSequenceNode.
 	self formatTemporariesFor: aSequenceNode.
 	
-	statementsBlock := [self formatStatementsFor: aSequenceNode].
-	(aSequenceNode needsMultipleLines and: [ aSequenceNode parent isMethod not])
-		ifTrue: [ self indent: statementsBlock]
+	statementsBlock := [ self formatStatementsFor: aSequenceNode ].
+	(aSequenceNode needsMultipleLines and: [ aSequenceNode parent isMethod not ])
+		ifTrue: [ self indent: statementsBlock ]
 		ifFalse: statementsBlock.
 	

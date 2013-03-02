@@ -2,6 +2,7 @@
 	"category" : "WebDoc",
 	"classinstvars" : [
 		 ],
+	"classtraitcomposition" : "TWDURLHelper classTrait",
 	"classvars" : [
 		 ],
 	"commentStamp" : "",
@@ -17,4 +18,5 @@
 	"pools" : [
 		 ],
 	"super" : "Object",
+	"traitcomposition" : "TWDURLHelper",
 	"type" : "normal" }

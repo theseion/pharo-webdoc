@@ -1,6 +1,6 @@
 rendering-formatting
 formatLiteral: literal style: styleClass
-	html anchor 
-		url: rootURL, '/class/', literal class name;
+	html anchor
+		url: (self urlForClass: literal class);
 		class: styleClass; 
 		with: literal

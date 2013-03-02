@@ -6,4 +6,4 @@ renderSignatureOn: html
 			showClassLinks 
 				ifTrue: [ self renderClassLink: method methodClass on: html]
 				ifFalse: [ html text: method methodClass name].
-			html text:  selector ]
+			html text: ' >> ' , selector ]

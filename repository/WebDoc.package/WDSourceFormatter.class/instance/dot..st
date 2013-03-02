@@ -1,8 +1,8 @@
 rendering
 dot: aNode
 	aNode isPragma 
-		ifTrue: [^self].
+		ifTrue: [ ^ self ].
 	aNode needsDot 
-		ifTrue: [html text: $. ].
+		ifTrue: [ html text: $. ].
 	self useBreaks 
 		ifFalse: [ html space ]

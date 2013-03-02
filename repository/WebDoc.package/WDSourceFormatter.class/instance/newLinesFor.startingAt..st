@@ -1,8 +1,8 @@
 private
 newLinesFor: aString startingAt: anIndex 
 	| count cr lf index char |
-	cr := Character value: 13.
-	lf := Character value: 10.
+	cr := Character cr.
+	lf := Character lf.
 	count := 0.
 	index := anIndex - 1.
 	[index > 0 and: 

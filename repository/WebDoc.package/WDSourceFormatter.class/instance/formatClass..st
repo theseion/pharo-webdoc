@@ -1,7 +1,7 @@
 rendering-formatting
 formatClass: aClass
-	 html anchor
-		url: rootURL, '/class/', aClass name;
+	html anchor
+		url: (self urlForClass: aClass);
 		class: 'stClassLiteral';
 		with: aClass.
 		

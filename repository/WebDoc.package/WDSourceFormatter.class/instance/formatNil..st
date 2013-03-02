@@ -2,5 +2,5 @@ rendering-formatting
 formatNil: aNode
 	html anchor
 		class: 'stNil';
-		url: rootURL, '/class/UndefinedObject';
+		url: (self urlForClass: UndefinedObject);
 		with: 'nil'.
