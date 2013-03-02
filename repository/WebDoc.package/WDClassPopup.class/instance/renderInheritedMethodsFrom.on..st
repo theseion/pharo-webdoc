@@ -1,2 +1,2 @@
-as yet unclassified
+rendering
 renderInheritedMethodsFrom: class on: html

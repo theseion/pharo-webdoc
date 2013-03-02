@@ -1,4 +1,4 @@
-as yet unclassified
+rendering
 renderMethod: method on: html
 	| class |
 	class := method methodClass.

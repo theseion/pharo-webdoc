@@ -1,4 +1,4 @@
-as yet unclassified
+updating
 updateRoot: anHtmlRoot
 	anHtmlRoot title: 'WebDoc a Pharo documentation'.
 	

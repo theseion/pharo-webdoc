@@ -1,3 +1,3 @@
-as yet unclassified
+rendering
 renderSearchResult: aClass on: html
 	self renderClassLink: aClass on: html.

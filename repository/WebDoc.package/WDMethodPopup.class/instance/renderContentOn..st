@@ -1,3 +1,3 @@
-as yet unclassified
+rendering
 renderContentOn: html
 	super renderContentOn: html.

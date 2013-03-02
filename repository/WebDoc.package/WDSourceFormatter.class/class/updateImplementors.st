@@ -1,4 +1,4 @@
-as yet unclassified
+accessing
 updateImplementors
 	implementors := Dictionary new.
 	SystemNavigation default allBehaviorsDo: [:class | class

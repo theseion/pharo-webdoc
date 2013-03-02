@@ -1,4 +1,4 @@
-as yet unclassified
+accessing
 searchResults
 	|result beginsWith others sortBlock name |
 	sortBlock := [ :a :b| a name <= b name ].

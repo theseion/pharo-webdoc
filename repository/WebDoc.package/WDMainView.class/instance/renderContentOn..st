@@ -1,4 +1,4 @@
-as yet unclassified
+rendering
 renderContentOn: html
 	self flag: 'split into submethods'.
 	html div

@@ -1,4 +1,4 @@
-as yet unclassified
+updating
 updateRoot: anHtmlRoot
 	anHtmlRoot stylesheet 
 		url: WDFileLibrary / #commonCss.

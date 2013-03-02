@@ -1,4 +1,4 @@
-as yet unclassified
+instance creation
 for: selector root: root
 	^ self new
 		root: root;

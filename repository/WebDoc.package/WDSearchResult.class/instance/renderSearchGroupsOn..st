@@ -1,4 +1,4 @@
-as yet unclassified
+rendering
 renderSearchGroupsOn: html	
 	(searchTerm isNil or: [searchTerm size == 0]) 
 		ifTrue: [ ^ self ].

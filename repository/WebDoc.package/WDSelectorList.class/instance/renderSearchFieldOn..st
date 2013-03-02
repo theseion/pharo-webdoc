@@ -1,4 +1,4 @@
-as yet unclassified
+rendering
 renderSearchFieldOn: html
 
 	(category isNil and: [ selector isNil ])

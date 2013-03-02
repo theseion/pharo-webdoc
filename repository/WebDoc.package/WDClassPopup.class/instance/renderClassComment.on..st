@@ -1,4 +1,4 @@
-as yet unclassified
+rendering
 renderClassComment: aString on: html
 	html div
 		class: 'docString';

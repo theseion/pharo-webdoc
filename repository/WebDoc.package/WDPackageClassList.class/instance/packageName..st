@@ -1,4 +1,4 @@
-as yet unclassified
+accessing
 packageName: aPackageName
 	selectedPackage := PackageOrganizer default packageNamed: aPackageName ifAbsent: [ nil ].
 	

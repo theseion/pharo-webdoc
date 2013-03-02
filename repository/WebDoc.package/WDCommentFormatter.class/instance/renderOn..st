@@ -1,7 +1,12 @@
 rendering
 renderOn: aRenderingCanvas
 	html := aRenderingCanvas.
-	parseTree := PPMarkdownParser parse: self comment.
+	
+	[ parseTree := PPMarkdownParser parse: self comment. ]
+		on: Error do: [ :e| 
+			(e -> self comment) inspect.
+			^ html text: comment].
+		
 	parseTree isPetitFailure
 		ifTrue: [ ^ html text: comment].
 	parseTree isCollection

@@ -1,4 +1,4 @@
-as yet unclassified
+instance creation
 on: aRoot
 
 	^ self new root: aRoot

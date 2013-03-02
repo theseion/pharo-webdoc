@@ -1,4 +1,4 @@
-as yet unclassified
+instance creation
 comment: aComment method: aMethod
 	^ self new
 		comment: aComment;

@@ -1,4 +1,4 @@
-as yet unclassified
+rendering
 renderContentOn: html 
 	renderPackages := Stack withAll: packages.
 	index := 0.

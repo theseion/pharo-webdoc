@@ -1,4 +1,4 @@
-as yet unclassified
+rendering
 renderSearchResult: aMethod on: html
 	|class selector|
 	selector := aMethod selector.

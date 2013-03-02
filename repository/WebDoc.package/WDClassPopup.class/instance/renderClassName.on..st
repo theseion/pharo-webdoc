@@ -1,4 +1,4 @@
-as yet unclassified
+rendering
 renderClassName: aString on: html
 	html heading
 		level3;

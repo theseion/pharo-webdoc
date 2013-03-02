@@ -1,4 +1,4 @@
-as yet unclassified
+instance creation
 with: aComment rootURL: aString
 	^ self new
 		rootURL: aString;

@@ -1,3 +1,3 @@
-as yet unclassified
+rendering
 renderListOn: html 
 	self subclassResponsibility.

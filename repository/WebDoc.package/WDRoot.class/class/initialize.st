@@ -1,4 +1,4 @@
 initialization
 initialize
 	super initialize.
-	self registerAsApplication: 'webdoc/doc'
+	self registerAsApplication: self rootURL

@@ -1,4 +1,4 @@
-as yet unclassified
+accessing
 title
 	selector ifNil: [ ^ 'Selectors' ]. 
 	^ 'Implementors'

@@ -1,4 +1,4 @@
-as yet unclassified
+rendering
 renderContentOn: html
 	(searchResults isNil or: [searchResults isEmpty]) 
 		ifTrue: [ ^ self ].

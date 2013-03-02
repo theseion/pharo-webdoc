@@ -1,3 +1,3 @@
-as yet unclassified
+rendering
 renderSearchResult: aResult on: html
 	self subclassResponsibility

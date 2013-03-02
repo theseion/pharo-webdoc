@@ -1,4 +1,4 @@
-as yet unclassified
+rendering
 renderSearchResultsOn: html
 	| index |
 	index := 0.
