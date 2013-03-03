@@ -1,3 +1,3 @@
-rendering
+abstract
 renderListOn: html 
 	self subclassResponsibility.

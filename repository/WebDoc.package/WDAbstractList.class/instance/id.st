@@ -1,3 +1,3 @@
-accessing
+abstract
 id
 	self subclassResponsibility.

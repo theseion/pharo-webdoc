@@ -1,0 +1,1 @@
+I am a specialized version of the general WDSelectorList to display implementors of a given selector.

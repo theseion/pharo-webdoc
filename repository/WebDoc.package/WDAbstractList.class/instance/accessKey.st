@@ -1,3 +1,3 @@
-accessing
+abstract
 accessKey
 	self subclassResponsibility.

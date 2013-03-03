@@ -4,10 +4,10 @@
 		 ],
 	"classvars" : [
 		 ],
-	"commentStamp" : "",
+	"commentStamp" : "CamilloBruni 3/3/2013 14:07",
 	"instvars" : [
 		 ],
-	"name" : "WDAbstractSearchList",
+	"name" : "WDAbstractList",
 	"pools" : [
 		 ],
 	"super" : "WDReflectionComponent",

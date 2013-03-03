@@ -3,5 +3,5 @@ Shamelessly imported from an older project called SimpleWebDoc.
 
 Usage
 	yuml := SWYumlMe new
-	yuml addPackageNamed: "SimpleWebDoc"
+	yuml addPackageNamed: "WebDoc"
 	yuml inheritanceDiagram   

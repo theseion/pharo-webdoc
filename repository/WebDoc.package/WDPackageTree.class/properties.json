@@ -4,7 +4,7 @@
 		 ],
 	"classvars" : [
 		 ],
-	"commentStamp" : "CamilloBruni 3/3/2013 12:03",
+	"commentStamp" : "CamilloBruni 3/3/2013 14:08",
 	"instvars" : [
 		"packages",
 		"hierarchy",
@@ -13,5 +13,5 @@
 	"name" : "WDPackageTree",
 	"pools" : [
 		 ],
-	"super" : "WDAbstractSearchList",
+	"super" : "WDAbstractList",
 	"type" : "normal" }

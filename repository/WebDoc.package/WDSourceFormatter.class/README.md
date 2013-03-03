@@ -1,4 +1,10 @@
-WDSourceFormatter has not been documented yet. The class comment should describe the purpose of the class, its collaborations and its variables.
+I visit the AST of a compiled method and produce formatted and annotated html output.
+
+I apply very limited type inference to figure out which particular method is used in a message send.
+I also apply limited source code formatting by using some hard-coded heuristics.
+
+The outputed html code contains the full AST with different CSS classes for each AST node.
+Formatting is done partially by CSS rules (in the WDLibrary) and some manually inserted newlines and indents.
 
 Instance Variables:
 	renderComment			<Boolean>

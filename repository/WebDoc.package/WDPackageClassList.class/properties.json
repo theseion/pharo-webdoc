@@ -4,7 +4,7 @@
 		 ],
 	"classvars" : [
 		 ],
-	"commentStamp" : "CamilloBruni 3/3/2013 12:03",
+	"commentStamp" : "CamilloBruni 3/3/2013 14:08",
 	"instvars" : [
 		"selectedPackage",
 		"classes",
@@ -12,5 +12,5 @@
 	"name" : "WDPackageClassList",
 	"pools" : [
 		 ],
-	"super" : "WDAbstractSearchList",
+	"super" : "WDAbstractList",
 	"type" : "normal" }

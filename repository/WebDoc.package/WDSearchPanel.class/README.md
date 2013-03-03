@@ -1,4 +1,4 @@
-WDSearchPanel has not been documented yet. The class comment should describe the purpose of the class, its collaborations and its variables.
+I display a little search text field and use some JavaScript to introduce to inject the results created by WDSearch into a nice list.
 
 Instance Variables:
 	selectedClass		<Behavior>
