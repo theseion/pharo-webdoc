@@ -1,0 +1,14 @@
+{
+	"category" : "SimpleWebDoc",
+	"classinstvars" : [
+		 ],
+	"classvars" : [
+		 ],
+	"commentStamp" : "",
+	"instvars" : [
+		 ],
+	"name" : "SWSession",
+	"pools" : [
+		 ],
+	"super" : "WASession",
+	"type" : "normal" }

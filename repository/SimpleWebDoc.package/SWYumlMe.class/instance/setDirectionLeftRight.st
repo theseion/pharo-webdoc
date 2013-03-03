@@ -1,0 +1,3 @@
+options
+setDirectionLeftRight
+	direction := #lr.

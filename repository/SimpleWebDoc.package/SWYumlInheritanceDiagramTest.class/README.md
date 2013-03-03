@@ -1,0 +1,1 @@
+Test SWYumlMe inheritance diagram generation

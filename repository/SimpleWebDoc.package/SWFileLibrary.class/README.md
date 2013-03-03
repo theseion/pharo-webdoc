@@ -1,0 +1,1 @@
+Files to be served for SWDocView application

@@ -1,0 +1,16 @@
+{
+	"category" : "SimpleWebDoc",
+	"classinstvars" : [
+		 ],
+	"classvars" : [
+		"HtmlCache" ],
+	"commentStamp" : "LaurentLaffont 12/8/2009 22:15",
+	"instvars" : [
+		"selectedPackageName",
+		"document",
+		"root" ],
+	"name" : "SWDocView",
+	"pools" : [
+		 ],
+	"super" : "WAComponent",
+	"type" : "normal" }

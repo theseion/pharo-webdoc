@@ -1,0 +1,23 @@
+{
+	"class" : {
+		"clearHtmlCache" : "LaurentLaffont 12/9/2009 16:34",
+		"htmlCache" : "LaurentLaffont 12/9/2009 08:56",
+		"initialize" : "LaurentLaffont 12/8/2009 22:58" },
+	"instance" : {
+		"allPackageNames" : "LaurentLaffont 3/7/2010 11:12",
+		"allSelectorsOfClass:" : "LaurentLaffont 3/7/2010 11:16",
+		"initialRequest:" : "DamienPollet 2/23/2011 13:13",
+		"packageNamed:" : "LaurentLaffont 3/7/2010 11:18",
+		"renderClass:On:" : "LaurentLaffont 2/22/2010 19:25",
+		"renderClassComment:On:" : "LaurentLaffont 12/11/2009 14:20",
+		"renderClassSummary:On:" : "LaurentLaffont 2/22/2010 19:37",
+		"renderContentOn:" : "LaurentLaffont 3/7/2010 11:21",
+		"renderPackage:On:" : "LaurentLaffont 2/22/2010 19:14",
+		"renderPackage:On:IfNotInCache:" : "LaurentLaffont 12/11/2009 14:11",
+		"renderPackageSelectOn:" : "LaurentLaffont 2/19/2010 21:20",
+		"renderPharoSearchForPackage:On:" : "LaurentLaffont 2/18/2010 22:30",
+		"renderSelector:OfClass:On:" : "LaurentLaffont 12/18/2009 23:40",
+		"renderSelectorsOfClass:On:" : "LaurentLaffont 12/11/2009 14:15",
+		"renderStringWithBreaks:On:" : "LaurentLaffont 12/9/2009 09:43",
+		"renderUMLForPackage:On:" : "LaurentLaffont 2/18/2010 22:30",
+		"updateRoot:" : "DamienPollet 2/23/2011 14:25" } }

@@ -1,0 +1,1 @@
+A SWDocView is a simple Seaside application which display all classes of a selected package, with comments and selectors.

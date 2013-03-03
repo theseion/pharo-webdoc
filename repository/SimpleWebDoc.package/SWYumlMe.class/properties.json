@@ -1,0 +1,17 @@
+{
+	"category" : "SimpleWebDoc",
+	"classinstvars" : [
+		 ],
+	"classvars" : [
+		 ],
+	"commentStamp" : "LaurentLaffont 12/18/2009 23:05",
+	"instvars" : [
+		"scale",
+		"direction",
+		"classes",
+		"selectedClass" ],
+	"name" : "SWYumlMe",
+	"pools" : [
+		 ],
+	"super" : "Object",
+	"type" : "normal" }
