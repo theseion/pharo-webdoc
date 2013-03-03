@@ -4,9 +4,8 @@
 		 ],
 	"classvars" : [
 		 ],
-	"commentStamp" : "",
+	"commentStamp" : "CamilloBruni 3/3/2013 12:03",
 	"instvars" : [
-		"root",
 		"selector",
 		"implementors",
 		"category" ],

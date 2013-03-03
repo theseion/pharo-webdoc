@@ -1,0 +1,1 @@
+I am a seaside file library containing the resources (Javascript and CSS) necessary for WebDoc.

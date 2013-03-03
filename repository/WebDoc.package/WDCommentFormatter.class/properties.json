@@ -5,15 +5,15 @@
 	"classtraitcomposition" : "TWDURLHelper classTrait",
 	"classvars" : [
 		 ],
-	"commentStamp" : "",
+	"commentStamp" : "CamilloBruni 3/3/2013 12:00",
 	"instvars" : [
 		"comment",
 		"method",
 		"html",
-		"parseTree",
 		"rootURL",
 		"wordSplitRegex",
-		"symbolRegex" ],
+		"symbolRegex",
+		"ast" ],
 	"name" : "WDCommentFormatter",
 	"pools" : [
 		 ],
