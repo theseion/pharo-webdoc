@@ -1,3 +1,3 @@
-accessing
+abstract
 searchResults
 	self subclassResponsibility

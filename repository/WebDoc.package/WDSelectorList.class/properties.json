@@ -12,5 +12,5 @@
 	"name" : "WDSelectorList",
 	"pools" : [
 		 ],
-	"super" : "WDSearchList",
+	"super" : "WDAbstractSearchList",
 	"type" : "normal" }

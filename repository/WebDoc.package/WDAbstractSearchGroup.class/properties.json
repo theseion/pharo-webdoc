@@ -4,13 +4,13 @@
 		 ],
 	"classvars" : [
 		 ],
-	"commentStamp" : "CamilloBruni 3/3/2013 12:02",
+	"commentStamp" : "CamilloBruni 3/3/2013 14:00",
 	"instvars" : [
 		"searchTerm",
 		"searchRegexp",
 		"searchResults",
 		"resultLimit" ],
-	"name" : "WDSearchGroup",
+	"name" : "WDAbstractSearchGroup",
 	"pools" : [
 		 ],
 	"super" : "WDReflectionComponent",

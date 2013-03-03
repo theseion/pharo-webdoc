@@ -4,11 +4,11 @@
 		 ],
 	"classvars" : [
 		 ],
-	"commentStamp" : "",
+	"commentStamp" : "CamilloBruni 3/3/2013 14:01",
 	"instvars" : [
 		 ],
 	"name" : "WDPackageSearchGroup",
 	"pools" : [
 		 ],
-	"super" : "WDSearchGroup",
+	"super" : "WDAbstractSearchGroup",
 	"type" : "normal" }

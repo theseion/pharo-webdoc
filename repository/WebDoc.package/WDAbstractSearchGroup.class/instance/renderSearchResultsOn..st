@@ -1,4 +1,4 @@
-rendering
+abstract
 renderSearchResultsOn: html
 	| index |
 	index := 0.

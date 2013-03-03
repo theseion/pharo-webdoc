@@ -1,0 +1,1 @@
+I am specialized search handler for Classes.

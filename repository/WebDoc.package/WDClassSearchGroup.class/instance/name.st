@@ -1,3 +1,3 @@
 testing
 name
-	^ 'Classs'
+	^ 'Class'
