@@ -1,0 +1,3 @@
+options
+setDirectionTopBottom
+	direction := #tb.

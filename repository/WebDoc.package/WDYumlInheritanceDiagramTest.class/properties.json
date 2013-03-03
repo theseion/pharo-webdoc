@@ -1,0 +1,14 @@
+{
+	"category" : "WebDoc-Test",
+	"classinstvars" : [
+		 ],
+	"classvars" : [
+		 ],
+	"commentStamp" : "CamilloBruni 3/3/2013 13:47",
+	"instvars" : [
+		"yuml" ],
+	"name" : "WDYumlInheritanceDiagramTest",
+	"pools" : [
+		 ],
+	"super" : "TestCase",
+	"type" : "normal" }

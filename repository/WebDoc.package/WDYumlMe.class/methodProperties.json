@@ -1,0 +1,22 @@
+{
+	"class" : {
+		 },
+	"instance" : {
+		"addClass:" : "LaurentLaffont 12/18/2009 22:57",
+		"addPackage:" : "LaurentLaffont 12/18/2009 22:58",
+		"addPackageNamed:" : "LaurentLaffont 12/18/2009 23:20",
+		"baseUrl" : "CamilloBruni 3/2/2013 15:15",
+		"classes" : "LaurentLaffont 12/14/2009 22:43",
+		"inheritanceDiagram" : "LaurentLaffont 12/18/2009 23:37",
+		"inheritanceDiagramForClass:" : "CamilloBruni 3/2/2013 15:54",
+		"inheritanceDiagramForPackage:" : "CamilloBruni 3/2/2013 15:16",
+		"inheritanceDiagramForPackageNamed:" : "LaurentLaffont 12/18/2009 23:19",
+		"initialize" : "LaurentLaffont 12/14/2009 14:08",
+		"packageDiagramForClass:" : "CamilloBruni 3/2/2013 15:50",
+		"printClass:" : "CamilloBruni 3/2/2013 15:57",
+		"printClass:inherits:" : "CamilloBruni 3/2/2013 15:13",
+		"printDetailedClass:" : "CamilloBruni 3/2/2013 16:00",
+		"scale" : "LaurentLaffont 12/18/2009 23:10",
+		"scale:" : "LaurentLaffont 12/14/2009 14:09",
+		"setDirectionLeftRight" : "LaurentLaffont 12/14/2009 14:10",
+		"setDirectionTopBottom" : "LaurentLaffont 12/14/2009 14:10" } }

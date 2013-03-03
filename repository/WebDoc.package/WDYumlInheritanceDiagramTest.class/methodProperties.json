@@ -1,0 +1,12 @@
+{
+	"class" : {
+		 },
+	"instance" : {
+		"setUp" : "CamilloBruni 3/3/2013 13:47",
+		"testEmpty" : "LaurentLaffont 12/18/2009 23:18",
+		"testWithAPackage" : "LaurentLaffont 12/18/2009 22:51",
+		"testWithAPackageContainingTrait" : "LaurentLaffont 12/18/2009 23:29",
+		"testWithAPackageName" : "LaurentLaffont 12/18/2009 23:25",
+		"testWithOneClass" : "LaurentLaffont 12/18/2009 22:33",
+		"testWithTwoIndependentClasses" : "LaurentLaffont 12/18/2009 22:35",
+		"testWithTwoRelatedClasses" : "LaurentLaffont 12/18/2009 22:34" } }

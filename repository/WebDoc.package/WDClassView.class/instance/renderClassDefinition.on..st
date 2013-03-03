@@ -10,12 +10,12 @@ renderClassDefinition: class on: html
 	
 	html text: 'View '.
 	html anchor
-       url: (SWYumlMe new setDirectionLeftRight; inheritanceDiagramForClass: class);
+       url: (WDYumlMe new setDirectionLeftRight; inheritanceDiagramForClass: class);
 		relationship: 'external';
 		with: 'inheritance diagram'.
 
 	html text: ' or '.
 	html anchor
-       url: (SWYumlMe new setDirectionLeftRight; packageDiagramForClass: class);
+       url: (WDYumlMe new setDirectionLeftRight; packageDiagramForClass: class);
 		relationship: 'external';
 		with: 'package diagram'.
