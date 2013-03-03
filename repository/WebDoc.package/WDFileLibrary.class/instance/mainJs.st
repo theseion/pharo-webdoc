@@ -71,4 +71,4 @@ $(window).bind( "hashchange", function(e) {
 // =========================================================================
 $(createFrameResizing);
 $(createFrameBookmarks);
-'
+' copyReplaceAll: String cr with: String lf

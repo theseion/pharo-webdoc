@@ -237,17 +237,18 @@ function generateTOC() {
   });
 }
 
-// ==============================================
+// ====================================================================
 function selectorPopupURL(item) {
 	url = item.attr("href");
 	if (url.indexOf("#") == -1) {
-		return defaultPopupURL(url.split("/doc")[1]);
+		return defaultPopupURL(url.split("/doc").pop());
 	}
 	url = url.split("#");
 	className = url[0].split("/").pop();
 	if (!className) {
-		className = $(".className:first").text();
+		className = $(".className:first").text()
 	}
+	className = className.split(".html")[0];
 	return defaultPopupURL("/class/"+className+"/"+url[1])
 }
 
@@ -263,7 +264,10 @@ function defaultPopupURL(url) {
 	url = url.split("/");
 	url.splice(0,1,"popup");
 	url=url.join("/");
-	return detectRootURL() + url + ".html";
+	if (!url.endsWith(".html")) {
+		url += ".html"
+	}
+	return detectRootURL() + url;
 }
 
 function detectRootURL() {
@@ -356,4 +360,4 @@ $(keyboardShortcuts);
 $(summaryToggle);
 $(fixOutsideWorldLinks);
 $(generateTOC);
-$(createSelectorLinks);'
+$(createSelectorLinks);' copyReplaceAll: String cr with: String lf

@@ -198,4 +198,4 @@ $(escapeShortcut);
 $(fullListSearch);
 $(linkList);
 $(collapse);
-'
+' copyReplaceAll: String cr with: String lf
