@@ -1,9 +1,12 @@
 updating
 updateRoot: anHtmlRoot
-	anHtmlRoot title: 'WebDoc a Pharo documentation'.
 	
 	anHtmlRoot stylesheet 
 		url: WDFileLibrary / #mainCss.
+		
+	anHtmlRoot link
+		relationship: 'license';
+		url: self urlForLicense.
 		
 	anHtmlRoot script 
 		url: JQDevelopmentLibrary / #jQueryJs.
@@ -14,3 +17,4 @@ updateRoot: anHtmlRoot
 	anHtmlRoot script 
 		url: WDFileLibrary / #mainJs.
 		
+	self title ifNotNilDo: [ :titleString | anHtmlRoot title: titleString ]

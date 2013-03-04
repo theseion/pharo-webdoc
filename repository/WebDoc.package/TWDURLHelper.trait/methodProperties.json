@@ -2,14 +2,23 @@
 	"class" : {
 		 },
 	"instance" : {
-		"baseUrlForClass:" : "CamilloBruni 3/3/2013 00:12",
+		"baseUrlForClass:" : "CamilloBruni 3/4/2013 11:01",
+		"popupURL" : "CamilloBruni 3/4/2013 11:04",
+		"popupURLForClass:" : "CamilloBruni 3/4/2013 11:07",
+		"popupURLForMethod:" : "CamilloBruni 3/4/2013 11:07",
+		"popupURLForSelector:" : "CamilloBruni 3/4/2013 12:42",
 		"respondNotFound" : "CamilloBruni 3/3/2013 00:55",
 		"selectorBaseURL" : "CamilloBruni 3/2/2013 18:59",
-		"urlForClass:" : "CamilloBruni 3/2/2013 18:48",
+		"urlForClass" : "CamilloBruni 3/4/2013 11:14",
+		"urlForClass:" : "CamilloBruni 3/4/2013 10:44",
 		"urlForInstanceVariable:inClass:" : "CamilloBruni 3/3/2013 00:12",
-		"urlForMethod:" : "CamilloBruni 3/2/2013 18:47",
+		"urlForLicense" : "CamilloBruni 3/4/2013 10:44",
+		"urlForMethod:" : "CamilloBruni 3/4/2013 11:02",
 		"urlForPackage" : "CamilloBruni 3/3/2013 00:18",
 		"urlForPackage:" : "CamilloBruni 3/3/2013 00:12",
+		"urlForSelector" : "CamilloBruni 3/4/2013 11:15",
 		"urlForSelector:" : "CamilloBruni 3/3/2013 00:12",
 		"urlForSelectorCategory:" : "CamilloBruni 3/3/2013 00:12",
-		"urlHTMLSuffix" : "CamilloBruni 3/3/2013 00:12" } }
+		"urlHTMLSuffix" : "CamilloBruni 3/3/2013 00:12",
+		"urlSuffixForClass:" : "CamilloBruni 3/4/2013 11:02",
+		"urlSuffixForMethod:" : "CamilloBruni 3/4/2013 11:05" } }

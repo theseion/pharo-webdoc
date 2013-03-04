@@ -19,6 +19,7 @@
 		"initialize" : "CamilloBruni 3/2/2013 23:58",
 		"initializeRoutes" : "CamilloBruni 3/3/2013 00:12",
 		"library" : "CamilloBruni 2/24/2011 17:39",
+		"license" : "CamilloBruni 3/4/2013 10:49",
 		"main" : "CamilloBruni 3/3/2013 00:44",
 		"methodPopup" : "CamilloBruni 7/4/2011 14:28",
 		"methodView" : "CamilloBruni 7/4/2011 14:28",
@@ -33,9 +34,12 @@
 		"popUpSelector:" : "CamilloBruni 3/3/2013 00:44",
 		"renderContentOn:" : "CamilloBruni 3/2/2013 17:06",
 		"renderGoogleAnalyticsOn:" : "DamienPollet 7/9/2011 00:55",
+		"robot" : "CamilloBruni 3/4/2013 11:11",
 		"rootURL" : "CamilloBruni 3/2/2013 18:00",
 		"selector:" : "CamilloBruni 3/3/2013 00:57",
 		"selectorCategory:" : "CamilloBruni 3/3/2013 00:44",
 		"selectorPopup" : "CamilloBruni 7/4/2011 14:28",
 		"selectorView" : "CamilloBruni 7/4/2011 14:28",
-		"selectors" : "CamilloBruni 3/3/2013 00:44" } }
+		"selectors" : "CamilloBruni 3/3/2013 00:44",
+		"sitemap" : "CamilloBruni 3/4/2013 11:23",
+		"version" : "CamilloBruni 3/4/2013 10:50" } }

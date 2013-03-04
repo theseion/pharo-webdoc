@@ -1,5 +1,6 @@
 updating
 updateRoot: anHtmlRoot
+	
 	rootURL := anHtmlRoot context actionBaseUrl withoutQuery asString.
 	anHtmlRoot stylesheet 
 		url: WDFileLibrary / #commonCss.
@@ -16,4 +17,7 @@ updateRoot: anHtmlRoot
 		url: JQUiDevelopmentLibrary / #jQueryUiJs.
 	anHtmlRoot script 
 		url: WDFileLibrary / #appJs.
+		
 	super updateRoot: anHtmlRoot.
+	
+	self title ifNotNilDo: [ :titleString | anHtmlRoot title: titleString ]

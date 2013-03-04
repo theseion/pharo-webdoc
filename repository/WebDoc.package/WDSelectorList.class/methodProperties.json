@@ -3,6 +3,8 @@
 		 },
 	"instance" : {
 		"accessKey" : "CamilloBruni 4/21/2011 15:23",
+		"binaryCategory" : "CamilloBruni 3/4/2013 12:47",
+		"categories" : "CamilloBruni 3/4/2013 12:47",
 		"category" : "CamilloBruni 4/18/2011 13:07",
 		"category:" : "CamilloBruni 4/18/2011 13:07",
 		"id" : "CamilloBruni 2/24/2011 14:17",
@@ -12,11 +14,13 @@
 		"renderListOn:" : "CamilloBruni 4/18/2011 13:26",
 		"renderMethod:at:on:" : "CamilloBruni 4/18/2011 13:51",
 		"renderMethod:on:" : "CamilloBruni 3/2/2013 11:11",
-		"renderSearchFieldOn:" : "CamilloBruni 4/18/2011 13:27",
-		"renderSelector:at:on:" : "CamilloBruni 2/24/2011 14:20",
+		"renderSearchFieldOn:" : "CamilloBruni 3/4/2013 12:36",
+		"renderSelector:at:on:" : "CamilloBruni 3/4/2013 12:37",
 		"renderSelector:on:" : "CamilloBruni 3/2/2013 18:50",
-		"renderSelectorCategoryListOn:" : "CamilloBruni 3/2/2013 18:59",
-		"renderSelectorListOn:" : "CamilloBruni 4/18/2011 13:16",
+		"renderSelectorCategoryListOn:" : "CamilloBruni 3/4/2013 12:38",
+		"renderSelectorListOn:" : "CamilloBruni 3/4/2013 11:40",
 		"selector" : "CamilloBruni 3/6/2011 16:43",
 		"selector:" : "CamilloBruni 4/18/2011 13:56",
-		"title" : "CamilloBruni 4/21/2011 22:46" } }
+		"selectorsForCategory:" : "CamilloBruni 3/4/2013 12:53",
+		"sitemapOn:" : "CamilloBruni 3/4/2013 12:40",
+		"title" : "CamilloBruni 3/4/2013 12:59" } }
