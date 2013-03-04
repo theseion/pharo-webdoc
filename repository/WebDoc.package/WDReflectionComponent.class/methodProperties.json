@@ -4,7 +4,9 @@
 	"instance" : {
 		"initialize" : "CamilloBruni 7/4/2011 14:43",
 		"renderClassLink:on:" : "CamilloBruni 3/2/2013 18:51",
-		"renderSelector:named:in:on:" : "CamilloBruni 7/4/2011 14:47",
+		"renderMethodLink:named:on:" : "CamilloBruni 3/4/2013 13:08",
+		"renderMethodLink:on:" : "CamilloBruni 3/4/2013 13:06",
+		"renderSelector:named:in:on:" : "CamilloBruni 3/4/2013 13:05",
 		"renderSelectorLink:class:on:" : "CamilloBruni 3/2/2011 14:59",
 		"renderSelectorLink:in:on:" : "CamilloBruni 3/8/2011 17:07",
 		"renderSelectorLink:on:" : "CamilloBruni 4/22/2011 21:00",

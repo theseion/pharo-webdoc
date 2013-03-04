@@ -1,9 +1,3 @@
 rendering
-renderSelector:  selector named: name in: class on: html
-	html anchor
-		class: 'object_link';
-		class: 'method_link';
-		class: 'stSelector';
-		target: 'classView';
-		url: rootURL,'/class/', class theNonMetaClass name, '#', (class isMeta ifTrue: [ 'class/'] ifFalse: ['']), 'method/', selector;
-		with: name.
+renderSelector: selector named: name in: class on: html
+	^ self renderMethodLink: class >> selector named: name on: html

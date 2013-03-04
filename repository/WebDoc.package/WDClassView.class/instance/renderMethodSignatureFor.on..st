@@ -4,5 +4,5 @@ renderMethodSignatureFor: method on: html
 		class: 'summary_signature';
 		with: [
 			html anchor
-				url: '#', (method methodClass isMeta ifTrue: ['class/'] ifFalse:['']), 'method/', method selector; 
+				url: '#', (self urlSuffixForMethod: method); 
 				with: method selector].

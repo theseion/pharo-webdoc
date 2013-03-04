@@ -1,7 +1,7 @@
 rendering
 renderContentOn: html
 	html anchor 
-		name: (self method methodClass isMeta ifTrue: ['class/'] ifFalse:['']), 'method/', self method selector.
+		name: (self urlSuffixForMethod: self method ).
 	html  div
 		class: contentSyleClass;
 		with: [
