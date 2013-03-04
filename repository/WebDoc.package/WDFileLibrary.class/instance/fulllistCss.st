@@ -116,7 +116,7 @@ li.r1 {
 }
 
 li.r2 { 
-	background: #fafafa;
+	background: #f7f7f7;
 }
 
 li:hover { 
