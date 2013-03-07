@@ -1,3 +1,3 @@
 t-url
 urlForSelectorCategory: aCategoryName
-	^ self selectorBaseURL, '/category/', aCategoryName, self urlHTMLSuffix
+	^ self selectorBaseURL, '/category/', aCategoryName urlencoded, self urlHTMLSuffix

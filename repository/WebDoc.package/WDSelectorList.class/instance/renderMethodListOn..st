@@ -1,7 +1,7 @@
 rendering
-renderClassListOn: html
+renderMethodListOn: html
 
-	self prepareImplementors.
+	self prepareMethodList.
 	
 	html anchor
 		target: '_searchingToolbar';

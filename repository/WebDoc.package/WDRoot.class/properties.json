@@ -19,7 +19,8 @@
 		"packageClassView",
 		"methodPopup",
 		"selectorPopup",
-		"classPopup" ],
+		"classPopup",
+		"instVarList" ],
 	"name" : "WDRoot",
 	"pools" : [
 		 ],

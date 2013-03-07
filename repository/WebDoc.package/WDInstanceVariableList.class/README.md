@@ -1,0 +1,1 @@
+I display the instance variables for a given class. In a second mode, given an instance variable name, I list the methods using that instance variable.

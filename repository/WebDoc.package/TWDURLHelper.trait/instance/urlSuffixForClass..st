@@ -1,3 +1,3 @@
 t-url
 urlSuffixForClass: aClass
-	^ '/class/', aClass name
+	^ '/class/', aClass name urlencoded

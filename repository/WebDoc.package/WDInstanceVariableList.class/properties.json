@@ -1,0 +1,14 @@
+{
+	"category" : "WebDoc",
+	"classinstvars" : [
+		 ],
+	"classvars" : [
+		 ],
+	"commentStamp" : "CamilloBruni 3/7/2013 19:00",
+	"instvars" : [
+		"viewClass" ],
+	"name" : "WDInstanceVariableList",
+	"pools" : [
+		 ],
+	"super" : "WDSelectorList",
+	"type" : "normal" }
