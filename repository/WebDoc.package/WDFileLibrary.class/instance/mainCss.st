@@ -87,4 +87,4 @@ iframe {
 	right: -4px;
    cursor: col-resize;
 }
-'
+' copyReplaceAll: String cr with: String lf

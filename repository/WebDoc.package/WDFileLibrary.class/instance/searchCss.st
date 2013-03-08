@@ -126,4 +126,4 @@ searchCss
 	width: 100%;
 }
 
-	'
+	' copyReplaceAll: String cr with: String lf

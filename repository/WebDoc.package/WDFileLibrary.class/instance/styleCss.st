@@ -324,7 +324,7 @@ ul.fullTree li:last-child { padding-bottom: 0; }
 } 
 
 .ac_loading {
-    background: white url("/images/loading.gif") right center no-repeat;
+    background: white /*url("/images/loading.gif")*/ right center no-repeat;
 }
 
 .ac_even {
@@ -449,4 +449,4 @@ pre.code .id.nth_ref { color: #6D79DE; }
 pre.code .regexp, .dregexp { color: #036A07; }
 pre.code a { border-bottom: 1px dotted #bbf; }
 
-'
+' copyReplaceAll: String cr with: String lf

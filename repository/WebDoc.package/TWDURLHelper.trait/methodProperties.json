@@ -2,10 +2,11 @@
 	"class" : {
 		 },
 	"instance" : {
+		"basePopupURLforClass:" : "CamilloBruni 3/9/2013 00:05",
 		"baseUrlForClass:" : "CamilloBruni 3/4/2013 11:01",
 		"popupURL" : "CamilloBruni 3/4/2013 11:04",
-		"popupURLForClass:" : "CamilloBruni 3/4/2013 13:28",
-		"popupURLForMethod:" : "CamilloBruni 3/4/2013 11:07",
+		"popupURLForClass:" : "CamilloBruni 3/9/2013 00:04",
+		"popupURLForMethod:" : "CamilloBruni 3/9/2013 00:05",
 		"popupURLForSelector:" : "CamilloBruni 3/4/2013 13:28",
 		"respondNotFound" : "CamilloBruni 3/3/2013 00:55",
 		"selectorBaseURL" : "CamilloBruni 3/2/2013 18:59",

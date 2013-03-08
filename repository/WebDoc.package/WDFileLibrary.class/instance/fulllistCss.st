@@ -252,4 +252,4 @@ li.collapsed.clicked a.toggle {
 #full_list.insearch li small.search_info {
 	display: block;
 }
-'
+' copyReplaceAll: String cr with: String lf

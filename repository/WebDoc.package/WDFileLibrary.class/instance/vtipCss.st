@@ -26,4 +26,4 @@ p#vtip #vtipArrow {
 	top: -10px; 
 	left: 5px 
 }
-'
+'copyReplaceAll: String cr with: String lf

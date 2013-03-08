@@ -1,3 +1,4 @@
 t-url
 popupURLForMethod: aCompiledMethod
-	^ self popupURL, (self urlSuffixForMethod: aCompiledMethod), self urlHTMLSuffix
+	^ (self basePopupURLforClass: aCompiledMethod methodClass), 
+		(self urlSuffixForMethod: aCompiledMethod), self urlHTMLSuffix

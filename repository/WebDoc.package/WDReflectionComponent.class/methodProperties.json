@@ -2,6 +2,7 @@
 	"class" : {
 		 },
 	"instance" : {
+		"basePopupURLforClass:" : "CamilloBruni 3/9/2013 00:06",
 		"initialize" : "CamilloBruni 7/4/2011 14:43",
 		"renderClassLink:on:" : "CamilloBruni 3/2/2013 18:51",
 		"renderMethodLink:named:on:" : "CamilloBruni 3/4/2013 13:08",

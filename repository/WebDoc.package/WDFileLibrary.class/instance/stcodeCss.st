@@ -58,4 +58,4 @@ code a {
     color: #660000;
 }
 
-'
+' copyReplaceAll: String cr with: String lf

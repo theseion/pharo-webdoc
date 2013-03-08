@@ -4,6 +4,7 @@ renderOn: aRenderingCanvas
 	self flag: 'clean and fix pp markdown parser'.
 	[[ ast := PPMarkdownParser parse: self comment. ]
 		on: Error do: [ :e| 
+			1halt.
 			(e -> self comment) inspect.
 			^ html text: comment]
 	] 	valueWithin: 10 seconds 
@@ -22,5 +23,6 @@ renderOn: aRenderingCanvas
 			ast first do: [ :each|
 				self visitNode: each]]
 	] on: Error do: [ :e| 
+e pass.
 			(e -> self comment) inspect.
 			^ html text: comment]

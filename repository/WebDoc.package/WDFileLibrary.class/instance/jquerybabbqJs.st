@@ -1137,4 +1137,4 @@ jquerybabbqJs
   })();
   
 })(jQuery,this);
-'
+' copyReplaceAll: String cr with: String lf

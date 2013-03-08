@@ -3,7 +3,10 @@ renderWord: aString
 	| symbol |
 	symbol :=  aString asSymbol.
 	Smalltalk at: symbol 
-		ifPresent: [ :class| ^ self formatClass: class].
+		ifPresent: [ :global| 
+			^ global isBehavior 
+				ifTrue: [ self formatClass: global ]
+				ifFalse: [ self formatGlobal: global named: symbol]].
 		
 	(self symbolRegex matches: aString)
 		ifTrue: [ ^ self formatSymbol: symbol value: aString].

@@ -14,4 +14,4 @@ function toggleSearch() {
 }
 
 $(toggleSearch);
-	'
+	' copyReplaceAll: String cr with: String lf
