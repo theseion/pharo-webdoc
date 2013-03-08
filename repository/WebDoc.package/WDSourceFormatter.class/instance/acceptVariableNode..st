@@ -21,4 +21,7 @@ acceptVariableNode: aVariableNode
 		 ifTrue: [ ^ self formatInstanceVariable: aVariableNode ].
 	
 	Smalltalk at: name asSymbol 
-		ifPresent: [ :class| ^ self formatClass: class ].
+		ifPresent: [ :global| 
+			^ global isBehavior 
+				ifTrue: [ self formatClass: global ]
+				ifFalse: [ self formatGlobal: global named: name ]].
