@@ -4,7 +4,7 @@ initialRequest: aRequest
 	super initialRequest: aRequest.
 	aRouteResult := routes 
 		routeForContext: self requestContext 
-		ifAbsent: [ ^ activeView := mainView].
+		ifAbsent: [ ^ self respondNotFound ].
 	aRouteResult sendMessageTo: self.
 	
 	
