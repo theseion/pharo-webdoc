@@ -25,3 +25,6 @@ acceptVariableNode: aVariableNode
 			^ global isBehavior 
 				ifTrue: [ self formatClass: global ]
 				ifFalse: [ self formatGlobal: global named: name ]].
+			
+	"most probably a shared pool variable"
+	html span	with: name.
