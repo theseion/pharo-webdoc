@@ -39,17 +39,20 @@ function createFrameBookmarks() {
 
 var registeredFrames = [];
 
+function frameBaseURL() {
+   var url = window.location.href.split("#")[0];
+	return url.substr(0, url.lastIndexOf("/")+1)
+}
+
 function createFrameBookmark(iframe) {
 	iframe.load(function() {
 		var state = {}
 		var src = this.contentWindow.location.href;
-		var mainFrameURL = window.location.href
+		var mainFrameURL = frameBaseURL() 
 		if (src && src.length > 0) {
-			if (src.indexOf("http://") == 0) {
-			   var mainFrameURL = mainFrameURL.split("#")[0];
-			}
-			var mainFrameBaseURLlength = mainFrameURL.lastIndexOf("/");
-			state[this.name] =  src.substr(mainFrameBaseURLlength + 1);
+			var newURL = src.substr(mainFrameURL.lastIndexOf("/")+1);
+			debugger;
+			state[this.name] = newURL;
 			$.bbq.pushState(state);
 		}
 	});
@@ -61,7 +64,7 @@ $(window).bind( "hashchange", function(e) {
 		var frame = registeredFrames[i]
 		var url = $.bbq.getState(frame.name, true) || false;
 		if (url) {
-			url = window.location.href.split("#")[0] + url;
+			url = frameBaseURL() + url;
 			if (frame.contentWindow.location.href != url && url) {
 				frame.src = url;
 			}

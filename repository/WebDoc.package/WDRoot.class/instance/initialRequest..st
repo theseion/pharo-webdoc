@@ -7,7 +7,7 @@ initialRequest: aRequest
 		routeForContext: self requestContext 
 		ifAbsent: [ 
 			^ (aRequest uri asString = self rootURL or: [ aRequest uri asString = (self rootURL, '/')])
-				ifTrue: [ activeView := mainView ]
+				ifTrue: [ self redirectTo: self rootURL, '/index.html' ]
 				ifFalse: [ self respondNotFound ]].
 			
 	aRouteResult sendMessageTo: self.
