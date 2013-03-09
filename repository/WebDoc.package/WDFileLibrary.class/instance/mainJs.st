@@ -43,12 +43,13 @@ function createFrameBookmark(iframe) {
 	iframe.load(function() {
 		var state = {}
 		var src = this.contentWindow.location.href;
+		var mainFrameURL = window.location.href
 		if (src && src.length > 0) {
 			if (src.indexOf("http://") == 0) {
-				state[this.name] =  src.substr(window.location.href.split("#")[0].length);
-			} else {
-				state[this.name] =  src;
+			   var mainFrameURL = mainFrameURL.split("#")[0];
 			}
+			var mainFrameBaseURLlength = mainFrameURL.lastIndexOf("/");
+			state[this.name] =  src.substr(mainFrameBaseURLlength + 1);
 			$.bbq.pushState(state);
 		}
 	});

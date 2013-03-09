@@ -20,7 +20,8 @@
 		"methodPopup",
 		"selectorPopup",
 		"classPopup",
-		"instVarList" ],
+		"instVarList",
+		"welcomeView" ],
 	"name" : "WDRoot",
 	"pools" : [
 		 ],

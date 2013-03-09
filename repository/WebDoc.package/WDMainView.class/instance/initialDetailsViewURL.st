@@ -1,0 +1,3 @@
+accessing
+initialDetailsViewURL
+	^ 'welcome.html'

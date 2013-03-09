@@ -4,10 +4,10 @@
 		 ],
 	"classvars" : [
 		 ],
-	"commentStamp" : "CamilloBruni 3/3/2013 13:55",
+	"commentStamp" : "",
 	"instvars" : [
-		 ],
-	"name" : "WDMainView",
+		"message" ],
+	"name" : "WDNotFoundView",
 	"pools" : [
 		 ],
 	"super" : "WDReflectionComponent",
