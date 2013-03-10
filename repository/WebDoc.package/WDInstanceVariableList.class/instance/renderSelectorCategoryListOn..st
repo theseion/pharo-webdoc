@@ -5,5 +5,5 @@ renderSelectorCategoryListOn: html
 			with: [
 				html anchor
 					class: 'selector_link';
-					url: (self urlForInstanceVariable: instVarName inClass: viewClass);
+					url: (self poupURLForInstanceVariable: instVarName inClass: viewClass);
 					with: instVarName ]]
