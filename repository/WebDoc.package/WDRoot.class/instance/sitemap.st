@@ -12,4 +12,7 @@ sitemap
 		self packageTree sitemapOn: stream.
 		self packageClassView sitemapOn: stream.
 		self classView sitemapOn: stream.
-		self selectorView sitemapOn: stream ]
+		self instanceVariableView sitemapOn: stream.
+		self methodPopup sitemapOn: stream.
+		
+		self selectorView sitemapOn: stream. ]

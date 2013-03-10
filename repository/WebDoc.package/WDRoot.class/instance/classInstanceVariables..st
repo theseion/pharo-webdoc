@@ -4,7 +4,7 @@ classInstanceVariables: aClassName
 	<path: 'class/{aClassName}/instvar.html'>
    <produces: 'text/html'>
 	
-	activeView := self instVarList.
+	activeView := self instanceVariableView.
 	activeView 
 		viewClass: (self classNamed: aClassName);
 		instVarName: nil.

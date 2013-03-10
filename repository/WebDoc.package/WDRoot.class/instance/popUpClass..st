@@ -4,5 +4,5 @@ popUpClass: aClassName
 	<path: 'popup/class/{aClassName}.html'>
    <produces: 'text/html'>
 	
-	activeView := self classPopup.
+	activeView := self classPopupView.
 	activeView selectClass: (self classNamed: aClassName)

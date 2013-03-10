@@ -4,7 +4,7 @@ class: aClassName instanceVariable: variableName
 	<path: 'class/{aClassName}/instvar/{variableName}.html'>
    <produces: 'text/html'>
 	
-	activeView := self instVarList.
+	activeView := self instanceVariableView.
 	activeView 
 		viewClass: (self classNamed: aClassName);
 		instVarName: variableName asSymbol

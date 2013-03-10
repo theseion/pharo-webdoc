@@ -1,4 +1,4 @@
 accessing
-classPopup
+classPopupView
 	^ classPopup ifNil: [ 
 			classPopup := self newChildView: WDClassPopup].

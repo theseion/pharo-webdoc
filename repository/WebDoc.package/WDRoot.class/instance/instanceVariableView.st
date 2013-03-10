@@ -1,4 +1,4 @@
 accessing
-instVarList
+instanceVariableView
 	^ instVarList ifNil: [ 
 			instVarList := self newChildView: WDInstanceVariableList ].
