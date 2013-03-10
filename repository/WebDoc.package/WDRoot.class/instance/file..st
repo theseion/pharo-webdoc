@@ -5,5 +5,5 @@ file: fileName
 	
 	self requestContext respond: [ :response |
 		response 
-			contentType: 'text/plain';
+			contentType: (ZnMimeType forFilenameExtension: (fileName copyAfterLast: $.)) asString;
 			nextPutAll: (self fileLibrary contentsForName: fileName) ]

@@ -51,7 +51,7 @@ function createFrameBookmark(iframe) {
 		var mainFrameURL = frameBaseURL() 
 		if (src && src.length > 0) {
 			var newURL = src.substr(mainFrameURL.lastIndexOf("/")+1);
-			debugger;
+			"debugger;"
 			state[this.name] = newURL;
 			$.bbq.pushState(state);
 		}

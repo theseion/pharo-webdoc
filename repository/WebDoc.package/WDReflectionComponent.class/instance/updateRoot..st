@@ -1,23 +1,12 @@
 updating
 updateRoot: anHtmlRoot
-	
 	rootURL := anHtmlRoot context actionBaseUrl withoutQuery asString.
-	anHtmlRoot stylesheet 
-		url: (self convertToRelativeURL: WDFileLibrary / #commonCss in: anHtmlRoot).
-	anHtmlRoot stylesheet 
-		url: (self convertToRelativeURL: WDFileLibrary / #stcodeCss in: anHtmlRoot).
-	anHtmlRoot stylesheet 
-		url: (self convertToRelativeURL: WDFileLibrary / #styleCss in: anHtmlRoot).
-	anHtmlRoot stylesheet 
-		url: (self convertToRelativeURL: WDFileLibrary / #vtipCss in: anHtmlRoot).
-		
-	anHtmlRoot script 
-		url: (self convertToRelativeURL: WDFileLibrary / #jQueryJs in: anHtmlRoot).
-	anHtmlRoot script 
-		url: (self convertToRelativeURL: WDFileLibrary / #jQueryUiJs in: anHtmlRoot).
-	anHtmlRoot script 
-		url: (self convertToRelativeURL: WDFileLibrary / #appJs in: anHtmlRoot).
-		
+	anHtmlRoot stylesheet url: (self relativeURL: WDFileLibrary / #commonCss).
+	anHtmlRoot stylesheet url: (self relativeURL: WDFileLibrary / #stcodeCss).
+	anHtmlRoot stylesheet url: (self relativeURL: WDFileLibrary / #styleCss).
+	anHtmlRoot stylesheet url: (self relativeURL: WDFileLibrary / #vtipCss).
+	anHtmlRoot script url: (self relativeURL: WDFileLibrary / #jQueryJs).
+	anHtmlRoot script url: (self relativeURL: WDFileLibrary / #jQueryUiJs).
+	anHtmlRoot script url: (self relativeURL: WDFileLibrary / #appJs).
 	super updateRoot: anHtmlRoot.
-	
 	self title ifNotNilDo: [ :titleString | anHtmlRoot title: titleString ]

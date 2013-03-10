@@ -1,20 +1,11 @@
 updating
 updateRoot: anHtmlRoot
-	
-	anHtmlRoot stylesheet 
-		url: (self convertToRelativeURL: WDFileLibrary / #mainCss in: anHtmlRoot).
-		
+	anHtmlRoot stylesheet url: (self relativeURL: WDFileLibrary / #mainCss).
 	anHtmlRoot link
 		relationship: 'license';
-		url: self urlForLicense.
-		
-	anHtmlRoot script 
-		url: (self convertToRelativeURL: WDFileLibrary / #jQueryJs in: anHtmlRoot).
-	anHtmlRoot script 
-		url: (self convertToRelativeURL: WDFileLibrary / #jQueryUiJs in: anHtmlRoot).
-	anHtmlRoot script 
-		url: (self convertToRelativeURL: WDFileLibrary / #bbqJs in: anHtmlRoot).
-	anHtmlRoot script 
-		url: (self convertToRelativeURL: WDFileLibrary / #mainJs in: anHtmlRoot).
-		
+		url: 'license.txt'.
+	anHtmlRoot script url: (self relativeURL: WDFileLibrary / #jQueryJs).
+	anHtmlRoot script url: (self relativeURL: WDFileLibrary / #jQueryUiJs).
+	anHtmlRoot script url: (self relativeURL: WDFileLibrary / #bbqJs).
+	anHtmlRoot script url: (self relativeURL: WDFileLibrary / #mainJs).
 	self title ifNotNilDo: [ :titleString | anHtmlRoot title: titleString ]
