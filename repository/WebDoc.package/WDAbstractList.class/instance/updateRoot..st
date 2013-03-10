@@ -1,13 +1,13 @@
 updating
 updateRoot: anHtmlRoot
 	anHtmlRoot stylesheet 
-		url: WDFileLibrary / #commonCss.
+		url: (self convertToRelativeURL: WDFileLibrary / #commonCss in: anHtmlRoot).
 	anHtmlRoot stylesheet 
-		url: WDFileLibrary / #fulllistCss.
+		url: (self convertToRelativeURL: WDFileLibrary / #fulllistCss in: anHtmlRoot).
 		
 	anHtmlRoot script 
-		url: JQDevelopmentLibrary / #jQueryJs.
+		url: (self convertToRelativeURL: WDFileLibrary / #jQueryJs in: anHtmlRoot).
 	anHtmlRoot script 
-		url: JQUiDevelopmentLibrary / #jQueryUiJs.
+		url: (self convertToRelativeURL: WDFileLibrary / #jQueryUiJs in: anHtmlRoot).
 	anHtmlRoot script 
-		url: WDFileLibrary / #fulllistJs.
+		url: (self convertToRelativeURL: WDFileLibrary / #fulllistJs in: anHtmlRoot).

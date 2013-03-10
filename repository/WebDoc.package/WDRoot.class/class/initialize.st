@@ -1,4 +1,8 @@
 initialization
 initialize
+	| application |
 	super initialize.
-	self registerAsApplication: self rootURL
+	application := WAAdmin register: self asApplicationAt: self rootURL.
+	application configuration 
+		at: #useCookies put: true.
+	self halt.

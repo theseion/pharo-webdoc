@@ -1,0 +1,1 @@
+A relative version of the WAUrl since there is no support for relative urls |(

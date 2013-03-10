@@ -21,7 +21,8 @@
 		"selectorPopup",
 		"classPopup",
 		"instVarList",
-		"welcomeView" ],
+		"welcomeView",
+		"fileLibrary" ],
 	"name" : "WDRoot",
 	"pools" : [
 		 ],

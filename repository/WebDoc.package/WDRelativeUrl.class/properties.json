@@ -1,0 +1,14 @@
+{
+	"category" : "WebDoc",
+	"classinstvars" : [
+		 ],
+	"classvars" : [
+		 ],
+	"commentStamp" : "CamilloBruni 3/10/2013 15:19",
+	"instvars" : [
+		 ],
+	"name" : "WDRelativeUrl",
+	"pools" : [
+		 ],
+	"super" : "WAUrl",
+	"type" : "normal" }
