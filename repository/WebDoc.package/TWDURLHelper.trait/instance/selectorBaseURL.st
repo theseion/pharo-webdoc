@@ -1,3 +1,3 @@
 t-url
 selectorBaseURL
-	^ self rootURL, '/selector'
+	^ self relativeRootURL, '/selector'
