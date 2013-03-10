@@ -1,6 +1,7 @@
 encoding
 encodePathOn: aDocument
 	path isNil ifTrue: [ ^ self ].
+	path isEmpty ifTrue: [ ^ aDocument nextPut: $. ].
 	
 	path keysAndValuesDo: [ :index :each |
 		index > 1

@@ -238,18 +238,23 @@ function generateTOC() {
 }
 
 // ====================================================================
+
+function findClassRoot(url) {
+	return "/class" + url.split("/class").pop()
+}
+
 function selectorPopupURL(item) {
-	url = item.attr("href");
+	var url = item.attr("href");
 	if (url.indexOf("#") == -1) {
-		return defaultPopupURL(url.split("/doc").pop());
+		return defaultPopupURL(findClassRoot(url));
 	}
 	url = url.split("#");
-	className = url[0].split("/").pop();
+	var className = url[0].split("/").pop();
 	if (!className) {
 		className = $(".className:first").text()
 	}
 	className = className.split(".html")[0];
-	return defaultPopupURL("/class/"+className+"/"+url[1])
+	return defaultPopupURL("/class/"+className+url[1])
 }
 
 function summaryPopupURL(item) {
@@ -257,11 +262,11 @@ function summaryPopupURL(item) {
 }
 
 function classPopupURL(item) {
-	return defaultPopupURL(item.attr("href"));
+	return defaultPopupURL(findClassRoot(item.attr("href")));
 }
 
 function defaultPopupURL(url) {
-	url = url.split("/");
+	var url = url.split("/");
 	url.splice(0,1,"popup");
 	url=url.join("/");
 	if (!url.endsWith(".html")) {
