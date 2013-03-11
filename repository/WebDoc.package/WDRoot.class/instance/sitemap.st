@@ -9,6 +9,12 @@ sitemap
 			contentType: 'text/plain'.
 		stream := response stream.
 		
+		stream nextPutAll: './index.html'; crlf.
+		stream nextPutAll: './license.txt'; crlf.
+		stream nextPutAll: './welcome.html'; crlf.
+		
+		self fileLibrary sitemapOn: stream.
+		
 		self packageTree sitemapOn: stream.
 		self packageClassView sitemapOn: stream.
 		self classView sitemapOn: stream.

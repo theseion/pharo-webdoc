@@ -1,3 +1,3 @@
 t-url
 basePopupURLforClass: aClass
-	^  self popupURL, (self urlSuffixForClass: aClass urlencoded)
+	^  self popupURL, (self urlSuffixForClass: aClass)
