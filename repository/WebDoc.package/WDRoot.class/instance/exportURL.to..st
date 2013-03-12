@@ -10,7 +10,7 @@ exportURL: aURL to: aFileReference
 		
 	[	ZnClient new
 		url: 'http://localhost:8088/', aURL;
-		numberOfRetries: 1;
+		numberOfRetries: 10;
 		downloadTo: file fullName
 	] on: FileExistsException do: [:e|
 		"probably an uppercase vs. lowercase in the filename.
