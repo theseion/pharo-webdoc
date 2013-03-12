@@ -6,6 +6,6 @@ version03: spec
 		spec blessing: #'development'.
 		spec description: 'Working version for 1.4'.
 		spec author: 'CamilloBruni'.
-		spec timestamp: '3/3/2013 13:49'.
+		spec timestamp: '3/12/2013 22:18'.
 		spec 
-			package: 'WebDoc' with: 'WebDoc-CamilloBruni.89' ].
+			package: 'WebDoc' with: 'WebDoc-CamilloBruni.118' ].
