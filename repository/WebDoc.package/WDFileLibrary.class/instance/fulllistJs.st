@@ -149,9 +149,9 @@ function linkList() {
 }
 
 function clickListLink(a) {
-	clicked = a.parent(''li'').addClass(''clicked'');
+	var clicked = a.parent(''li'').addClass(''clicked'');
 	var win = window.top.frames[a.attr("target")];
-	href = a.attr(''href'');
+	var href = a.attr(''href'');
 	if (!win) {
 		win = window.parent;
 	}
