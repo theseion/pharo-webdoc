@@ -8,5 +8,5 @@ exportAllClassesTo: aFileReference
 	classes sort: [ :a :b| a name <= b name ].
 	
 	classes 
-		do: [ :cls | self exportClass: cls to: aFileReference]
+		do: [ :cls | self exportClass: cls to: aFileReference ]
 		displayingProgress: [ :cls| 'Exporting ', cls name ].

@@ -9,4 +9,7 @@ exportAllTo: aFileReference
 		exportURL: self rootURL, '/license.txt'  to: aFileReference.
 		
 	self fileLibrary exportAllTo: aFileReference.
-	self exportAllClassesTo: aFileReference.
+	
+	self 
+		exportAllPackagesTo: aFileReference;
+		exportAllClassesTo: aFileReference.
