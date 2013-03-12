@@ -1,6 +1,6 @@
 rendering
 renderContentOn: html
-	self prepareMethodList.
+	self initializeItems.
 	super renderContentOn: html.
 	"self renderSearchFieldOn: html.
 	self renderListOn: html."

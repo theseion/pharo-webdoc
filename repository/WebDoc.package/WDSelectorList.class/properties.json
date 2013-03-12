@@ -7,8 +7,8 @@
 	"commentStamp" : "CamilloBruni 3/3/2013 14:10",
 	"instvars" : [
 		"selector",
-		"implementors",
-		"category" ],
+		"category",
+		"items" ],
 	"name" : "WDSelectorList",
 	"pools" : [
 		 ],

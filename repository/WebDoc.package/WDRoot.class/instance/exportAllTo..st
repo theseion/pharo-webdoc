@@ -10,6 +10,7 @@ exportAllTo: aFileReference
 		
 	self fileLibrary exportAllTo: aFileReference.
 	
-	self 
+	self
+		exportAllSymbolsTo: aFileReference;
 		exportAllPackagesTo: aFileReference;
 		exportAllClassesTo: aFileReference.
