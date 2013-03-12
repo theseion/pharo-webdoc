@@ -1,7 +1,7 @@
 {
 	"category" : "WebDoc",
 	"classinstvars" : [
-		 ],
+		"routes" ],
 	"classtraitcomposition" : "TWDURLHelper classTrait",
 	"classvars" : [
 		"HtmlCache",
