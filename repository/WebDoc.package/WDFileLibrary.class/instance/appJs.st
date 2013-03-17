@@ -276,7 +276,7 @@ function defaultPopupURL(url) {
 }
 
 function detectRootURL() {
-	return window.location.href.split("/doc/")[0] + "/doc/"
+	return window.location.href + "/" + document.WEBDOC_RELATIVE_DOCUMENT_ROOT + "/"
 }
 
 if (!document["useVtips"]) {
