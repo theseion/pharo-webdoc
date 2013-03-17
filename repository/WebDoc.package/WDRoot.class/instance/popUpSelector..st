@@ -6,4 +6,5 @@ popUpSelector: aSelector
 	
 	activeView := self selectorPopup.
 	activeView category: nil.
-	activeView selector: aSelector asSymbol
+	activeView selector: aSelector asSymbol.
+	^ self render: activeView.

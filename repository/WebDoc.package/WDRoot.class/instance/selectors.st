@@ -6,4 +6,5 @@ selectors
 	
 	activeView := self selectorView.
 	activeView category: nil.
-	activeView selector: nil
+	activeView selector: nil.
+	^ self render: activeView.

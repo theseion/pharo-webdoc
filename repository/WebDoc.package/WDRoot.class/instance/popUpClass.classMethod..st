@@ -7,4 +7,5 @@ popUpClass: aClassName classMethod: aSelector
 	activeView := self methodPopup.
 	activeView viewClass: (self classNamed: aClassName).
 	activeView selectClass: activeView viewClass class.
-	activeView selectMethodNamed: aSelector asSymbol
+	activeView selectMethodNamed: aSelector asSymbol.
+	^ self render: activeView.

@@ -4,4 +4,4 @@ welcome
 	<path: 'welcome.html'>
    <produces: 'text/html'>
 	
-	activeView := self welcomeView.
+	^ self render: self welcomeView.

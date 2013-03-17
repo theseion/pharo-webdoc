@@ -27,6 +27,6 @@
 	"name" : "WDRoot",
 	"pools" : [
 		 ],
-	"super" : "WAComponent",
+	"super" : "WARestfulHandler",
 	"traitcomposition" : "TWDURLHelper",
 	"type" : "normal" }

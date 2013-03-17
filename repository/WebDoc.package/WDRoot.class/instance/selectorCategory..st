@@ -6,4 +6,5 @@ selectorCategory: aSymbol
 	
 	activeView := self selectorView.
 	activeView category: aSymbol.
-	activeView selector: nil
+	activeView selector: nil.
+	^ self render: activeView.

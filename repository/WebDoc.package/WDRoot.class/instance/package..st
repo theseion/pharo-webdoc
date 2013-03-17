@@ -5,4 +5,5 @@ package: aPackageName
    <produces: 'text/html'>
 	
 	activeView := self packageClassView.
-	activeView packageName: aPackageName asSymbol
+	activeView packageName: aPackageName asSymbol.
+	^ self render: activeView.

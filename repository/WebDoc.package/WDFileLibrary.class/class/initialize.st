@@ -1,3 +1,3 @@
 initialization
 initialize
-	self addAllFilesIn: 'resource/css'.
+	"self addAllFilesIn: 'resource/css'."

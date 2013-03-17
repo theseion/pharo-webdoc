@@ -5,4 +5,5 @@ class: aClassName
    <produces: 'text/html'>
 
 	activeView := self classView.
-	activeView selectClass: (self classNamed: aClassName)
+	activeView selectClass: (self classNamed: aClassName).
+	^ self render: activeView

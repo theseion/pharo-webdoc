@@ -5,4 +5,5 @@ popUpClass: aClassName
    <produces: 'text/html'>
 	
 	activeView := self classPopupView.
-	activeView selectClass: (self classNamed: aClassName)
+	activeView selectClass: (self classNamed: aClassName).
+	^ self render: activeView.

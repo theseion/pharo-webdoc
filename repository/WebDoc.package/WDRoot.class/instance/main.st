@@ -3,5 +3,6 @@ main
 	<get>
 	<path: 'index.html'>
    <produces: 'text/html'>
-	
-	activeView := mainView.
+
+
+   ^ self render: self mainView

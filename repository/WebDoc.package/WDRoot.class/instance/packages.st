@@ -4,4 +4,5 @@ packages
 	<path: 'package.html'>
    <produces: 'text/html'>
 	
-	activeView := self packageTree
+	activeView := self packageTree.
+	^ self render: activeView.

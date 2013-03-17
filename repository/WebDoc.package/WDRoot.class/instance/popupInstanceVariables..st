@@ -8,3 +8,4 @@ popupInstanceVariables: aClassName
 	activeView 
 		viewClass: (self classNamed: aClassName);
 		instVarName: nil.
+	^ self render: activeView.

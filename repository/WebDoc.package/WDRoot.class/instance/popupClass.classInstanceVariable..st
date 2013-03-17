@@ -7,4 +7,5 @@ popupClass: aClassName classInstanceVariable: variableName
 	activeView := self instanceVariablePopupView.
 	activeView 
 		viewClass: (self classNamed: aClassName) class;
-		instVarName: variableName asSymbol
+		instVarName: variableName asSymbol.
+	^ self render: activeView.
