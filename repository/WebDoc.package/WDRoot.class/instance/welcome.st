@@ -3,5 +3,4 @@ welcome
 	<get>
 	<path: 'welcome.html'>
    <produces: 'text/html'>
-	
-	^ self render: self welcomeView.
+	^ self render: self welcomeView

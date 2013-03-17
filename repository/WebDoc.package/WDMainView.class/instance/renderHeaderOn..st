@@ -8,4 +8,4 @@ renderHeaderOn: html
 			html anchor url: '#'; with: 'Class List'.
 			html anchor url: '#'; with: 'Selector List' ].
 		
-	html div clear
+	html div

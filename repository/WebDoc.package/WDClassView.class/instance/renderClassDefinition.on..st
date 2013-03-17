@@ -6,7 +6,7 @@ renderClassDefinition: class on: html
 			html definitionTerm 
 				with: 'Subclass of: '.
 			self renderInheritListOn: html].
-	html div clear.
+	html div.
 	
 	html text: 'View '.
 	html anchor

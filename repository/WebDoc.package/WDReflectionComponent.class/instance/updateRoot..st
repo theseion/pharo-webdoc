@@ -1,6 +1,5 @@
 updating
 updateRoot: anHtmlRoot
-	rootURL := anHtmlRoot context actionBaseUrl withoutQuery asString.
 	anHtmlRoot stylesheet url: (self relativeURL: WDFileLibrary / #commonCss).
 	anHtmlRoot stylesheet url: (self relativeURL: WDFileLibrary / #stcodeCss).
 	anHtmlRoot stylesheet url: (self relativeURL: WDFileLibrary / #styleCss).
