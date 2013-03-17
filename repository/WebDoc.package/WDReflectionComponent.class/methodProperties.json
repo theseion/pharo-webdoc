@@ -3,7 +3,9 @@
 		 },
 	"instance" : {
 		"basePopupURLforClass:" : "CamilloBruni 3/9/2013 00:06",
+		"baseScript" : "CamilloBruni 3/13/2013 09:14",
 		"initialize" : "CamilloBruni 7/4/2011 14:43",
+		"relativeURL:" : "CamilloBruni 3/17/2013 16:49",
 		"renderClassLink:on:" : "CamilloBruni 3/2/2013 18:51",
 		"renderMethodLink:named:on:" : "CamilloBruni 3/4/2013 13:08",
 		"renderMethodLink:on:" : "CamilloBruni 3/4/2013 13:06",
@@ -14,4 +16,4 @@
 		"rootURL" : "CamilloBruni 3/2/2013 18:56",
 		"rootURL:" : "CamilloBruni 3/2/2013 18:00",
 		"title" : "CamilloBruni 3/4/2013 10:09",
-		"updateRoot:" : "CamilloBruni 3/12/2013 09:17" } }
+		"updateRoot:" : "CamilloBruni 3/17/2013 16:50" } }

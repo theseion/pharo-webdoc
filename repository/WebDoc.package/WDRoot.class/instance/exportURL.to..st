@@ -1,6 +1,7 @@
 exporting
 exportURL: aURL to: aFileReference 
 	| file current |
+	
 	file := aFileReference resolve: (aURL seasideUrl asRelativeURLTo: self rootURL) asString.
 	
 	(FileStream isAFileNamed: file fullName) ifTrue: [ ^ self ].

@@ -1,6 +1,5 @@
 rendering
 renderListOn: html 
-	self halt.
 	html anchor
 		target: '_searchingToolbar'.
 	classes doWithIndex: [ :class :index |
