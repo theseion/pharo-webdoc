@@ -268,7 +268,7 @@ function classPopupURL(item) {
 function defaultPopupURL(url) {
 	var url = url.split("/");
 	url.splice(0,1,"popup");
-	url=url.join("/");
+	url = url.join("/");
 	if (!url.endsWith(".html")) {
 		url += ".html"
 	}
@@ -284,15 +284,15 @@ if (!document["useVtips"]) {
 }
 
 function createSelectorLinks() {
-	xOffset = 3;
-   	yOffset = -10; 
-	closeTimeout = 0;
-	timeout = 500;
+	var xOffset = 3;
+   	var yOffset = -10; 
+	var closeTimeout = 0;
+	var timeout = 500;
 	$("body")
 		.append( "<p id=''vtip''><img id=''vtipArrow'' /><iframe id=''popupFrame''></iframe></p>" );
 		
-	toolTip = $("p#vtip");
-	toolTipFrame = $("iframe#popupFrame");
+	var toolTip = $("p#vtip");
+	var toolTipFrame = $("iframe#popupFrame");
 	
       //$("p#vtip #vtipArrow").attr("src", "images/vtip_arrow.png");
 	toolTip
