@@ -149,7 +149,7 @@ function linkList() {
 }
 
 function clickListLink(a) {
-	var clicked = a.parent(''li'').addClass(''clicked'');
+	clicked = a.parent(''li'').addClass(''clicked'');
 	var win = window.top.frames[a.attr("target")];
 	var href = a.attr(''href'');
 	if (!win) {
