@@ -1,3 +1,3 @@
 initialization
 rootURL
-	^ '/doc'
+	^ 'doc'
