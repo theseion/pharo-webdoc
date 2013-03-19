@@ -1,3 +1,3 @@
 t-url
 urlForSelector: aSelector
-	^ self selectorBaseURL, '/list/', aSelector urlencoded, self urlHTMLSuffix
+	^ self selectorBaseURL, '/list/', aSelector webdocEncoded, self urlHTMLSuffix

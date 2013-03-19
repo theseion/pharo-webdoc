@@ -5,7 +5,7 @@ popUpClass: aClassName instanceMethod: aSelector
    <produces: 'text/html'>
 	
 	activeView := self methodPopup.
-	activeView selectClass: (self classNamed: aClassName).
+	activeView selectClass: (self classNamed: aClassName urldecoded).
 	activeView viewClass: activeView selectedClass.
-	activeView selectMethodNamed: aSelector asSymbol.
+	activeView selectMethodNamed: aSelector urldecoded asSymbol.
 	^ self render: activeView.

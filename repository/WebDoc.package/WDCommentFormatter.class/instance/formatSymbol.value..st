@@ -1,8 +1,8 @@
 rendering
 formatSymbol: aSymbol value: aString
-	| url implementors |
+	| implementors |
 	
-	implementors := SystemNavigation default allImplementorsOf: aSymbol.
+	implementors := self class allImplementorsOf: aSymbol.
 	
 	implementors size = 0
 		ifTrue: [ ^ html text: aString ].

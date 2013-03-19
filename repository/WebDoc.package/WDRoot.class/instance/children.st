@@ -1,4 +1,0 @@
-hooks
-children
-
-	^ {activeView}

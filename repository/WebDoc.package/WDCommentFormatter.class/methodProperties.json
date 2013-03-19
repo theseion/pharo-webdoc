@@ -1,6 +1,9 @@
 {
 	"class" : {
+		"allImplementorsOf:" : "CamilloBruni 3/19/2013 18:16",
 		"comment:method:" : "CamilloBruni 2/28/2011 20:45",
+		"implementors" : "CamilloBruni 3/19/2013 18:16",
+		"reset" : "CamilloBruni 3/19/2013 18:16",
 		"with:rootURL:" : "DamienPollet 9/8/2011 18:24" },
 	"instance" : {
 		"acceptCode:" : "CamilloBruni 3/2/2013 13:11",
@@ -25,7 +28,7 @@
 		"formatClassVariable:" : "CamilloBruni 2/28/2011 21:31",
 		"formatGlobal:named:" : "CamilloBruni 3/9/2013 00:55",
 		"formatMethod:value:" : "CamilloBruni 3/2/2013 18:38",
-		"formatSymbol:value:" : "CamilloBruni 3/2/2013 18:37",
+		"formatSymbol:value:" : "CamilloBruni 3/18/2013 23:32",
 		"formatThisContext" : "CamilloBruni 2/28/2011 21:34",
 		"method" : "CamilloBruni 2/28/2011 20:28",
 		"method:" : "CamilloBruni 2/28/2011 20:28",

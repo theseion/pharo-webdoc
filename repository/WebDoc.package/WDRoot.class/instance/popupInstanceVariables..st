@@ -6,6 +6,6 @@ popupInstanceVariables: aClassName
 	
 	activeView := self instanceVariablePopupView.
 	activeView 
-		viewClass: (self classNamed: aClassName);
+		viewClass: (self classNamed: aClassName urldecoded);
 		instVarName: nil.
 	^ self render: activeView.
