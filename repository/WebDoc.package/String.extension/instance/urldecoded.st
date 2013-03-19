@@ -1,5 +1,3 @@
 *WebDoc
 urldecoded
-	self shouldBeImplemented.
-	^ String new: self size streamContents: [ :s |
-		(WAUrlEncoder on: s) nextPutAll: self ]
+	^ ZnPercentEncoder new decode: self
