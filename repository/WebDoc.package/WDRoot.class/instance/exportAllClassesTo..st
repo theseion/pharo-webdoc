@@ -3,8 +3,7 @@ exportAllClassesTo: aFileReference
 	
 	| classes |
 	
-	classes := Array streamContents: [ :s| 
-					SystemNavigation default allBehaviorsDo: [ :cls| s nextPut: cls]].
+	classes := self environment allNonMetaClasses.
 	classes sort: [ :a :b| a name <= b name ].
 	
 	classes 

@@ -1,5 +1,11 @@
 I am the root component responsible for dispatching over the different subviews.
 
+
+Usage: 
+
+	ZnZincServerAdaptor startOn: 8088.
+	[ WDRoot allInstances first exportAll ] fork.
+
 Instance Variables:
 	classView			<WDClassView>
 	methodView			<WDMethodView>

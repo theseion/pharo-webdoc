@@ -6,7 +6,7 @@
 	"classvars" : [
 		"HtmlCache",
 		"Uacct" ],
-	"commentStamp" : "CamilloBruni 3/3/2013 14:19",
+	"commentStamp" : "<historical>",
 	"instvars" : [
 		"classView",
 		"methodView",
@@ -22,7 +22,8 @@
 		"instVarList",
 		"welcomeView",
 		"fileLibrary",
-		"instanceVariablePopupView" ],
+		"instanceVariablePopupView",
+		"environment" ],
 	"name" : "WDRoot",
 	"pools" : [
 		 ],

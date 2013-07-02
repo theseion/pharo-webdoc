@@ -9,7 +9,8 @@
 		"packages",
 		"hierarchy",
 		"renderPackages",
-		"index" ],
+		"index",
+		"environment" ],
 	"name" : "WDPackageTree",
 	"pools" : [
 		 ],
