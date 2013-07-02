@@ -1,6 +1,5 @@
 rendering
 renderSearchFieldOn: html
 	(category isNil and: [ selector isNil ])
-		ifTrue: [^ self].
+		ifTrue: [ ^ self ].
 	super renderSearchFieldOn: html.
-	

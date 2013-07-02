@@ -8,7 +8,8 @@
 	"instvars" : [
 		"selector",
 		"category",
-		"items" ],
+		"items",
+		"environment" ],
 	"name" : "WDSelectorList",
 	"pools" : [
 		 ],

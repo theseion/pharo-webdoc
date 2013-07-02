@@ -1,7 +1,7 @@
 rendering
 selectorsForCategory: aCategoryName
 	| implementedSelectors |
-	implementedSelectors := SystemNavigation default allImplementedMessages.
+	implementedSelectors := self environment selectors.
 	
 	aCategoryName = self binaryCategory
 		ifTrue: [ ^ implementedSelectors select: [ :symbol | symbol isBinary ]].
