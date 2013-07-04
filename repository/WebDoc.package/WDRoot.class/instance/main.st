@@ -1,7 +1,7 @@
 routes
 main
 	<get>
-	<path: 'index.html'>
+	<path: '/'>
    <produces: 'text/html'>
 	
-   ^ self render: self mainView
+   ^ self index

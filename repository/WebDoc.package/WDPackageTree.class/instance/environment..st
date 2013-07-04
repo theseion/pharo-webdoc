@@ -1,4 +1,4 @@
 accessing
 environment: anRBEnvironment
-	environment := anRBEnvironment.
+	super environment: anRBEnvironment.
 	self resetPackageHierarchy.
