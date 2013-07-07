@@ -1,9 +1,7 @@
 accessing
 packageName: aPackageName
-	selectedPackage := PackageOrganizer default 
-		packageNamed: aPackageName 
+	selectedPackage := self environment 
+		packageAt: aPackageName 
 		ifAbsent: [ self respondNotFound ].
 	
-	classes := selectedPackage isNil
-					ifTrue: [ #() ]
-					ifFalse: [ selectedPackage classes sort: [ :a :b | a name <= b name ] ].
+	self resetClassList.
