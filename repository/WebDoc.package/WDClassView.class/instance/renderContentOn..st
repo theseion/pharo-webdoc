@@ -6,7 +6,6 @@ renderContentOn: html
 	html div
 		id: 'content';
 		with: [
-			1halt.
 			self renderClassName: self selectedClass name on: html.
 			self renderClassDefinition: self selectedClass on: html.
 			self renderClassComment: self selectedClass comment on: html.
