@@ -6,7 +6,7 @@ searchResults
 	beginsWith := SortedCollection sortBlock: sortBlock.
 	others := SortedCollection sortBlock: sortBlock.
 	
-	SystemNavigation default allClassesDo: [ :class|
+	self environment classesAndTraitsDo: [ :class|
 		name := class name.
 		name = searchTerm
 			ifTrue: [ result add: class]

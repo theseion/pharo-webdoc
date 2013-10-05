@@ -2,7 +2,7 @@ rendering
 formatSymbol: aSymbol value: aString
 	| implementors |
 	
-	implementors := self class allImplementorsOf: aSymbol.
+	implementors := self allImplementorsOf: aSymbol.
 	
 	implementors size = 0
 		ifTrue: [ ^ html text: aString ].

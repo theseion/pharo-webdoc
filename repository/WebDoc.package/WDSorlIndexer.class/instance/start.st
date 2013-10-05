@@ -1,4 +1,4 @@
 as yet unclassified
 start
-	SystemNavigation default allClassesDo: [ :aClass|
+	self environment classesAndTraitsDo: [ :aClass|
 		self commitClass: aClass].

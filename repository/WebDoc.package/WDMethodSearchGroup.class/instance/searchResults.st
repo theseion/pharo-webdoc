@@ -6,8 +6,8 @@ searchResults
 	beginsWith := SortedCollection sortBlock: sortBlock.
 	others := SortedCollection sortBlock: sortBlock.
 	
-	SystemNavigation default allBehaviorsDo: [:class | class
-		selectorsAndMethodsDo: [:name :method|
+	self environment classesAndTraitsDo: [ :class | 
+		class selectorsAndMethodsDo: [ :name :method |
 			name = searchTerm
 				ifTrue: [ result add: method]
 				ifFalse: [ (name beginsWith: searchTerm)

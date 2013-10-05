@@ -9,6 +9,7 @@
 	"instvars" : [
 		"comment",
 		"method",
+		"environment",
 		"html",
 		"rootURL",
 		"wordSplitRegex",

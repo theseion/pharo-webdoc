@@ -1,7 +1,7 @@
 sitemap
 sitemapOn: stream
 	
-	SystemNavigation default allBehaviorsDo: [ :class |
+	self environment classesAndTraitsDo: [ :class |
 		stream nextPutAll: (self poupURLForInstanceVariables: class); crlf.
 		stream nextPutAll: (self poupURLForInstanceVariables: class class); crlf.
 			

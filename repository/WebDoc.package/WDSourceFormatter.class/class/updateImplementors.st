@@ -1,8 +1,9 @@
 accessing
 updateImplementors
 	implementors := Dictionary new.
-	SystemNavigation default allBehaviorsDo: [:class | class
-		selectorsAndMethodsDo: [:sel :m| 
-			implementors at: sel ifAbsentPut: [ OrderedCollection new].
-			(implementors at: sel) add: m]].
+	self environment classesAndTraitsDo: [ :class |
+		class selectorsAndMethodsDo: [ :selector :method | 
+			(implementors 
+				at: selector 
+				ifAbsentPut: [ OrderedCollection new ]) add: method ]].
 	
