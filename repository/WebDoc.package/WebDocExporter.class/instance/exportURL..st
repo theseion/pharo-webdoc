@@ -9,7 +9,9 @@ exportURL: aURL
 	"now this gets soooo slow that we have to do all these ugly tricks"
 	self ensureDirectory: file parent asAbsolute.
 		
-	requestContext := self requestContextForURL: aURL file: file.
+	requestContext := self requestContextForURL: aURL.
 	[ rootComponent handle: requestContext ]
 		on: WAResponseNotification
-		do: [ :n | "got a response" ]
+		do: [ :n | "got a response" ].
+	file writeStreamDo: [ :stream| 
+		stream nextPutAll: requestContext response contents ]

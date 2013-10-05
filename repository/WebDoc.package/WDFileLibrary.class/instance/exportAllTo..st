@@ -1,7 +1,7 @@
 exporting
 exportAllTo: aFileReference
 	| files |
-	files := (aFileReference / 'files') ensureDirectory.
+	files := (aFileReference / 'files') ensureCreateDirectory.
 	
 	self fileSelectors do: [ :fileProviderMethodSelector | | file |
 		file := files / (self asFilename: fileProviderMethodSelector).
