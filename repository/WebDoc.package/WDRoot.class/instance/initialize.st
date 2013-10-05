@@ -1,9 +1,9 @@
 initialization
 initialize
-	super initialize.
-	
 	childViews := OrderedCollection new.
-	environment := RBPackageEnvironment packageNamed: 'WebDoc'.
+	environment := RBBrowserEnvironment new.
+	
+	super initialize.
 	
 	"initialize file library"
 	self fileLibrary.

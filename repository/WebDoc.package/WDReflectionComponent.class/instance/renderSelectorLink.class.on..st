@@ -1,5 +1,5 @@
 rendering
-renderSelectorLink: method class: class on: html
+renderSelectorLink: selector class: class on: html
 	self renderClassLink: class on: html.
 	html text: ' >> '.
-	self renderSelectorLink: method in: class on: html.
+	self renderSelectorLink: selector in: class on: html.

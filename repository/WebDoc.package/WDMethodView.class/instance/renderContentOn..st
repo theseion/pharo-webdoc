@@ -1,6 +1,5 @@
 rendering
 renderContentOn: html
-1halt.
 	html anchor 
 		name: (self urlSuffixForMethod: self method ).
 	html div

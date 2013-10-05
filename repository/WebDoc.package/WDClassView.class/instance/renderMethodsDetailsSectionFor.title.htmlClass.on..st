@@ -6,6 +6,7 @@ renderMethodsDetailsSectionFor: class title: title htmlClass: htmlClass on: html
 	
 	methodView := WDMethodView new.
 	methodView 
+		environment: self environment;
 		rootURL: rootURL;
 		showClassLinks: false;
 		viewClass: self selectedClass.
@@ -14,5 +15,5 @@ renderMethodsDetailsSectionFor: class title: title htmlClass: htmlClass on: html
 		class: 'methodDetail';
 		with: [
 			self renderSectionTitle: title on: html.
-			class selectors asArray sort do: [ :selector|
-				html render: (methodView  method: (class methodDict at: selector))]].
+			(self selectorsForClass: class ) do: [ :selector|
+				(methodView  method: (class >> selector)) renderOn: html ]].

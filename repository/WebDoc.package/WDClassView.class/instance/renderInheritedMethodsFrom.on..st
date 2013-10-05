@@ -1,8 +1,8 @@
 rendering
 renderInheritedMethodsFrom: class on: html
-	|methods|
-	methods := class methodDict values asArray sort: [:a :b | a selector <= b selector].
-	methods ifEmpty: [ ^ self ].
+	| selectors |
+	selectors := self selectorsForClass: class.
+	selectors ifEmpty: [ ^ self ].
 	
 	html div
 		class: 'inheritedMethod';
@@ -10,6 +10,6 @@ renderInheritedMethodsFrom: class on: html
 			html heading level3;
 				class: 'inherited';
 				with: [
-					html text: methods size asString, ' methods inherited from '.
+					html text: selectors size asString; text: ' methods inherited from '.
 					self renderClassLink: class on: html ].
-			self renderSelectorList: methods  in: class on: html ]
+			self renderSelectorList: selectors in: class on: html ]

@@ -1,7 +1,7 @@
 rendering
 renderMethodsSummarySectionFor: class title: title htmlClass: htmlClass on: html
 	| selectors |
-	selectors := class selectors sort.
+	selectors := self selectorsForClass: class.
 	selectors ifEmpty: [ ^ self ].
 	
 	html div
