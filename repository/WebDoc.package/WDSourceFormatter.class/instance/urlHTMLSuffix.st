@@ -1,0 +1,3 @@
+t-url
+urlHTMLSuffix
+	^ '.html'
