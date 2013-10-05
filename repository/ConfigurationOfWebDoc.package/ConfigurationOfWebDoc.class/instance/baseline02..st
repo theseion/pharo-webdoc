@@ -12,10 +12,10 @@ baseline02: spec
 				version: #'development';
 				repository: 'http://smalltalkhub.com/mc/dh83/petitmarkdown/main/' ].
 			
-		spec project: 'Seaside30' with: [
+		spec project: 'Seaside3' with: [
 			spec
 				repository: 'http://smalltalkhub.com/mc/Seaside/MetacelloConfigurations/main';
-				className: 'ConfigurationOfSeaside30';
+				className: 'ConfigurationOfSeaside3';
 				version: #'stable' ].
 			
 		spec project: 'Seaside-REST' with: [
@@ -26,4 +26,4 @@ baseline02: spec
 			
 		spec 
 			package: 'WebDoc' with: [
-				spec requires: #('Petit Markdown' 'Seaside30' 'Seaside-REST') ]]
+				spec requires: #('Petit Markdown' 'Seaside3' 'Seaside-REST') ]]
