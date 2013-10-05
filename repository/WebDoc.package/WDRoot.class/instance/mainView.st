@@ -1,4 +1,4 @@
 accessing
 mainView
 	^ mainView ifNil: [ 
-			mainView := self newChildView: WDMainView ].
+		mainView := self newChildView: WDMainView ].

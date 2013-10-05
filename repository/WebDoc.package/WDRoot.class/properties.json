@@ -23,7 +23,9 @@
 		"welcomeView",
 		"fileLibrary",
 		"instanceVariablePopupView",
-		"environment" ],
+		"environment",
+		"rootURL",
+		"childViews" ],
 	"name" : "WDRoot",
 	"pools" : [
 		 ],

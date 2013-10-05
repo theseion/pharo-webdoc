@@ -1,4 +1,4 @@
 accessing
 methodView
 	^ methodView ifNil: [ 
-			methodView := self newChildView: WDMethodView].
+		methodView := self newChildView: WDMethodView].

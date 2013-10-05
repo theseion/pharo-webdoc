@@ -10,6 +10,6 @@ exportAllSymbols
 				do: [ :selector | 
 					self exportURL: (self urlForSelector: selector).
 					self exportURL: (self popupURLForSelector: selector) ] 
-				displayingProgress: 'Exporting Used Selectors in Category ', category ] 
+				displayingProgress: 'Exporting Used Selectors in Category: "', category, '"' ] 
 		displayingProgress: 'Exporting Symbol Categories'.
 		

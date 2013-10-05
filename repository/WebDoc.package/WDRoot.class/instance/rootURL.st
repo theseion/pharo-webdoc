@@ -1,3 +1,3 @@
 accessing
 rootURL
-	^ self class rootURL
+	^ rootURL ifNil: [ self class rootURL ].

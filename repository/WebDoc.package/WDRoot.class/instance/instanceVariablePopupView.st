@@ -1,4 +1,4 @@
 accessing
 instanceVariablePopupView
 	^ instanceVariablePopupView ifNil: [ 
-			instanceVariablePopupView := self newChildView: WDInstanceVariablePopup ].
+		instanceVariablePopupView := self newChildView: WDInstanceVariablePopup ].

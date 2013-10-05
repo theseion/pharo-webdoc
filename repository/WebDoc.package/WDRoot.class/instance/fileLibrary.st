@@ -1,4 +1,4 @@
 accessing
 fileLibrary
 	^ fileLibrary ifNil: [ 
-			fileLibrary := self newChildView: WDFileLibrary ].
+		fileLibrary := self newChildView: WDFileLibrary ].

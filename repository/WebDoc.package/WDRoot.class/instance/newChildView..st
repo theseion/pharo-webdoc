@@ -2,5 +2,8 @@ initialization
 newChildView: aClass
 	|instance|
 	instance := aClass new.
-	instance rootURL: self rootURL.
+	childViews add: instance.
+	instance 
+		rootURL: self rootURL;
+		environment: self environment.
 	^ instance
