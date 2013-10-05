@@ -2,7 +2,7 @@ rendering
 renderContentOn: html
 	html anchor 
 		name: (self urlSuffixForMethod: self method ).
-	html  div
+	html div
 		class: contentSyleClass;
 		with: [
 			self renderSignatureOn: html.

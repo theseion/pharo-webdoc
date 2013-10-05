@@ -10,5 +10,5 @@ formatMethodPatternFor: aMethodNode
 	selectorParts with: arguments do: [:selector :arg | 
 			self renderSelector: selector.
 			html space.
-			self visitArgument: arg.
+			self visitArgumentNode: arg.
 			html space.]

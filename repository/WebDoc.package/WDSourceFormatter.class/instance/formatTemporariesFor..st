@@ -9,7 +9,7 @@ formatTemporariesFor: aSequenceNode
 		with: [
 			html text: '| '.
 			temps do: [:each | 
-				self visitArgument: each.
+				self visitArgumentNode: each.
 				html space ].
 			html text: '| '].
 	aSequenceNode parent isMethod ifTrue: [ self break ].

@@ -1,6 +1,7 @@
 uploaded
 styleCss
 	^ '
+	/* Original StyleSheet from http://yardoc.org/ */
 body { 
   padding: 0;
   font-family: "Lucida Sans", "Lucida Grande", Verdana, Arial, sans-serif; 
@@ -76,17 +77,6 @@ h2 small {
 	padding: 7px 10px;
 	display: block;
 }
-.note.todo { background: #ffffc5; border-color: #ececaa; }
-.note.returns_void { background: #efefef; }
-.note.deprecated { background: #ffe5e5; border-color: #e9dada; }
-.note.private { background: #ffffc5; border-color: #ececaa; }
-.note.title { text-transform: lowercase; padding: 1px 5px; font-size: 0.9em; font-family: "Lucida Sans", "Lucida Grande", Verdana, Arial, sans-serif; display: inline; }
-.summary_signature + .note.title { margin-left: 7px; }
-h1 .note.title { font-size: 0.5em; font-weight: normal; padding: 3px 5px; position: relative; top: -3px; text-transform: capitalize; }
-.note.title.constructor { color: #fff; background: #6a98d6; border-color: #6689d6; } 
-.note.title.writeonly { color: #fff; background: #45a638; border-color: #2da31d; } 
-.note.title.readonly { color: #fff; background: #6a98d6; border-color: #6689d6; } 
-.note.title.private { background: #d5d5d5; border-color: #c5c5c5; }
 
 .discussion .stComment {
 	font-family: "Lucida Sans", "Lucida Grande", Verdana, Arial, sans-serif;

@@ -1,0 +1,15 @@
+{
+	"category" : "WebDoc",
+	"classinstvars" : [
+		 ],
+	"classvars" : [
+		 ],
+	"commentStamp" : "<historical>",
+	"instvars" : [
+		"environment",
+		"destination" ],
+	"name" : "WebDocExporter",
+	"pools" : [
+		 ],
+	"super" : "Object",
+	"type" : "normal" }
