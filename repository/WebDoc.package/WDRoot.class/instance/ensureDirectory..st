@@ -1,3 +1,3 @@
 exporting
 ensureDirectory: aFileReference 
-	aFileReference ensureDirectory.
+	aFileReference ensureCreateDirectory.

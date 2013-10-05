@@ -1,5 +1,5 @@
 exporting
-exportAllClassesTo: aFileReference
+exportAllClasses
 	
 	| classes |
 	
@@ -7,5 +7,5 @@ exportAllClassesTo: aFileReference
 	classes sort: [ :a :b| a name <= b name ].
 	
 	classes 
-		do: [ :cls | self exportClass: cls to: aFileReference ]
+		do: [ :cls | self exportClass: cls ]
 		displayingProgress: [ :cls| 'Exporting ', cls name ].

@@ -2,14 +2,18 @@
 	"category" : "WebDoc",
 	"classinstvars" : [
 		 ],
+	"classtraitcomposition" : "TWDURLHelper classTrait",
 	"classvars" : [
 		 ],
 	"commentStamp" : "<historical>",
 	"instvars" : [
 		"environment",
-		"destination" ],
+		"destination",
+		"rootComponent",
+		"codec" ],
 	"name" : "WebDocExporter",
 	"pools" : [
 		 ],
 	"super" : "Object",
+	"traitcomposition" : "TWDURLHelper",
 	"type" : "normal" }
