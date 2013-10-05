@@ -14,15 +14,15 @@ baseline02: spec
 			
 		spec project: 'Seaside30' with: [
 			spec
+				repository: 'http://smalltalkhub.com/mc/Seaside/MetacelloConfigurations/main';
 				className: 'ConfigurationOfSeaside30';
-				version: #'stable';
-				repository: 'http://www.squeaksource.com/MetacelloRepository' ].
+				version: #'stable' ].
 			
 		spec project: 'Seaside-REST' with: [
 			spec
+				repository: 'http://smalltalkhub.com/mc/Seaside/MetacelloConfigurations/main';
 				className: 'ConfigurationOfSeasideRest';
-				version: #'stable';
-				repository: 'http://www.squeaksource.com/MetacelloRepository' ].
+				version: #'stable' ].
 			
 		spec 
 			package: 'WebDoc' with: [
