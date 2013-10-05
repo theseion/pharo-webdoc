@@ -5,8 +5,8 @@ allImplementorsOf: aSelector
 	
 	self flag: 'Almost Duplicate of SystemNavigation >> #allImplementorsOf: that works with RBEnvironments'.
 	
-	aCollection := SortedCollection new.
+	aCollection := OrderedCollection new.
 	self environment classesAndTraitsDo: [ :class | 
 		(class includesLocalSelector: aSelector)
 			ifTrue: [ aCollection add: (class >> aSelector) ]].
-	^ aCollection
+	^ aCollection sort: [ :a :b | a selector <= b selector ]
