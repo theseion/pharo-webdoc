@@ -1,3 +1,3 @@
 t-url
 urlForLicense
-	^  self relativeRootURL, '/license.txt'
+	^  self relativeRootURL, 'license.txt'

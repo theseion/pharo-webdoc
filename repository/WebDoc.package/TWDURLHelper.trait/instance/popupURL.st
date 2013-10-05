@@ -1,3 +1,3 @@
 t-url
 popupURL
-	^ self relativeRootURL, '/popup'
+	^ self relativeRootURL, 'popup/'
