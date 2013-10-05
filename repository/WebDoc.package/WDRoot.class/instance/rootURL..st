@@ -1,4 +1,4 @@
-as yet unclassified
+accessing
 rootURL: anURLString
 	rootURL := anURLString.
 	
