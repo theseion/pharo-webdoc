@@ -5,3 +5,4 @@ export
 	exporter := WebDocExporter packages: self packages.
 	exporter 
 		exportTo: directory.
+	self exitSuccess.
