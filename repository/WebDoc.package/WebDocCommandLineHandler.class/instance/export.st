@@ -1,8 +1,11 @@
 actions
 export
-	| directory exporter |
+	| directory exporter packages |
 	directory := (self optionAt: 'export') asFileReference.
-	exporter := WebDocExporter packages: self packages.
+	packages := self packages.
+	exporter := packages isEmpty
+		ifTrue: [ WebDocExporter new ]
+		ifFalse: [ WebDocExporter packages: packages ].
 	exporter 
 		exportTo: directory.
 	self exitSuccess.

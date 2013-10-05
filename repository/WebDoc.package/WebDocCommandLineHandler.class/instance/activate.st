@@ -4,9 +4,9 @@ activate
 		ifTrue: [  ^ self ].
 	
 	(self hasOption: 'export')
-		ifTrue: [ self export ].
+		ifTrue: [ ^ self export ].
 	
 	(self hasOption: 'server')
-		ifTrue: [ self export ].
+		ifTrue: [ ^ self server ].
 		
 	self exitFailure: 'Either --server=<Port> or --export=<Path> have to be specified.'
