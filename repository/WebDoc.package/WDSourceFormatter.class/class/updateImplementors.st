@@ -1,7 +1,7 @@
 accessing
 updateImplementors
 	implementors := Dictionary new.
-	self environment classesAndTraitsDo: [ :class |
+	SystemNavigation default allBehaviorsDo: [ :class |
 		class selectorsAndMethodsDo: [ :selector :method | 
 			(implementors 
 				at: selector 
