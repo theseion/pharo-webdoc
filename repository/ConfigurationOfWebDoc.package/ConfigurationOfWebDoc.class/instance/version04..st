@@ -8,4 +8,4 @@ version04: spec
 		spec author: 'CamilloBruni'.
 		spec timestamp: '2013-10-06 00:36'.
 		spec 
-			package: 'WebDoc' with: 'WebDoc-CamilloBruni.156' ].
+			package: 'WebDoc' with: 'WebDoc-CamilloBruni.157' ].
