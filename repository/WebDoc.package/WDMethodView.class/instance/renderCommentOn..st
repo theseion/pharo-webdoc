@@ -5,6 +5,7 @@ renderCommentOn: html
 		with: [
 			html div class: 'discussion';
 				with: (WDCommentFormatter new 
-							method: method;
-							rootURL: rootURL;
-							yourself)].
+					environment: self environment;
+					method: method;
+					rootURL: rootURL;
+					yourself)].
