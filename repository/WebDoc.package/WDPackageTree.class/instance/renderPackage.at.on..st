@@ -13,5 +13,6 @@ renderPackage: package at: anIndex on: html
 					self privateRenderPackage: package at: anIndex on: html.
 					self renderNextPackageOn: html]].
 	
+	hierarchy ifEmpty: [ ^ self ].
 	hierarchy pop.
 	self renderNextPackageOn: html.
