@@ -16,8 +16,7 @@ baseline02: spec
 			spec
 				repository: 'http://smalltalkhub.com/mc/Seaside/MetacelloConfigurations/main';
 				className: 'ConfigurationOfSeaside3';
-				version: #'stable';
-				loads: #(Base) ].
+				version: #'stable' ].
 			
 		spec project: 'Seaside-REST' with: [
 			spec
