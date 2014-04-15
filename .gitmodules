@@ -1,0 +1,3 @@
+[submodule "petitmarkdown"]
+	path = petitmarkdown
+	url = git@github.com:estebanlm/petitmarkdown.git
