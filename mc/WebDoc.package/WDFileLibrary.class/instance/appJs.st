@@ -254,7 +254,7 @@ function selectorPopupURL(item) {
 		className = $(".className:first").text()
 	}
 	className = className.split(".html")[0];
-	return defaultPopupURL("/class/"+className+url[1])
+	return defaultPopupURL("/class/"+className+"/"+url[1])
 }
 
 function summaryPopupURL(item) {

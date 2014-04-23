@@ -1,7 +1,7 @@
 routes
 main
 	<get>
-	<path: '/'>
+	<path: ''>
    <produces: 'text/html'>
 	
    ^ self index

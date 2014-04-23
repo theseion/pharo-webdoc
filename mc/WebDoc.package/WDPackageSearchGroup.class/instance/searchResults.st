@@ -6,7 +6,7 @@ searchResults
 	beginsWith := SortedCollection sortBlock: sortBlock.
 	others := SortedCollection sortBlock: sortBlock.
 	
-	PackageOrganizer default packages do: [ :package|
+	RPackageOrganizer default packages do: [ :package|
 		name := package name.
 		name = searchTerm
 			ifTrue: [ result add: package]

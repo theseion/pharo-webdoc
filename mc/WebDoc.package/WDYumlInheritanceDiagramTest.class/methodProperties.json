@@ -2,11 +2,11 @@
 	"class" : {
 		 },
 	"instance" : {
-		"setUp" : "CamilloBruni 3/3/2013 13:47",
+		"setUp" : "EstebanLorenzano 4/23/2014 12:54",
 		"testEmpty" : "LaurentLaffont 12/18/2009 23:18",
-		"testWithAPackage" : "LaurentLaffont 12/18/2009 22:51",
-		"testWithAPackageContainingTrait" : "LaurentLaffont 12/18/2009 23:29",
-		"testWithAPackageName" : "LaurentLaffont 12/18/2009 23:25",
+		"testWithAPackage" : "EstebanLorenzano 4/23/2014 12:56",
+		"testWithAPackageContainingTrait" : "EstebanLorenzano 4/23/2014 12:56",
+		"testWithAPackageName" : "EstebanLorenzano 4/23/2014 12:57",
 		"testWithOneClass" : "LaurentLaffont 12/18/2009 22:33",
 		"testWithTwoIndependentClasses" : "LaurentLaffont 12/18/2009 22:35",
 		"testWithTwoRelatedClasses" : "LaurentLaffont 12/18/2009 22:34" } }

@@ -1,3 +1,3 @@
 initialization
 addPackageNamed: aString
-	self addPackage: (PackageOrganizer default packageNamed: aString ifAbsent: [^self]).
+	self addPackage: (RPackageOrganizer default packageNamed: aString ifAbsent: [^self]).

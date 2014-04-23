@@ -8,6 +8,7 @@
 		"packageNames:" : "CamilloBruni 10/5/2013 19:00",
 		"packages:" : "CamilloBruni 10/5/2013 18:59" },
 	"instance" : {
+		"basePopupURLforClass:" : "EstebanLorenzano 4/15/2014 17:42",
 		"codec" : "CamilloBruni 10/5/2013 19:44",
 		"destination" : "CamilloBruni 10/5/2013 19:03",
 		"destination:" : "CamilloBruni 10/5/2013 19:03",
@@ -23,7 +24,7 @@
 		"exportInstanceVariablesOf:" : "CamilloBruni 10/5/2013 19:25",
 		"exportMethods:" : "CamilloBruni 10/5/2013 19:25",
 		"exportTo:" : "CamilloBruni 10/5/2013 19:06",
-		"exportURL:" : "CamilloBruni 10/5/2013 20:32",
+		"exportURL:" : "EstebanLorenzano 4/15/2014 17:59",
 		"fileLibrary" : "CamilloBruni 10/5/2013 20:24",
 		"initialize" : "CamilloBruni 10/5/2013 23:27",
 		"packageTree" : "CamilloBruni 10/6/2013 01:12",

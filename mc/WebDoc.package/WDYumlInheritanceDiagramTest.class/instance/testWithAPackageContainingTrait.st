@@ -1,4 +1,4 @@
 tests
 testWithAPackageContainingTrait
 	yuml addPackageNamed: 'CollectionsTests'.
-	self assert: (yuml inheritanceDiagram includesSubString: 'TAddTest') not.
+	self assert: (yuml inheritanceDiagram includesSubstring: 'TAddTest') not.

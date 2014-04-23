@@ -1,7 +1,9 @@
 tests
 testWithAPackage
 	| aPackage |
-	aPackage :=  PackageOrganizer default packageOfClass: self class.
+	aPackage :=  RPackageOrganizer default packageOf: self class.
 	yuml addPackage: aPackage.
-	self assert: (aPackage classes size) equals: (',' split: yuml inheritanceDiagram) size
+	self 
+		assert: ((aPackage classes reject: #isTrait) size) 
+		equals: (',' split: yuml inheritanceDiagram) size
 	
