@@ -365,4 +365,4 @@ $(keyboardShortcuts);
 $(summaryToggle);
 $(fixOutsideWorldLinks);
 $(generateTOC);
-$(createSelectorLinks);' copyReplaceAll: String cr with: String lf
+/*$(createSelectorLinks);*/ ' copyReplaceAll: String cr with: String lf

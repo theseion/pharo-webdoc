@@ -106,10 +106,12 @@ dl.box {
   width: 520px;
   font-size: 1em;
 }
+
 dl.box dt {
   float: left;
   display: block;
   width: 100px;
+  min-height: 20px;
   margin: 0;
   text-align: right;
   font-weight: bold;
@@ -118,10 +120,12 @@ dl.box dt {
   padding: 6px 0;
   padding-right: 10px;
 }
+
 dl.box dd {
   float: left;
   display: block;
   width: 380px;
+  min-height: 20px;
   margin: 0;
   padding: 6px 0;
   padding-right: 20px;

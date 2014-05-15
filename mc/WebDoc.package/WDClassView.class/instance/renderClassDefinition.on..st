@@ -5,9 +5,10 @@ renderClassDefinition: class on: html
 		with: [
 			html definitionTerm 
 				with: 'Subclass of: '.
-			self renderInheritListOn: html].
-	html div.
-	
+			self renderInheritListOn: html ].
+	html break.
+	self flag: #todo. "Package diagram is not working"
+	"
 	html text: 'View '.
 	html anchor
        url: (WDYumlMe new setDirectionLeftRight; inheritanceDiagramForClass: class);
@@ -18,4 +19,4 @@ renderClassDefinition: class on: html
 	html anchor
        url: (WDYumlMe new setDirectionLeftRight; packageDiagramForClass: class);
 		relationship: 'external';
-		with: 'package diagram'.
+		with: 'package diagram'."
