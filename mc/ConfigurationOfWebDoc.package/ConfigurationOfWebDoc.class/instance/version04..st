@@ -8,4 +8,4 @@ version04: spec
 		spec author: 'MaxLeske'.
 		spec timestamp: '2014-11-11 17:05'.
 		spec 
-			package: 'WebDoc' with: 'WebDoc-CamilloBruni.157' ].
+			package: 'WebDoc' with: 'WebDoc-EstebanLorenzano.159' ].
